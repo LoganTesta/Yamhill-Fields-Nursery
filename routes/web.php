@@ -47,6 +47,10 @@ Route::get('/500', function(){
 	return view('500');
 });
 
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('config:cache');
+    return 'DONE'; //Return anything
+});
 
 
 /*POST routes*/
