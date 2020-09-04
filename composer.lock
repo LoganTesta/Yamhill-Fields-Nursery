@@ -516,7 +516,7 @@
                 "symfony/debug": "^4.2",
                 "symfony/finder": "^4.2",
                 "symfony/http-foundation": "^4.2",
-                "symfony/http-kernel": "^4.2",
+                "symfony/http-kernel": "^4.4.13",
                 "symfony/process": "^4.2",
                 "symfony/routing": "^4.2",
                 "symfony/var-dumper": "^4.2",
@@ -2062,7 +2062,7 @@
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v4.4.10",
+            "version": "v4.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
