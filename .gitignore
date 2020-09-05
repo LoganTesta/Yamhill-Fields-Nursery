@@ -16,3 +16,4 @@ yarn-error.log
 /public/blog/wp-content/themes/twentytwenty/
 /public/blog/wp-content/plugins/akismet/
 /nbproject/private/
+/public/blog/wp-content/plugins/wordpress-importer/
