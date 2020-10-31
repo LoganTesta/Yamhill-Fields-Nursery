@@ -538,6 +538,7 @@ header { min-height: 270px; }
     .footer__location-address { font-size: 19px; }
     .footer__location-address { font-size: 19px; }
     .footer__location-hours { font-size: 19px; }
+    .footer__phone { font-size: 19px; }
 
     .main-title-container { top: 80px; left: 70px; width: 500px; margin-left: 0; margin-right: 0; }
     .main-title-container__background { height: 74px; }
