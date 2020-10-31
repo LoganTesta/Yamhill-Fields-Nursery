@@ -355,6 +355,10 @@ header { min-height: 270px; }
 .page-index .subfooter-container__background { background: url('../images/cacti-inside-sunny-greenhouse.jpg') 50% 50%/cover no-repeat; }
 .nursery-view__subheader { text-align: center; }
 
+/*WooCommerce customizations.*/
+.products { width: 100%; }
+.product { width: 100%; margin-bottom: 50px; }
+
 
 /*Blog page*/
 .page-our-blog .blog-post { padding-bottom: 40px; }
@@ -442,6 +446,10 @@ header { min-height: 270px; }
 
 /* Clearing variable width columns */
 @media only screen and (min-width: 700px) and (max-width: 1199px){   
+     /*WooCommerce customizations.*/
+    .product:nth-of-type(2n+1) { content: ""; display: block; clear: both; }
+    
+    
     .supply:nth-of-type(2n){ content: ""; display: block; clear: both; }
 }
 
@@ -478,6 +486,12 @@ header { min-height: 270px; }
     /*General use classes*/
     .content__highlighted-phrase { font-size: 18px; }
 
+    
+    /*WooCommerce customizations.*/
+    .products { }
+    .product { float: left; width: 50%; margin-right: 30px; }
+    
+    
     /*Index*/
     .slideshow { padding-bottom: 0; }
     .slideshow__image { height: 260px; }
@@ -494,11 +508,14 @@ header { min-height: 270px; }
     /*Plants*/
     .plant.six { padding-bottom: 0; }
 
+    
     /*Supplies*/
     .supply.six { padding-bottom: 0; }
 
+    
     /*Blog*/
     .blog__image img { display: block; width: auto; height: auto; }
+    
     
     /*Contact Us*/
     .form__transmit-results { font-size: 20px; }
@@ -550,8 +567,16 @@ header { min-height: 270px; }
     /*General use classes*/
     .content__content-image { height: 360px; }
 
+    
     /*Shared styles*/
     .main-title-container, .subtitle-container { margin-left: 0; margin-right: 0; }
+    
+    
+    /*WooCommerce customizations.*/
+    .products { }
+    .product { width: 350px; margin-right: 40px; }
+    .product:nth-of-type(3n+1) { content: ""; display: block; clear: both; }
+
 
     /*Index page */
     .index-content-image { height: 400px; }
@@ -594,6 +619,7 @@ header { min-height: 270px; }
     .plant__zoom-in-container.inspect { display: block; position: absolute; top: 400px; left: 15px; width: 370px; height: 300px; overflow: hidden; z-index: 101; 
                                     border: 1px solid #999999; border-radius: 10px; box-shadow: 0 0 6px 12px rgba(0,0,0,0.9); }
     .plant__zoom-in { width: 370px; height: 300px; background-color: #cccccc; border: 1px solid #000000; transform: scale(2); }
+    
     
     /*Supplies*/
     .supply { }
