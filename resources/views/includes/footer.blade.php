@@ -7,7 +7,7 @@
             </div>
             <div class="footer__location">
                 <div class="footer__location-header">Location and Hours:</div> 
-                <div class="footer__location-address">45202 SW Dundee, OR 97115</div>
+                <div class="footer__location-address">45202 Oak Highway, Dundee, OR 97115</div>
                 <div class="footer__location-hours">Open Mon-Sat 9:00 am-9:00 pm, closed Sunday.</div>
                 <div class="footer__phone">503-538-8204</div>
             </div>	

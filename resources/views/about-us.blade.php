@@ -31,7 +31,7 @@
                             <p>Open Mon-Sat 9:00 am-9:00 pm, closed Sunday.</p>
                             <p>Questions? Call us at 503-538-8204.</p>
                             <h3>Location</h3>
-                            <p>45202 SW Dundee, OR 97115</p>
+                            <p>45202 Oak Highway, Dundee, OR 97115</p>
                         </div>
                         <div class="col-sma-7">
                             <div class="content-background-container">
