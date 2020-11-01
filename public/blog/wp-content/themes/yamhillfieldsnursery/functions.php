@@ -19,3 +19,10 @@ if(false === get_option( "medium_crop" )) {
 } else {
     update_option( "medium_crop", "1" );
 }
+
+
+function yfn_woocommerce_customizations() {
+    echo '<div class="plant__notes">' . get_the_excerpt() . '</div>';
+    echo '<div class="plant__description">' . get_the_content() . '</div>';
+}
+add_action( 'woocommerce_after_shop_loop_item', 'yfn_woocommerce_customizations' );
