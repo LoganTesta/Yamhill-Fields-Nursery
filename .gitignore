@@ -17,3 +17,7 @@ yarn-error.log
 /public/blog/wp-content/plugins/akismet/
 /nbproject/private/
 /public/blog/wp-content/plugins/wordpress-importer/
+/public/blog/wp-content/plugins/woocommerce/
+/public/blog/wp-content/plugins/mailchimp-for-woocommerce/
+/public/blog/wp-content/plugins/facebook-for-woocommerce/
+/public/blog/wp-content/plugins/kliken-marketing-for-google/
