@@ -387,22 +387,6 @@ header { min-height: 270px; }
 .plant__description { padding-bottom: 10px; }
 .plant__price { font-size: 18px; font-weight: bold; text-align: center; color: #325b53; }
 
-.plant.zero .plant__background-image { background: url('../images/plants/cactus.jpg') 50% 50%/cover no-repeat; }
-.plant.one .plant__background-image { background: url('../images/plants/trees-outside-nursery.jpg') 50% 50%/cover no-repeat; }
-.plant.two .plant__background-image { background: url('../images/plants/fern-in-pot.jpg') 50% 50%/cover no-repeat; }
-.plant.three .plant__background-image { background: url('../images/plants/blueberry-bush.jpg') 50% 50%/cover no-repeat; }
-.plant.four .plant__background-image { background: url('../images/plants/potted-plants-inside-sunny-greenhouse.jpg') 50% 50%/cover no-repeat; }
-.plant.five .plant__background-image { background: url('../images/plants/grasses-up-close.jpg') 50% 50%/cover no-repeat; }
-.plant.six .plant__background-image { background: url('../images/plants/strawberry-bush.jpg') 50% 50%/cover no-repeat; }
-
-.plant.zero .plant__zoom-in { background: url('../images/plants/cactus-bigger-width.jpg') 91px 73px/cover no-repeat; }
-.plant.one .plant__zoom-in { background: url('../images/plants/trees-outside-nursery.jpg') 91px 73px/cover no-repeat; }
-.plant.two .plant__zoom-in { background: url('../images/plants/fern-in-pot.jpg') 91px 73px/cover no-repeat; }
-.plant.three .plant__zoom-in { background: url('../images/plants/blueberry-bush.jpg') 91px 73px/cover no-repeat; }
-.plant.four .plant__zoom-in { background: url('../images/plants/potted-plants-inside-sunny-greenhouse.jpg') 91px 73px/cover no-repeat; }
-.plant.five .plant__zoom-in { background: url('../images/plants/grasses-up-close.jpg') 91px 73px/cover no-repeat; }
-.plant.six .plant__zoom-in { background: url('../images/plants/strawberry-bush.jpg') 91px 73px/cover no-repeat; }
-
 .plant.six { padding-bottom: 0; }
 
 

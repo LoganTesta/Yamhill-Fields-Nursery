@@ -41,7 +41,7 @@ function yfn_woocommerce_products_plants_layout() {
             echo '<div class="plant__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
             echo '<div class="plant__zoom-in-container-close">X</div>';
             echo '<div class="plant__zoom-in-container">';
-                echo '<div class="plant__zoom-in"></div>';
+                echo '<div class="plant__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
             echo '</div>';
             echo '<div class="plant__inspect-background"></div>';
             echo '<div class="plant__notes">' . get_the_excerpt() . '</div>';
