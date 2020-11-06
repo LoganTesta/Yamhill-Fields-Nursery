@@ -1,32 +1,38 @@
 
-let numberOfItems = 7;
+let numberOfItems;
 
-for (let i = 0; i < numberOfItems; i++) {
-    let itemInspectBackground = document.getElementsByClassName("item__inspect-background")[i];
+function loadItems(totalItems){
+    numberOfItems = totalItems;
 
-    let itemImage = document.getElementsByClassName("item__background-image")[i];
-    let itemImageZoomIn = document.getElementsByClassName("item__zoom-in")[i];
-    let itemZoomInContainer = document.getElementsByClassName("item__zoom-in-container")[i];
-    let itemInspectBackgroundClose = document.getElementsByClassName("item__zoom-in-container-close")[i];
+    for (let i = 0; i < numberOfItems; i++) {
+        let itemInspectBackground = document.getElementsByClassName("item__inspect-background")[i];
+
+        let itemImage = document.getElementsByClassName("item__background-image")[i];
+        let itemImageZoomIn = document.getElementsByClassName("item__zoom-in")[i];
+        let itemZoomInContainer = document.getElementsByClassName("item__zoom-in-container")[i];
+        let itemInspectBackgroundClose = document.getElementsByClassName("item__zoom-in-container-close")[i];
 
 
-    itemImage.addEventListener("click", function () {
-        toggleExamine(event, i);
-    });
+        itemImage.addEventListener("click", function () {
+            toggleExamine(event, i);
+        });
 
-    itemImage.addEventListener("mousemove", function () {
-        updateZoomInImage(event, i);
-    });
-    itemInspectBackground.addEventListener("click", function () {
-        toggleExamine(event, i);
-    });
+        itemImage.addEventListener("mousemove", function () {
+            updateZoomInImage(event, i);
+        });
+        itemInspectBackground.addEventListener("click", function () {
+            toggleExamine(event, i);
+        });
+
+        itemInspectBackgroundClose.addEventListener("click", function () {
+            toggleExamine(event, i);
+        });
+    }
     
-    itemInspectBackgroundClose.addEventListener("click", function () {
-        toggleExamine(event, i);
-    });
+    checkBrowserWidth();
 }
 
-window.onload = checkBrowserWidth();
+
 window.addEventListener("resize", checkBrowserWidth);
 
 

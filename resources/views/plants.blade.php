@@ -44,6 +44,9 @@
                 });
             </script>
             <script type="text/javascript" src="/assets/javascript/item-hover-over-zoom-in.js"></script>
+            <script>
+                loadItems(7);    
+            </script>
         </div>
     </body>
 </html>
