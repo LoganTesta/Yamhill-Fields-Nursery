@@ -359,6 +359,19 @@ header { min-height: 270px; }
 .products { width: 100%; }
 .product { width: 100%; margin-bottom: 50px; }
 
+/*WooCommerce customized products/items*/
+.item { position: relative; padding-bottom: 40px; }
+.item__title { padding-bottom: 15px; font-size: 20px; font-weight: bold; text-align: center; color: #4f7942; }
+.item__background-image { width: 100%; height: 240px; margin-bottom: 8px; }
+.item__inspect-background { display: none; }
+.item__zoom-in-container-close { display: none; }
+.item__zoom-in-container { display: none; }
+.item__notes { padding-bottom: 8px; font-weight: bold; color: #325b53; }
+.item__description { padding-bottom: 10px; }
+.item__price { font-size: 18px; font-weight: bold; text-align: center; color: #325b53; }
+
+.item:last-of-type { padding-bottom: 0; }
+
 
 /*Blog page*/
 .page-our-blog .blog-post { padding-bottom: 40px; }
@@ -377,17 +390,6 @@ header { min-height: 270px; }
 
 
 /*Plants page*/
-.plant { position: relative; padding-bottom: 40px; }
-.plant__title { padding-bottom: 15px; font-size: 20px; font-weight: bold; text-align: center; color: #4f7942; }
-.plant__background-image { width: 100%; height: 240px; margin-bottom: 8px; }
-.plant__inspect-background { display: none; }
-.plant__zoom-in-container-close { display: none; }
-.plant__zoom-in-container { display: none; }
-.plant__notes { padding-bottom: 8px; font-weight: bold; color: #325b53; }
-.plant__description { padding-bottom: 10px; }
-.plant__price { font-size: 18px; font-weight: bold; text-align: center; color: #325b53; }
-
-.plant:last-of-type { padding-bottom: 0; }
 
 
 /*Supplies page*/
@@ -410,7 +412,7 @@ header { min-height: 270px; }
 }
 
 @media only screen and (min-width: 700px) {
-    .plant:nth-of-type(3n+1){ content: ""; display: block; clear: both; }
+    .item:nth-of-type(3n+2){ content: ""; display: block; clear: both; }
 }
 
 @media only screen and (min-width: 1200px){   
@@ -447,6 +449,9 @@ header { min-height: 270px; }
     .products { }
     .product { float: left; width: 50%; margin-right: 30px; }
     
+    /*WooCommerce customized products/items*/
+    .item:last-of-type { padding-bottom: 0; }
+    
     
     /*Index*/
     .slideshow { padding-bottom: 0; }
@@ -462,7 +467,6 @@ header { min-height: 270px; }
     
     
     /*Plants*/
-    .plant:last-of-type { padding-bottom: 0; }
 
     
     /*Supplies*/
@@ -532,7 +536,24 @@ header { min-height: 270px; }
     .product { width: 350px; margin-right: 40px; }
     .product:nth-of-type(3n+1) { content: ""; display: block; clear: both; }
 
+    /*WooCommerce customized products/items*/
+    .item { }
+    .item__title { font-size: 24px; }
+    .item__background-image { height: 300px; cursor: zoom-in; }
+    .item__description { }
+    .item__price { font-size: 19px; }
 
+    .item__inspect-background.show { display: inline-block; float: left; width: 18px; height: 28px; margin-right: 15px; margin-bottom: 5px;
+                                      background: url('../images/magnifying-glass.png') 50% 50%/cover no-repeat; cursor: pointer; }
+    .item__zoom-in-container-close.inspect { display: block; position: absolute; left: 360px; top: 352px; padding-left: 10px; padding-right: 10px; 
+                                              border-radius: 12px; font-size: 24px; font-weight: bold; background-color: #77874a; color: #ffffff; 
+                                              transition: 0.4s ease-in; cursor: pointer; }
+    .item__zoom-in-container-close.inspect:hover { background-color: #4f7942; transition: 0.4s ease-in; }
+    .item__zoom-in-container.inspect { display: block; position: absolute; top: 400px; left: 15px; width: 370px; height: 300px; overflow: hidden; z-index: 101; 
+                                    border: 1px solid #999999; border-radius: 10px; box-shadow: 0 0 6px 12px rgba(0,0,0,0.9); }
+    .item__zoom-in { width: 370px; height: 300px; background-color: #cccccc; border: 1px solid #000000; transform: scale(2); }
+
+    
     /*Index page */
     .index-content-image { height: 400px; }
     
@@ -559,25 +580,9 @@ header { min-height: 270px; }
 
     
     /*Plants page*/
-    .plant { }
-    .plant__title { font-size: 24px; }
-    .plant__background-image { height: 300px; cursor: zoom-in; }
-    .plant__description { }
-    .plant__price { font-size: 19px; }
-
-    .plant__inspect-background.show { display: inline-block; float: left; width: 18px; height: 28px; margin-right: 15px; margin-bottom: 5px;
-                                      background: url('../images/magnifying-glass.png') 50% 50%/cover no-repeat; cursor: pointer; }
-    .plant__zoom-in-container-close.inspect { display: block; position: absolute; left: 360px; top: 352px; padding-left: 10px; padding-right: 10px; 
-                                              border-radius: 12px; font-size: 24px; font-weight: bold; background-color: #77874a; color: #ffffff; 
-                                              transition: 0.4s ease-in; cursor: pointer; }
-    .plant__zoom-in-container-close.inspect:hover { background-color: #4f7942; transition: 0.4s ease-in; }
-    .plant__zoom-in-container.inspect { display: block; position: absolute; top: 400px; left: 15px; width: 370px; height: 300px; overflow: hidden; z-index: 101; 
-                                    border: 1px solid #999999; border-radius: 10px; box-shadow: 0 0 6px 12px rgba(0,0,0,0.9); }
-    .plant__zoom-in { width: 370px; height: 300px; background-color: #cccccc; border: 1px solid #000000; transform: scale(2); }
     
     
     /*Supplies*/
-    .supply { }
     
     
     /*Blog*/

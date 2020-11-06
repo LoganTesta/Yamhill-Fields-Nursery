@@ -27,6 +27,11 @@
                             <h3>Buy Plants Here</h3>
                             <p>We offer a wide selection of outdoor and indoor plants for your gardening and landscaping needs.  <strong><em>Note: Prices and
                                 supplies are approximate and are provided as an estimate only.</em></strong></p>
+                        </div>
+                    </div>
+                    <div class="content-row">
+                        <div class="col-sma-12">
+                        </div>
                             <?php echo do_shortcode( "[yfn_woocommerce_products_plants]" ); ?>
                     </div>
                 </div>

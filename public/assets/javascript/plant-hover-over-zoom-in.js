@@ -2,12 +2,12 @@
 let numberOfPlants = 7;
 
 for (let i = 0; i < numberOfPlants; i++) {
-    let plantInspectBackground = document.getElementsByClassName("plant__inspect-background")[i];
+    let plantInspectBackground = document.getElementsByClassName("item__inspect-background")[i];
 
-    let itemImage = document.getElementsByClassName("plant__background-image")[i];
-    let itemImageZoomIn = document.getElementsByClassName("plant__zoom-in")[i];
-    let plantZoomInContainer = document.getElementsByClassName("plant__zoom-in-container")[i];
-    let plantInspectBackgroundClose = document.getElementsByClassName("plant__zoom-in-container-close")[i];
+    let itemImage = document.getElementsByClassName("item__background-image")[i];
+    let itemImageZoomIn = document.getElementsByClassName("item__zoom-in")[i];
+    let plantZoomInContainer = document.getElementsByClassName("item__zoom-in-container")[i];
+    let plantInspectBackgroundClose = document.getElementsByClassName("item__zoom-in-container-close")[i];
 
 
     itemImage.addEventListener("click", function () {
@@ -33,16 +33,16 @@ window.addEventListener("resize", checkBrowserWidth);
 function checkBrowserWidth() {
     for (let i = 0; i < numberOfPlants; i++) {
         if (window.innerWidth >= 1200) {
-            if (document.getElementsByClassName("plant__inspect-background")[i].classList.contains("show") === false) {
-                document.getElementsByClassName("plant__inspect-background")[i].classList.add("show");
+            if (document.getElementsByClassName("item__inspect-background")[i].classList.contains("show") === false) {
+                document.getElementsByClassName("item__inspect-background")[i].classList.add("show");
             }
         } else {
-            document.getElementsByClassName("plant__inspect-background")[i].classList.remove("show");
+            document.getElementsByClassName("item__inspect-background")[i].classList.remove("show");
         }
 
         if (window.innerWidth < 1200) {
-            document.getElementsByClassName("plant__zoom-in-container")[i].classList.remove("inspect");
-            document.getElementsByClassName("plant__zoom-in-container-close")[i].classList.remove("inspect");
+            document.getElementsByClassName("item__zoom-in-container")[i].classList.remove("inspect");
+            document.getElementsByClassName("item__zoom-in-container-close")[i].classList.remove("inspect");
         }
     }
 }
@@ -50,13 +50,13 @@ function checkBrowserWidth() {
 function toggleExamine(event, plantNumber) {
     for (let i = 0; i < numberOfPlants; i++) {
         if(i !== plantNumber){
-            document.getElementsByClassName("plant__zoom-in-container")[i].classList.remove("inspect");
-            document.getElementsByClassName("plant__zoom-in-container-close")[i].classList.remove("inspect");
+            document.getElementsByClassName("item__zoom-in-container")[i].classList.remove("inspect");
+            document.getElementsByClassName("item__zoom-in-container-close")[i].classList.remove("inspect");
         }
     }
     if (window.innerWidth >= 1200) {
-        document.getElementsByClassName("plant__zoom-in-container")[plantNumber].classList.toggle("inspect");
-        document.getElementsByClassName("plant__zoom-in-container-close")[plantNumber].classList.toggle("inspect");
+        document.getElementsByClassName("item__zoom-in-container")[plantNumber].classList.toggle("inspect");
+        document.getElementsByClassName("item__zoom-in-container-close")[plantNumber].classList.toggle("inspect");
     }
 }
 
@@ -67,7 +67,7 @@ function updateZoomInImage(event, plantNumber) {
     let imageBaseCroppedX = 0;
     let imageBaseCroppedY = 0;
 
-    let itemImageRect = document.getElementsByClassName("plant__background-image")[plantNumber].getBoundingClientRect();
+    let itemImageRect = document.getElementsByClassName("item__background-image")[plantNumber].getBoundingClientRect();
 
     let mouseX = event.pageX - itemImageRect.left - window.pageXOffset;
     let mouseY = event.pageY - itemImageRect.top - window.pageYOffset;
@@ -88,5 +88,5 @@ function updateZoomInImage(event, plantNumber) {
     let updatedX = imageBaseX - imageBaseCroppedX - 0.5 * mouseX;
     let updatedY = imageBaseY - imageBaseCroppedY - 0.5 * mouseY;
 
-    document.getElementsByClassName("plant__zoom-in")[plantNumber].style.backgroundPosition = updatedX + "px" + " " + updatedY + "px";
+    document.getElementsByClassName("item__zoom-in")[plantNumber].style.backgroundPosition = updatedX + "px" + " " + updatedY + "px";
 }

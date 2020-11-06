@@ -28,7 +28,11 @@
                             <p>Whether it's winter or summer, we have the supplies you need for your gardening projects!  <strong><em>Note: Prices and 
                                 supplies are approximate and are provided as an estimate only.</em></strong></p>
                         </div>
-                        <?php echo do_shortcode( "[yfn_woocommerce_products_plants]" ); ?>
+                    </div>
+                    <div class="content-row">
+                        <div class="col-sma-12">
+                        </div>
+                        <?php echo do_shortcode( "[yfn_woocommerce_products_supplies]" ); ?>
                     </div>
                 </div>
             </div>
@@ -39,7 +43,7 @@
                     setCurrentPage(2, "desktopNav");
                 });
             </script>
-            <script type="text/javascript" src="/assets/javascript/supply-hover-over-zoom-in.js"></script>
+            <script type="text/javascript" src="/assets/javascript/plant-hover-over-zoom-in.js"></script>
         </div>
     </body>
 </html>
