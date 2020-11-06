@@ -387,36 +387,10 @@ header { min-height: 270px; }
 .plant__description { padding-bottom: 10px; }
 .plant__price { font-size: 18px; font-weight: bold; text-align: center; color: #325b53; }
 
-.plant.six { padding-bottom: 0; }
+.plant:last-of-type { padding-bottom: 0; }
 
 
 /*Supplies page*/
-.supply { position: relative; padding-bottom: 40px; }
-.supply__title { padding-bottom: 15px; font-size: 20px; font-weight: bold; text-align: center; color: #4f7942; }
-.supply__background-image { width: 100%; height: 240px; margin-bottom: 8px; }
-.supply__inspect-background { display: none; }
-.supply__zoom-in-container-close { display: none; }
-.supply__zoom-in-container { display: none; }
-.supply__description { padding-bottom: 10px; }
-.supply__price { font-size: 18px; font-weight: bold; text-align: center; color: #325b53; }
-
-.supply.zero .supply__background-image { background: url('../images/supplies/garden-supplies.jpg') 50% 50%/cover no-repeat; }
-.supply.one .supply__background-image { background: url('../images/supplies/two-watering-cans.jpg') 50% 50%/cover no-repeat; }
-.supply.two .supply__background-image { background: url('../images/supplies/potting-soil.jpg') 50% 50%/cover no-repeat; }
-.supply.three .supply__background-image { background: url('../images/supplies/garden-clay-pots.jpg') 50% 50%/cover no-repeat; }
-.supply.four .supply__background-image { background: url('../images/supplies/seed-packs.jpg') 50% 50%/cover no-repeat; }
-.supply.five .supply__background-image { background: url('../images/supplies/rake.jpg') 50% 50%/cover no-repeat; }
-.supply.six .supply__background-image { background: url('../images/supplies/garden-hose.jpg') 50% 50%/cover no-repeat; }
-
-.supply.zero .supply__zoom-in { background: url('../images/supplies/garden-supplies.jpg') 50% 50%/cover no-repeat; }
-.supply.one .supply__zoom-in { background: url('../images/supplies/two-watering-cans.jpg') 50% 50%/cover no-repeat; }
-.supply.two .supply__zoom-in { background: url('../images/supplies/potting-soil.jpg') 50% 50%/cover no-repeat; }
-.supply.three .supply__zoom-in { background: url('../images/supplies/garden-clay-pots.jpg') 50% 50%/cover no-repeat; }
-.supply.four .supply__zoom-in { background: url('../images/supplies/seed-packs.jpg') 50% 50%/cover no-repeat; }
-.supply.five .supply__zoom-in { background: url('../images/supplies/rake.jpg') 50% 50%/cover no-repeat; }
-.supply.six .supply__zoom-in { background: url('../images/supplies/garden-hose.jpg') 50% 50%/cover no-repeat; }
-
-.supply.six { padding-bottom: 0; }
 
 
 /*404*/
@@ -432,17 +406,15 @@ header { min-height: 270px; }
 @media only screen and (min-width: 700px) and (max-width: 1199px){   
      /*WooCommerce customizations.*/
     .product:nth-of-type(2n+1) { content: ""; display: block; clear: both; }
-    
-    
-    .supply:nth-of-type(2n){ content: ""; display: block; clear: both; }
+  
 }
 
 @media only screen and (min-width: 700px) {
-    .plant:nth-of-type(3n+2){ content: ""; display: block; clear: both; }
+    .plant:nth-of-type(3n+1){ content: ""; display: block; clear: both; }
 }
 
 @media only screen and (min-width: 1200px){   
-    .supply:nth-of-type(3n+2){ content: ""; display: block; clear: both; }   
+
 }
 
 
@@ -490,11 +462,10 @@ header { min-height: 270px; }
     
     
     /*Plants*/
-    .plant.six { padding-bottom: 0; }
+    .plant:last-of-type { padding-bottom: 0; }
 
     
     /*Supplies*/
-    .supply.six { padding-bottom: 0; }
 
     
     /*Blog*/
@@ -607,22 +578,6 @@ header { min-height: 270px; }
     
     /*Supplies*/
     .supply { }
-    .supply__title { font-size: 24px; }
-    .supply__background-image { height: 240px; cursor: zoom-in; }
-    .supply__description { }
-    .supply__price { font-size: 19px; }
-    
-    .supply__inspect-background.show { display: inline-block; float: left; width: 18px; height: 28px; margin-right: 10px; margin-bottom: 5px;
-                                       background: url('../images/magnifying-glass.png') 50% 50%/cover no-repeat; cursor: pointer; }
-    .supply__zoom-in-container-close.inspect { display: block; position: absolute; left: 360px; top: 290px; padding: 2px 12px 2px 12px; 
-                                               border-radius: 12px; font-size: 24px; font-weight: bold; background-color: #77874a; color: #ffffff; 
-                                               transition: 0.4s ease-in; cursor: pointer; }
-    .supply__zoom-in-container-close.inspect:hover { background-color: #4f7942; transition: 0.4s ease-in; }
-    .supply__zoom-in-container.inspect { display: block; position: absolute; top: 340px; left: 15px; width: 370px; height: 240px; overflow: hidden; z-index: 101; 
-                                    border: 1px solid #999999; border-radius: 10px; box-shadow: 0 0 6px 12px rgba(0,0,0,0.9); }
-    .supply__zoom-in { width: 370px; height: 240px; background-color: #cccccc; border: 1px solid #000000; transform: scale(2); }
-
-    .supply.six { padding-bottom: 0; }
     
     
     /*Blog*/

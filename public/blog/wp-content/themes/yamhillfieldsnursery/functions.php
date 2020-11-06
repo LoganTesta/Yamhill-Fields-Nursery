@@ -51,3 +51,30 @@ function yfn_woocommerce_products_plants_layout() {
     endwhile;
 }
 add_shortcode( 'yfn_woocommerce_products_plants', 'yfn_woocommerce_products_plants_layout' );
+
+
+
+function yfn_woocommerce_products_supplies_layout() {
+    $args = array(
+        'post_type' => 'product',
+        'product_cat' => 'supplies',
+    );
+    $products = new WP_Query( $args );
+    
+    while( $products->have_posts() ) : $products->the_post(); global $product;  
+        echo '<div class="plant col-sma-4">';
+            echo '<h4 class="plant__title">' . get_the_title() . '</h4>';
+            echo '<div class="plant__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
+            echo '<div class="plant__zoom-in-container-close">X</div>';
+            echo '<div class="plant__zoom-in-container">';
+                echo '<div class="plant__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
+            echo '</div>';
+            echo '<div class="plant__inspect-background"></div>';
+            echo '<div class="plant__notes">' . get_the_excerpt() . '</div>';
+            echo '<div class="plant__description">' . get_the_content() . '</div>';
+            echo '<div class="plant__price">$5</div>';
+        echo '</div>';       
+    endwhile;
+}
+add_shortcode( 'yfn_woocommerce_products_plants', 'yfn_woocommerce_products_supplies_layout' );
+
