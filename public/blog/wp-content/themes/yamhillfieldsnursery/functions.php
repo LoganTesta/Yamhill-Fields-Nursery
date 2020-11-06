@@ -46,7 +46,7 @@ function yfn_woocommerce_products_plants_layout() {
             echo '<div class="item__inspect-background"></div>';
             echo '<div class="item__notes">' . get_the_excerpt() . '</div>';
             echo '<div class="item__description">' . get_the_content() . '</div>';
-            echo '<div class="item__price">$' . $product->get_price() . '</div>';
+            echo '<div class="item__price">$' . $product->get_price() . '<a class="item__add-to-cart" href="?add-to-cart=' . $product->id . '">Add to Cart</a></div>';
         echo '</div>';       
     endwhile;
 }
@@ -72,7 +72,7 @@ function yfn_woocommerce_products_supplies_layout() {
             echo '<div class="item__inspect-background"></div>';
             echo '<div class="item__notes">' . get_the_excerpt() . '</div>';
             echo '<div class="item__description">' . get_the_content() . '</div>';
-            echo '<div class="item__price">$' . $product->get_price() . '</div>';
+            echo '<div class="item__price">$' . $product->get_price() . '<a class="item__add-to-cart" href="?add-to-cart=' . $product->id . '">Add to Cart</a></div>';
         echo '</div>';       
     endwhile;
 }
