@@ -43,7 +43,7 @@
                     setCurrentPage(2, "desktopNav");
                 });
             </script>
-            <script type="text/javascript" src="/assets/javascript/plant-hover-over-zoom-in.js"></script>
+            <script type="text/javascript" src="/assets/javascript/item-hover-over-zoom-in.js"></script>
         </div>
     </body>
 </html>
