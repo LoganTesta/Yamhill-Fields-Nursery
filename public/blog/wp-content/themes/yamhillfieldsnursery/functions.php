@@ -21,14 +21,8 @@ if(false === get_option( "medium_crop" )) {
 }
 
 
-//function yfn_woocommerce_customizations() {
-//    echo '<div class="plant__notes">' . get_the_excerpt() . '</div>';
-//    echo '<div class="plant__description">' . get_the_content() . '</div>';
-//}
-//add_action( 'woocommerce_after_shop_loop_item', 'yfn_woocommerce_customizations' );
 
-
-function yfn_woocommerce_products_plants_layout() {
+function yfn_woocommerce_products_plants_layout() {   
     $args = array(
         'post_type' => 'product',
         'product_cat' => 'plants',
@@ -51,7 +45,6 @@ function yfn_woocommerce_products_plants_layout() {
     endwhile;
 }
 add_shortcode( 'yfn_woocommerce_products_plants', 'yfn_woocommerce_products_plants_layout' );
-
 
 
 function yfn_woocommerce_products_supplies_layout() {
@@ -78,3 +71,15 @@ function yfn_woocommerce_products_supplies_layout() {
 }
 add_shortcode( 'yfn_woocommerce_products_supplies', 'yfn_woocommerce_products_supplies_layout' );
 
+
+
+function yfm_update_cart(){
+    global $woocommerce;
+    ob_start();
+    ?>
+    <a class="woocommerce-cart-total" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php _e( "See shopping cart", "woothemes" ); ?>"><?php echo sprintf( _n( '%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes' ), $woocommerce->cart->cart_contents_count ); ?> - <?php echo $woocommerce->cart->get_cart_total(); ?></a>
+    <?php
+    $fragments['a.woocommerce-cart-total'] = ob_get_clean();
+    return $fragments;
+}
+add_filter( 'woocommerce_add_to_cart_fragments', 'yfm_update_cart' );
