@@ -1,3 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Your friendly Portland area landscaping and gardening store is here for business." />
+        <meta name="keywords" content="nursery, Portland, Willamette Valley, Oregon, plants, grass, shrubs, trees, garden, gardening, landscaping" />
+        <title>Yamhill Fields Nursery</title>
+        @include('includes.head')
+    </head>
+    <body class="page-index">
+        <div class="body-wrapper">
+            <header>
+                <div class="header__background"></div>
+                <div class="inner-wrapper">
+                    @include('includes.header-components')
+                    <div class="subtitle-container">
+                        <h2 class="subtitle-container__subtitle">Shopping Cart</h2>
+                    </div>
+                </div>
+            </header>
+            @include('includes.nav')
+            <div class="inner-wrapper">
+                <div class="content">
+                    <div class="content-row">
+                        <div class="col-sma-12">
+                            <h3>Shopping Cart</h3>
+
+                            
+
+
+<!-- Beginning of WooCommerce Cart -->
 <?php
 /**
  * Cart Page
@@ -174,3 +206,23 @@ do_action( 'woocommerce_before_cart' ); ?>
 </div>
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
+<!-- End of WooCommerce Cart -->
+                            
+                            
+                           
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @include('includes.footer')
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    setCurrentPage(0, "mobileNav");
+                    setCurrentPage(0, "desktopNav");
+                });
+            </script>
+            <script src="/assets/javascript/index-slideshow.js"></script>
+        </div>
+    </body>
+</html>
