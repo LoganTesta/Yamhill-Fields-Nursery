@@ -12,3 +12,5 @@
 
 <link rel="stylesheet" type="text/css" href="/assets/css/main-styles.css?mod=11062020" />
 <link rel="stylesheet" type="text/css" href="/assets/css/print-styles.css?mod=08032019" />
+
+<?php wp_head(); ?> <!-- Allow WordPress plugins to use CSS and JavaScript. -->

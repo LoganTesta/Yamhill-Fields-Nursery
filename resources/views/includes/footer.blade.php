@@ -30,3 +30,4 @@
 </footer>
 <script type="text/javascript" src="/assets/javascript/javascript-functions.js"></script>
 <script type="text/javascript" src="/assets/javascript/vue-javascript.js"></script>
+<?php wp_footer(); ?><!-- Allow WordPress plugins to use CSS and JavaScript. -->

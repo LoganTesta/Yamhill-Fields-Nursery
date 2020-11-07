@@ -6,7 +6,6 @@
         <meta name="description" content="Your friendly Portland area landscaping and gardening store is here for business." />
         <meta name="keywords" content="nursery, Portland, Willamette Valley, Oregon, plants, grass, shrubs, trees, garden, gardening, landscaping" />
         <title>Yamhill Fields Nursery</title>
-        <?php wp_head(); ?><!-- Allow WordPress plugins to use CSS and JavaScript. -->
         @include('includes.head')
     </head>
     <body class="page-index">
@@ -167,6 +166,5 @@
             </script>
             <script src="/assets/javascript/index-slideshow.js"></script>
         </div>
-        <?php wp_footer(); ?><!-- Allow WordPress plugins to use CSS and JavaScript. -->
     </body>
 </html>
