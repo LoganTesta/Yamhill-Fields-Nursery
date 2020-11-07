@@ -13,6 +13,8 @@ add_filter( 'rest_authentication_errors', function( $result ) {
 
 
 add_theme_support( "post-thumbnails" ); //Allow image thumbnails in pages and posts.
+add_theme_support( "woocommerce" );
+
 //Allow cropping for medium thumbnail images.
 if(false === get_option( "medium_crop" )) {
     add_option( "medium_crop", "1" );
@@ -77,7 +79,7 @@ function yfm_update_cart(){
     global $woocommerce;
     ob_start();
     ?>
-    <a class="woocommerce-cart-total" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php _e( "See shopping cart", "woothemes" ); ?>"><?php echo sprintf( _n( '%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes' ), $woocommerce->cart->cart_contents_count ); ?> - <?php echo $woocommerce->cart->get_cart_total(); ?></a>
+    <a class="woocommerce-cart-total" href="/cart" title="<?php _e( "See shopping cart", "woothemes" ); ?>"><?php echo sprintf( _n( '%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes' ), $woocommerce->cart->cart_contents_count ); ?> - <?php echo $woocommerce->cart->get_cart_total(); ?></a>
     <?php
     $fragments['a.woocommerce-cart-total'] = ob_get_clean();
     return $fragments;

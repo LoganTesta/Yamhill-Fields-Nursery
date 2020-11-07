@@ -39,6 +39,10 @@ Route::get('/supplies', function(){
 
 Route::get('/contact-us', 'ContactUsValidationController@displayContactForm');
 
+Route::get('/cart', function(){
+	return view('cart');
+});
+
 Route::get('/404', function(){
 	return view('404');
 });
