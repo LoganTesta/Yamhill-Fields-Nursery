@@ -85,51 +85,59 @@ add_action( 'wp_enqueue_scripts', function() {
 
 
 function yfn_woocommerce_products_plants_layout() {   
+    $itemContainer = "";
     $args = array(
         'post_type' => 'product',
         'product_cat' => 'plants',
     );
     $products = new WP_Query( $args );
     
+    $itemContainer .= '<div class="content-row">';
     while( $products->have_posts() ) : $products->the_post(); global $product;  
-        echo '<div class="item col-sma-4">';
-            echo '<h4 class="item__title">' . get_the_title() . '</h4>';
-            echo '<div class="item__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
-            echo '<div class="item__zoom-in-container-close">X</div>';
-            echo '<div class="item__zoom-in-container">';
-                echo '<div class="item__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
-            echo '</div>';
-            echo '<div class="item__inspect-background"></div>';
-            echo '<div class="item__notes">' . get_the_excerpt() . '</div>';
-            echo '<div class="item__description">' . get_the_content() . '</div>';
-            echo '<div class="item__price">$' . $product->get_price() . '<a class="item__add-to-cart" href="?add-to-cart=' . $product->id . '">Add to Cart</a></div>';
-        echo '</div>';       
+        $itemContainer .= '<div class="item col-sma-4">';
+            $itemContainer .= '<h4 class="item__title">' . get_the_title() . '</h4>';
+            $itemContainer .= '<div class="item__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
+            $itemContainer .= '<div class="item__zoom-in-container-close">X</div>';
+            $itemContainer .= '<div class="item__zoom-in-container">';
+                $itemContainer .= '<div class="item__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
+            $itemContainer .= '</div>';
+            $itemContainer .= '<div class="item__inspect-background"></div>';
+            $itemContainer .= '<div class="item__notes">' . get_the_excerpt() . '</div>';
+            $itemContainer .= '<div class="item__description">' . get_the_content() . '</div>';
+            $itemContainer .= '<div class="item__price">$' . $product->get_price() . '<a class="item__add-to-cart" href="?add-to-cart=' . $product->id . '">Add to Cart</a></div>';
+        $itemContainer .= '</div>';       
     endwhile;
+    $itemContainer .= '</div>'; 
+    return $itemContainer;
 }
 add_shortcode( 'yfn_woocommerce_products_plants', 'yfn_woocommerce_products_plants_layout' );
 
 
 function yfn_woocommerce_products_supplies_layout() {
+    $itemContainer = "";
     $args = array(
         'post_type' => 'product',
         'product_cat' => 'supplies',
     );
     $products = new WP_Query( $args );
     
+    $itemContainer .= '<div class="content-row">';
     while( $products->have_posts() ) : $products->the_post(); global $product;  
-        echo '<div class="item col-sma-4">';
-            echo '<h4 class="item__title">' . get_the_title() . '</h4>';
-            echo '<div class="item__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
-            echo '<div class="item__zoom-in-container-close">X</div>';
-            echo '<div class="item__zoom-in-container">';
-                echo '<div class="item__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
-            echo '</div>';
-            echo '<div class="item__inspect-background"></div>';
-            echo '<div class="item__notes">' . get_the_excerpt() . '</div>';
-            echo '<div class="item__description">' . get_the_content() . '</div>';
-            echo '<div class="item__price">$' . $product->get_price() . '<a class="item__add-to-cart" href="?add-to-cart=' . $product->id . '">Add to Cart</a></div>';
-        echo '</div>';       
+        $itemContainer .= '<div class="item col-sma-4">';
+            $itemContainer .= '<h4 class="item__title">' . get_the_title() . '</h4>';
+            $itemContainer .= '<div class="item__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
+            $itemContainer .= '<div class="item__zoom-in-container-close">X</div>';
+            $itemContainer .= '<div class="item__zoom-in-container">';
+                $itemContainer .= '<div class="item__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
+            $itemContainer .= '</div>';
+            $itemContainer .= '<div class="item__inspect-background"></div>';
+            $itemContainer .= '<div class="item__notes">' . get_the_excerpt() . '</div>';
+            $itemContainer .= '<div class="item__description">' . get_the_content() . '</div>';
+            $itemContainer .= '<div class="item__price">$' . $product->get_price() . '<a class="item__add-to-cart" href="?add-to-cart=' . $product->id . '">Add to Cart</a></div>';
+        $itemContainer .= '</div>';       
     endwhile;
+    $itemContainer .= '</div>'; 
+    return $itemContainer;
 }
 add_shortcode( 'yfn_woocommerce_products_supplies', 'yfn_woocommerce_products_supplies_layout' );
 
