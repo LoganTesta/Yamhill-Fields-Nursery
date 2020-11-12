@@ -110,8 +110,8 @@ window.addEventListener("load", function() {
                     slideButton1.classList.add('currentSlideButton');
                     slideButton2.classList.remove('currentSlideButton');
                     slideButton3.classList.remove('currentSlideButton');
-                    currentSlideImageLink.href = "/about-us";
-                    currentSlideImageLink.setAttribute("aria-label", "About Us");
+                    currentSlideImageLink.href = "/about";
+                    currentSlideImageLink.setAttribute("aria-label", "About");
                     currentSlideDescription.innerHTML = "Rows and rows of plants!";
                 } else if (currentSlideNumber === 2) {
                     currentSlide.style.backgroundImage = "url(" + slide2.src + ")";
