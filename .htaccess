@@ -1,7 +1,22 @@
-RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# BEGIN WordPress
+# The directives (lines) between `BEGIN WordPress` and `END WordPress` are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteRule ^(.*)$ public/$1 [L]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
 </IfModule>
+
+
+# END WordPress
+
+#Redirects domain to subdirectory.  Uncomment for live.  
+RewriteEngine on
+RewriteCond %{HTTP_HOST} yamhillfieldsnursery\.com [NC]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ /wordpress/$1 [L]
