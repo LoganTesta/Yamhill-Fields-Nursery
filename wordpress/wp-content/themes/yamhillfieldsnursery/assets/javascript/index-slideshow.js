@@ -101,7 +101,7 @@ window.addEventListener("load", function() {
                     slideButton1.classList.remove('currentSlideButton');
                     slideButton2.classList.remove('currentSlideButton');
                     slideButton3.classList.remove('currentSlideButton');
-                    currentSlideImageLink.href = "/plants";
+                    currentSlideImageLink.href = "plants";
                     currentSlideImageLink.setAttribute("aria-label", "Plants");
                     currentSlideDescription.innerHTML = "View from the nursery...";
                 } else if (currentSlideNumber === 1) {
@@ -110,7 +110,7 @@ window.addEventListener("load", function() {
                     slideButton1.classList.add('currentSlideButton');
                     slideButton2.classList.remove('currentSlideButton');
                     slideButton3.classList.remove('currentSlideButton');
-                    currentSlideImageLink.href = "/about";
+                    currentSlideImageLink.href = "about";
                     currentSlideImageLink.setAttribute("aria-label", "About");
                     currentSlideDescription.innerHTML = "Rows and rows of plants!";
                 } else if (currentSlideNumber === 2) {
@@ -119,7 +119,7 @@ window.addEventListener("load", function() {
                     slideButton1.classList.remove('currentSlideButton');
                     slideButton2.classList.add('currentSlideButton');
                     slideButton3.classList.remove('currentSlideButton');
-                    currentSlideImageLink.href = "/plants";
+                    currentSlideImageLink.href = "plants";
                     currentSlideImageLink.setAttribute("aria-label", "Plants");
                     currentSlideDescription.innerHTML = "Green grass for yards";
                 } else if (currentSlideNumber === 3) {
@@ -128,7 +128,7 @@ window.addEventListener("load", function() {
                     slideButton1.classList.remove('currentSlideButton');
                     slideButton2.classList.remove('currentSlideButton');
                     slideButton3.classList.add('currentSlideButton');
-                    currentSlideImageLink.href = "/supplies";
+                    currentSlideImageLink.href = "supplies";
                     currentSlideImageLink.setAttribute("aria-label", "Supplies");
                     currentSlideDescription.innerHTML = "Wide variety of seeds";
                 }

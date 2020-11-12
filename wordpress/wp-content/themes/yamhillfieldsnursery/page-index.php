@@ -47,10 +47,10 @@ get_header();
             <div class="col-sma-1">&nbsp;</div>
             <div class="col-sma-5">
                 <div class="index-product zero">
-                    <div class="index-product__name"><a href="/plants" class="index-product__name-link">Saplings for the yard</a></div>
+                    <div class="index-product__name"><a href="plants" class="index-product__name-link">Saplings for the yard</a></div>
                     <div class="index-product__image">
                         <div class="index-product__background-layer">
-                            <a href="/plants" class="index-product__image-link"><span class="sr-only">Plants</span></a>
+                            <a href="plants" class="index-product__image-link"><span class="sr-only">Plants</span></a>
                         </div>    
                     </div>
                     <div class="index-product__description">We sell deciduous and evergreens.  Grown here in the nursery!</div>
@@ -59,10 +59,10 @@ get_header();
             </div>
             <div class="col-sma-5">
                 <div class="index-product one">
-                    <div class="index-product__name"><a href="/supplies" class="index-product__name-link">Watering cans and more</a></div>
+                    <div class="index-product__name"><a href="supplies" class="index-product__name-link">Watering cans and more</a></div>
                     <div class="index-product__image">
                         <div class="index-product__background-layer">
-                            <a href="/supplies" class="index-product__image-link"><span class="sr-only">Supplies</span></a>
+                            <a href="supplies" class="index-product__image-link"><span class="sr-only">Supplies</span></a>
                         </div>
                     </div>
                     <div class="index-product__description">We are here for your gardening supplies.  Give us a call or drop on in.</div>
@@ -80,7 +80,7 @@ get_header();
                 ?>      
                 <div class="col-sma-4">
                     <div class="blog-post">
-                        <h4 class="blog-post__title"><a href="/our-blog#<?php the_title(); ?>" class="blog-post__title__link"><?php the_title(); ?></a></h4>
+                        <h4 class="blog-post__title"><a href="blog#<?php the_title(); ?>" class="blog-post__title__link"><?php the_title(); ?></a></h4>
                         <div class="blog__categories"><?php
                             $categories = get_the_category();
                             $h = 0;
@@ -102,7 +102,7 @@ get_header();
                             ?>
                         </div>
                         <div class="blog__date"><?php the_date(); ?></div>
-                        <div class="blog__image"><a href="/our-blog#<?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a> <div class="clear-both"></div></div>
+                        <div class="blog__image"><a href="blog#<?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a> <div class="clear-both"></div></div>
                         <div class="blog__content"><?php the_excerpt(); ?></div>
                         <div class="clear-both"></div>
                     </div>
