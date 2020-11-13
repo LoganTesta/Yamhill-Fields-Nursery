@@ -104,7 +104,9 @@ function yfn_woocommerce_products_plants_layout() {
             $itemContainer .= '<div class="item__inspect-background"></div>';
             $itemContainer .= '<div class="item__notes">' . get_the_excerpt() . '</div>';
             $itemContainer .= '<div class="item__description">' . get_the_content() . '</div>';
-            $itemContainer .= '<div class="item__price">$' . $product->get_price() . '<a class="item__add-to-cart" href="?add-to-cart=' . $product->id . '">Add to Cart</a></div>';
+            $itemContainer .= '<div class="item__price">$' . $product->get_price() . 
+                    '<a class="item__add-to-cart ajax_add_to_cart add_to_cart_button" href="' . $product->add_to_cart_url() . '" value="' . esc_attr( $product->get_id() ) . '" data-product_id="' . get_the_ID() . '" data-product_sku="' . esc_attr( $sku ) . '" aria-label="Add ' . the_title_attribute() . ' to cart.">Add to Cart</a>';
+            $itemContainer .= '</div>';
         $itemContainer .= '</div>';       
     endwhile;
     $itemContainer .= '</div>'; 
@@ -133,8 +135,10 @@ function yfn_woocommerce_products_supplies_layout() {
             $itemContainer .= '<div class="item__inspect-background"></div>';
             $itemContainer .= '<div class="item__notes">' . get_the_excerpt() . '</div>';
             $itemContainer .= '<div class="item__description">' . get_the_content() . '</div>';
-            $itemContainer .= '<div class="item__price">$' . $product->get_price() . '<a class="item__add-to-cart" href="?add-to-cart=' . $product->id . '">Add to Cart</a></div>';
-        $itemContainer .= '</div>';       
+            $itemContainer .= '<div class="item__price">$' . $product->get_price() . 
+                    '<a class="item__add-to-cart ajax_add_to_cart add_to_cart_button" href="' . $product->add_to_cart_url() . '" value="' . esc_attr( $product->get_id() ) . '" data-product_id="' . get_the_ID() . '" data-product_sku="' . esc_attr( $sku ) . '" aria-label="Add ' . the_title_attribute() . ' to cart.">Add to Cart</a>';
+            $itemContainer .= '</div>';
+        $itemContainer .= '</div>';      
     endwhile;
     $itemContainer .= '</div>'; 
     return $itemContainer;

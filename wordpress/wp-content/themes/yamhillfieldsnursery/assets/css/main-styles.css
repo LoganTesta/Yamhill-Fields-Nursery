@@ -430,6 +430,8 @@ ul { }
 .woocommerce input, .woocommerce textarea, .woocommerce select { width: 100%; padding: 10px 15px; border: 1px solid #000000; border-radius: 5px; }
 .woocommerce label { display: inline-block; padding-bottom: 0; font-size: 19px; font-weight: bold; color: #4f7942; }
 
+.added_to_cart.wc-forward { padding-left: 20px; font-size: inherit; font-weight: inherit; color: #999999; }
+
 /*WooCommerce shopping cart icon*/
 .woocommerce-cart-total { position: absolute; top: 232px; right: 20px; padding: 4px 5px; border: 3px solid rgba(79, 121, 66, 0.8); border-radius: 8px; background-color: #ffffff; }
 
