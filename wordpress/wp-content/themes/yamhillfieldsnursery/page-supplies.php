@@ -12,11 +12,7 @@ get_header();
             <?php the_content(); ?>
             </div>
         </div>
-        <div class="content-row">
-            <div class="col-sma-12">
-                <?php echo do_shortcode( '[yfn_woocommerce_products_supplies]' ); ?>
-            </div>
-        </div>
+        <?php echo do_shortcode( '[yfn_woocommerce_products_supplies]' ); ?>
     </div>
 </div>
                              
