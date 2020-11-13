@@ -1,5 +1,5 @@
 <?php
-/*Template Name: Plants page custom template
+/*Template Name: Supplies page custom template
  Description: the customized index page layout for this site. */
 get_header(); 
 ?>
@@ -14,7 +14,7 @@ get_header();
         </div>
         <div class="content-row">
             <div class="col-sma-12">
-                <?php echo do_shortcode( '[yfn_woocommerce_products_plants]' ); ?>
+                <?php echo do_shortcode( '[yfn_woocommerce_products_supplies]' ); ?>
             </div>
         </div>
     </div>
