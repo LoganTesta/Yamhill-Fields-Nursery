@@ -377,9 +377,6 @@ ul { }
 
 .item:last-of-type { padding-bottom: 0; }
 
-/*WooCommerce shopping cart icon*/
-.woocommerce-cart-total { position: absolute; top: 232px; right: 20px; padding: 4px 5px; border: 3px solid rgba(79, 121, 66, 0.8); border-radius: 8px; background-color: #ffffff; }
-
 
 /*Blog page*/
 .page-our-blog .blog-post { padding-bottom: 40px; }
@@ -426,6 +423,15 @@ ul { }
 
 .wpcf7-response-output { font-size: 18px; font-weight: bold; }
 .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output { margin-left: 0; border-color: #4f7942; }
+
+
+/*WooCommerce customizations*/
+.woocommerce { }
+.woocommerce input, .woocommerce textarea, .woocommerce select { width: 100%; padding: 10px 15px; border: 1px solid #000000; border-radius: 5px; }
+.woocommerce label { display: inline-block; padding-bottom: 0; font-size: 19px; font-weight: bold; color: #4f7942; }
+
+/*WooCommerce shopping cart icon*/
+.woocommerce-cart-total { position: absolute; top: 232px; right: 20px; padding: 4px 5px; border: 3px solid rgba(79, 121, 66, 0.8); border-radius: 8px; background-color: #ffffff; }
 
 
 
