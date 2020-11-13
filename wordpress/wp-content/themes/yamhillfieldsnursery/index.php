@@ -11,10 +11,10 @@ get_header();
                 <div class="content__body">
 
                 <?php
-                    //General layout.
+                    //The general page layout.
                     if ( is_home() === false ){ 
                         while ( have_posts()) : the_post(); //A while loop is necessary to call the_content(). ?>
-                            <div class="content__featured-image <?php if ( esc_url( trim( the_post_thumbnail_url() ) ) === "" ) { echo "hide"; } ?>" style="background-image: url('<?php echo esc_url( the_post_thumbnail_url() ); ?>')"></div>    
+                            <div class="content__content-image <?php if ( esc_url( trim( the_post_thumbnail_url() ) ) === "" ) { echo "hide"; } ?>" style="background-image: url('<?php echo esc_url( the_post_thumbnail_url() ); ?>')"></div>    
                             <div class="content__the-content"><?php the_content(); ?></div>
                         <?php 
                         endwhile;
