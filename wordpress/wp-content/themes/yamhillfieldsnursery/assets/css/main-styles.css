@@ -291,7 +291,8 @@ ul { }
 .content-backround-container { }
 
 .content__highlighted-phrase { font-size: 17px; font-weight: bold; color: #444444; }
-.content__content-image { width: 100%; min-height: 200px; margin: 0 auto; }
+.content__content-image { display: block; width: 100%; min-height: 200px; margin: 0 auto; }
+.content__content-image.hide { display: none; }
 
 
 /*Shared styles*/
@@ -392,6 +393,7 @@ ul { }
 
 
 /*Plants page*/
+.page.plants .content__content-image { min-height: 140px; margin-bottom: 15px; }
 
 
 /*Supplies page*/
@@ -615,6 +617,7 @@ ul { }
 
     
     /*Plants page*/
+    .page.plants .content__content-image { float: right; width: 33.333333%; height: 150px; margin-left: 15px; margin-bottom: 0; }
     
     
     /*Supplies*/
