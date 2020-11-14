@@ -89,27 +89,37 @@ function yfn_woocommerce_products_plants_layout() {
     $args = array(
         'post_type' => 'product',
         'product_cat' => 'plants',
-        'orderby' => get_query_var('orderby')
+        'orderby' => get_query_var('orderby'),
+        'order' => 'asc'
     );
-    $products = new WP_Query( $args );
-    
+    $products = new WP_Query( $args );    
+
     $itemContainer .= '<div class="content-row">';
-    while( $products->have_posts() ) : $products->the_post(); global $product;  
-        $itemContainer .= '<div class="item col-sma-4">';
-            $itemContainer .= '<h4 class="item__title">' . get_the_title() . '</h4>';
-            $itemContainer .= '<div class="item__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
-            $itemContainer .= '<div class="item__zoom-in-container-close">X</div>';
-            $itemContainer .= '<div class="item__zoom-in-container">';
-                $itemContainer .= '<div class="item__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
-            $itemContainer .= '</div>';
-            $itemContainer .= '<div class="item__inspect-background"></div>';
-            $itemContainer .= '<div class="item__notes">' . get_the_excerpt() . '</div>';
-            $itemContainer .= '<div class="item__description">' . get_the_content() . '</div>';
-            $itemContainer .= '<div class="item__price">$' . $product->get_price() . 
-                    '<a class="item__add-to-cart ajax_add_to_cart add_to_cart_button" href="' . $product->add_to_cart_url() . '" value="' . esc_attr( $product->get_id() ) . '" data-product_id="' . get_the_ID() . '" data-product_sku="' . esc_attr( $sku ) . '" aria-label="Add ' . the_title_attribute( 'echo=0' ) . ' to cart.">Add to Cart</a>';
-            $itemContainer .= '</div>';
-        $itemContainer .= '</div>';       
-    endwhile;
+    
+        $itemContainer .= '<form class="woocommerce-ordering custom-form" method="get">';
+            $itemContainer .= '<select name="orderby" class="orderby" aria-label="Shop order">';
+                $itemContainer .= '<option value="menu_order">Default</option>'; 
+                $itemContainer .= '<option value="name">Name</option>';   
+            $itemContainer .= '</select>';     
+            $itemContainer .= '<input type="hidden" name="paged" value="1">';   
+        $itemContainer .= '</form>';  
+    
+        while( $products->have_posts() ) : $products->the_post(); global $product;  
+            $itemContainer .= '<div class="item col-sma-4">';
+                $itemContainer .= '<h4 class="item__title">' . get_the_title() . '</h4>';
+                $itemContainer .= '<div class="item__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
+                $itemContainer .= '<div class="item__zoom-in-container-close">X</div>';
+                $itemContainer .= '<div class="item__zoom-in-container">';
+                    $itemContainer .= '<div class="item__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
+                $itemContainer .= '</div>';
+                $itemContainer .= '<div class="item__inspect-background"></div>';
+                $itemContainer .= '<div class="item__notes">' . get_the_excerpt() . '</div>';
+                $itemContainer .= '<div class="item__description">' . get_the_content() . '</div>';
+                $itemContainer .= '<div class="item__price">$' . $product->get_price() . 
+                        '<a class="item__add-to-cart ajax_add_to_cart add_to_cart_button" href="' . $product->add_to_cart_url() . '" value="' . esc_attr( $product->get_id() ) . '" data-product_id="' . get_the_ID() . '" data-product_sku="' . esc_attr( $sku ) . '" aria-label="Add ' . the_title_attribute( 'echo=0' ) . ' to cart.">Add to Cart</a>';
+                $itemContainer .= '</div>';
+            $itemContainer .= '</div>';       
+        endwhile;
     $itemContainer .= '</div>'; 
     return $itemContainer;
 }
@@ -121,27 +131,37 @@ function yfn_woocommerce_products_supplies_layout() {
     $args = array(
         'post_type' => 'product',
         'product_cat' => 'supplies',
-        'orderby' => get_query_var('orderby')
+        'orderby' => get_query_var('orderby'),
+        'order' => 'asc'
     );
     $products = new WP_Query( $args );
     
     $itemContainer .= '<div class="content-row">';
-    while( $products->have_posts() ) : $products->the_post(); global $product;  
-        $itemContainer .= '<div class="item col-sma-4">';
-            $itemContainer .= '<h4 class="item__title">' . get_the_title() . '</h4>';
-            $itemContainer .= '<div class="item__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
-            $itemContainer .= '<div class="item__zoom-in-container-close">X</div>';
-            $itemContainer .= '<div class="item__zoom-in-container">';
-                $itemContainer .= '<div class="item__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
-            $itemContainer .= '</div>';
-            $itemContainer .= '<div class="item__inspect-background"></div>';
-            $itemContainer .= '<div class="item__notes">' . get_the_excerpt() . '</div>';
-            $itemContainer .= '<div class="item__description">' . get_the_content() . '</div>';
-            $itemContainer .= '<div class="item__price">$' . $product->get_price() . 
-                    '<a class="item__add-to-cart ajax_add_to_cart add_to_cart_button" href="' . $product->add_to_cart_url() . '" value="' . esc_attr( $product->get_id() ) . '" data-product_id="' . get_the_ID() . '" data-product_sku="' . esc_attr( $sku ) . '" aria-label="Add ' . the_title_attribute( 'echo=0' ) . ' to cart.">Add to Cart</a>';
-            $itemContainer .= '</div>';
-        $itemContainer .= '</div>';      
-    endwhile;
+    
+        $itemContainer .= '<form class="woocommerce-ordering custom-form" method="get">';
+            $itemContainer .= '<select name="orderby" class="orderby" aria-label="Shop order">';
+                $itemContainer .= '<option value="menu_order">Default</option>'; 
+                $itemContainer .= '<option value="name">Name</option>';   
+            $itemContainer .= '</select>';     
+            $itemContainer .= '<input type="hidden" name="paged" value="1">';   
+        $itemContainer .= '</form>';  
+    
+        while( $products->have_posts() ) : $products->the_post(); global $product;  
+            $itemContainer .= '<div class="item col-sma-4">';
+                $itemContainer .= '<h4 class="item__title">' . get_the_title() . '</h4>';
+                $itemContainer .= '<div class="item__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
+                $itemContainer .= '<div class="item__zoom-in-container-close">X</div>';
+                $itemContainer .= '<div class="item__zoom-in-container">';
+                    $itemContainer .= '<div class="item__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
+                $itemContainer .= '</div>';
+                $itemContainer .= '<div class="item__inspect-background"></div>';
+                $itemContainer .= '<div class="item__notes">' . get_the_excerpt() . '</div>';
+                $itemContainer .= '<div class="item__description">' . get_the_content() . '</div>';
+                $itemContainer .= '<div class="item__price">$' . $product->get_price() . 
+                        '<a class="item__add-to-cart ajax_add_to_cart add_to_cart_button" href="' . $product->add_to_cart_url() . '" value="' . esc_attr( $product->get_id() ) . '" data-product_id="' . get_the_ID() . '" data-product_sku="' . esc_attr( $sku ) . '" aria-label="Add ' . the_title_attribute( 'echo=0' ) . ' to cart.">Add to Cart</a>';
+                $itemContainer .= '</div>';
+            $itemContainer .= '</div>';      
+        endwhile;
     $itemContainer .= '</div>'; 
     return $itemContainer;
 }

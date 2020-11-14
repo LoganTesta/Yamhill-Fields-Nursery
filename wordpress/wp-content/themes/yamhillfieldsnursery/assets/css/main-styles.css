@@ -432,6 +432,10 @@ ul { }
 .woocommerce input, .woocommerce textarea, .woocommerce select { width: 100%; padding: 10px 15px; border: 1px solid #000000; border-radius: 5px; }
 .woocommerce label { display: inline-block; padding-bottom: 0; font-size: 19px; font-weight: bold; color: #4f7942; }
 
+/*Products, supplies*/
+.woocommerce-ordering.custom-form { padding-bottom: 15px; }
+.woocommerce-ordering select { padding: 10px 15px; border: 1px solid #000000; border-radius: 5px; }
+
 .added_to_cart.wc-forward { padding-left: 20px; font-size: inherit; font-weight: inherit; color: #999999; }
 
 /*WooCommerce shopping cart icon*/
@@ -515,6 +519,13 @@ ul { }
     
     
     /*Contact Us*/
+    
+    
+    /*Customized plugin styles.*/
+    /*WooCommerce customizations*/
+    
+    /*Products, supplies*/
+    .woocommerce-ordering.custom-form { padding-left: 15px; }
 
 }
 
