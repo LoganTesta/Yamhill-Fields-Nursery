@@ -85,25 +85,33 @@ add_action( 'wp_enqueue_scripts', function() {
 
 
 function yfn_woocommerce_products_plants_layout() {   
-    $itemContainer = "";
+    $itemContainer = "";   
+    $orderby = get_query_var('orderby');
+    $order = 'asc';
+    
+    if( $orderby === 'date' ) {
+        $order = 'desc';
+    }
+    
     $args = array(
         'post_type' => 'product',
         'product_cat' => 'plants',
-        'orderby' => get_query_var('orderby'),
-        'order' => 'asc'
+        'orderby' => $orderby,
+        'order' => $order
     );
-    $products = new WP_Query( $args );    
-
+    $products = new WP_Query( $args );   
+     
     $itemContainer .= '<div class="content-row">';
     
         $itemContainer .= '<form class="woocommerce-ordering custom-form" method="get">';
             $itemContainer .= '<select name="orderby" class="orderby" aria-label="Shop order">';
                 $itemContainer .= '<option value="menu_order">Default</option>'; 
                 $itemContainer .= '<option value="name">Name</option>';   
+                $itemContainer .= '<option value="date">Newest</option>';  
             $itemContainer .= '</select>';     
             $itemContainer .= '<input type="hidden" name="paged" value="1">';   
         $itemContainer .= '</form>';  
-    
+        
         while( $products->have_posts() ) : $products->the_post(); global $product;  
             $itemContainer .= '<div class="item col-sma-4">';
                 $itemContainer .= '<h4 class="item__title">' . get_the_title() . '</h4>';
@@ -128,11 +136,18 @@ add_shortcode( 'yfn_woocommerce_products_plants', 'yfn_woocommerce_products_plan
 
 function yfn_woocommerce_products_supplies_layout() {
     $itemContainer = "";
+    $orderby = get_query_var('orderby');
+    $order = 'asc';
+    
+    if( $orderby === 'date' ) {
+        $order = 'desc';
+    }
+    
     $args = array(
         'post_type' => 'product',
         'product_cat' => 'supplies',
-        'orderby' => get_query_var('orderby'),
-        'order' => 'asc'
+        'orderby' => $orderby,
+        'order' => $order
     );
     $products = new WP_Query( $args );
     
@@ -142,6 +157,7 @@ function yfn_woocommerce_products_supplies_layout() {
             $itemContainer .= '<select name="orderby" class="orderby" aria-label="Shop order">';
                 $itemContainer .= '<option value="menu_order">Default</option>'; 
                 $itemContainer .= '<option value="name">Name</option>';   
+                $itemContainer .= '<option value="date">Newest</option>';   
             $itemContainer .= '</select>';     
             $itemContainer .= '<input type="hidden" name="paged" value="1">';   
         $itemContainer .= '</form>';  
