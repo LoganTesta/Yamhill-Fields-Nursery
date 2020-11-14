@@ -89,6 +89,7 @@ function yfn_woocommerce_products_plants_layout() {
     $args = array(
         'post_type' => 'product',
         'product_cat' => 'plants',
+        'orderby' => get_query_var('orderby')
     );
     $products = new WP_Query( $args );
     
@@ -120,6 +121,7 @@ function yfn_woocommerce_products_supplies_layout() {
     $args = array(
         'post_type' => 'product',
         'product_cat' => 'supplies',
+        'orderby' => get_query_var('orderby')
     );
     $products = new WP_Query( $args );
     
