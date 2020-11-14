@@ -360,11 +360,8 @@ ul { }
 .page.index .subfooter-container__background { background: url('../images/cacti-inside-sunny-greenhouse.jpg') 50% 50%/cover no-repeat; }
 .nursery-view__subheader { text-align: center; }
 
-/*WooCommerce customizations.*/
-.products { width: 100%; }
-.product { width: 100%; margin-bottom: 50px; }
 
-/*WooCommerce customized products/items*/
+/*Products in custom WooCommerce shortcode.*/
 .item { position: relative; padding-bottom: 40px; }
 .item__title { padding-bottom: 15px; font-size: 20px; font-weight: bold; text-align: center; color: #4f7942; }
 .item__background-image { width: 100%; height: 240px; margin-bottom: 8px; }
@@ -432,6 +429,9 @@ ul { }
 .woocommerce input, .woocommerce textarea, .woocommerce select { width: 100%; padding: 10px 15px; border: 1px solid #000000; border-radius: 5px; }
 .woocommerce label { display: inline-block; padding-bottom: 0; font-size: 19px; font-weight: bold; color: #4f7942; }
 
+.products { width: 100%; }
+.product { width: 100%; margin-bottom: 50px; }
+
 /*Products, supplies*/
 .woocommerce-ordering.custom-form { padding-bottom: 15px; }
 .woocommerce-ordering select { padding: 10px 15px; border: 1px solid #000000; border-radius: 5px; }
@@ -484,11 +484,7 @@ ul { }
     .content__highlighted-phrase { font-size: 18px; }
 
     
-    /*WooCommerce customizations.*/
-    .products { }
-    .product { float: left; width: 50%; margin-right: 30px; }
-    
-    /*WooCommerce customized products/items*/
+    /*Products in custom WooCommerce shortcode.*/
     .item:last-of-type { padding-bottom: 0; }
     
     /*WooCommerce shopping cart icon*/
@@ -523,6 +519,8 @@ ul { }
     
     /*Customized plugin styles.*/
     /*WooCommerce customizations*/
+    .products { }
+    .product { float: left; width: 50%; margin-right: 30px; }
     
     /*Products, supplies*/
     .woocommerce-ordering.custom-form { padding-left: 15px; }
@@ -575,13 +573,8 @@ ul { }
     /*Shared styles*/
     .main-title-container, .subtitle-container { margin-left: 0; margin-right: 0; }
     
-    
-    /*WooCommerce customizations.*/
-    .products { }
-    .product { width: 350px; margin-right: 40px; }
-    .product:nth-of-type(3n+1) { content: ""; display: block; clear: both; }
 
-    /*WooCommerce customized products/items*/
+    /*Products in custom WooCommerce shortcode.*/
     .item { }
     .item__title { font-size: 24px; }
     .item__background-image { height: 300px; cursor: zoom-in; }
@@ -636,6 +629,13 @@ ul { }
     
     /*Blog*/
     .page-our-blog .blog-post { padding-bottom: 50px; }
+    
+    
+    /*Customized plugin styles.*/
+    /*WooCommerce customizations.*/
+    .products { }
+    .product { width: 350px; margin-right: 40px; }
+    .product:nth-of-type(3n+1) { content: ""; display: block; clear: both; }
 
 }
 
