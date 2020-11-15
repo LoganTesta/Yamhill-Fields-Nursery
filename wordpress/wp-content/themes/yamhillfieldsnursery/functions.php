@@ -88,22 +88,27 @@ function yfn_woocommerce_products_plants_layout() {
     $itemContainer = "";   
     $orderby = get_query_var('orderby');
     $order = 'asc';
+    $metakey = '';
     
-    if( $orderby === 'date' ) {
+    if ( $orderby === 'date' ) {
         $order = 'desc';
     } else if ( $orderby === 'name-desc' ) {
         $orderby = 'name';
         $order = 'desc';
+    } else if ( $orderby === 'price' ) {
+        $orderby = 'meta_value_num';
+        $metakey = '_price';
     }
     
     $args = array(
         'post_type' => 'product',
         'product_cat' => 'plants',
+        'meta_key' => $metakey,
         'orderby' => $orderby,
         'order' => $order
     );
     $products = new WP_Query( $args );   
-     
+    
     $itemContainer .= '<div class="content-row">';
     
         $itemContainer .= '<form class="woocommerce-ordering custom-form" method="get">';
@@ -112,6 +117,7 @@ function yfn_woocommerce_products_plants_layout() {
                 $itemContainer .= '<option value="name">Name</option>';   
                 $itemContainer .= '<option value="name-desc">Name (Reversed)</option>';   
                 $itemContainer .= '<option value="date">Newest</option>';  
+                $itemContainer .= '<option value="price">Price (Low to High)</option>';
             $itemContainer .= '</select>';     
             $itemContainer .= '<input type="hidden" name="paged" value="1">';   
         $itemContainer .= '</form>';  
@@ -142,17 +148,22 @@ function yfn_woocommerce_products_supplies_layout() {
     $itemContainer = "";
     $orderby = get_query_var('orderby');
     $order = 'asc';
+    $metakey = '';
     
-    if( $orderby === 'date' ) {
+    if ( $orderby === 'date' ) {
         $order = 'desc';
     } else if ( $orderby === 'name-desc' ) {
         $orderby = 'name';
         $order = 'desc';
+    } else if ( $orderby === 'price' ) {
+        $orderby = 'meta_value_num';
+        $metakey = '_price';
     }
     
     $args = array(
         'post_type' => 'product',
         'product_cat' => 'supplies',
+        'meta_key' => $metakey,
         'orderby' => $orderby,
         'order' => $order
     );
@@ -166,6 +177,7 @@ function yfn_woocommerce_products_supplies_layout() {
                 $itemContainer .= '<option value="name">Name</option>';  
                 $itemContainer .= '<option value="name-desc">Name (Reversed)</option>'; 
                 $itemContainer .= '<option value="date">Newest</option>';   
+                $itemContainer .= '<option value="price">Price (Low to High)</option>';
             $itemContainer .= '</select>';     
             $itemContainer .= '<input type="hidden" name="paged" value="1">';   
         $itemContainer .= '</form>';  
