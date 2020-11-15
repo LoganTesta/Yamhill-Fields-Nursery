@@ -98,6 +98,10 @@ function yfn_woocommerce_products_plants_layout() {
     } else if ( $orderby === 'price' ) {
         $orderby = 'meta_value_num';
         $metakey = '_price';
+    } else if ( $orderby === 'price-desc' ) {
+        $orderby = 'meta_value_num';
+        $order = 'price';
+        $metakey = '_price';
     }
     
     $args = array(
@@ -118,6 +122,7 @@ function yfn_woocommerce_products_plants_layout() {
                 $itemContainer .= '<option value="name-desc">Name (Reversed)</option>';   
                 $itemContainer .= '<option value="date">Newest</option>';  
                 $itemContainer .= '<option value="price">Price (Low to High)</option>';
+                $itemContainer .= '<option value="price-desc">Price (High to Low)</option>';
             $itemContainer .= '</select>';     
             $itemContainer .= '<input type="hidden" name="paged" value="1">';   
         $itemContainer .= '</form>';  
@@ -158,6 +163,10 @@ function yfn_woocommerce_products_supplies_layout() {
     } else if ( $orderby === 'price' ) {
         $orderby = 'meta_value_num';
         $metakey = '_price';
+    } else if ( $orderby === 'price-desc' ) {
+        $orderby = 'meta_value_num';
+        $order = 'price';
+        $metakey = '_price';
     }
     
     $args = array(
@@ -178,6 +187,7 @@ function yfn_woocommerce_products_supplies_layout() {
                 $itemContainer .= '<option value="name-desc">Name (Reversed)</option>'; 
                 $itemContainer .= '<option value="date">Newest</option>';   
                 $itemContainer .= '<option value="price">Price (Low to High)</option>';
+                $itemContainer .= '<option value="price-desc">Price (High to Low)</option>';
             $itemContainer .= '</select>';     
             $itemContainer .= '<input type="hidden" name="paged" value="1">';   
         $itemContainer .= '</form>';  
