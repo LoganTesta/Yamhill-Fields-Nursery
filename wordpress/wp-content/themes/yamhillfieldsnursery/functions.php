@@ -91,6 +91,9 @@ function yfn_woocommerce_products_plants_layout() {
     
     if( $orderby === 'date' ) {
         $order = 'desc';
+    } else if ( $orderby === 'name-desc' ) {
+        $orderby = 'name';
+        $order = 'desc';
     }
     
     $args = array(
@@ -107,6 +110,7 @@ function yfn_woocommerce_products_plants_layout() {
             $itemContainer .= '<select name="orderby" class="orderby" aria-label="Shop order">';
                 $itemContainer .= '<option value="menu_order">Default</option>'; 
                 $itemContainer .= '<option value="name">Name</option>';   
+                $itemContainer .= '<option value="name-desc">Name (Reversed)</option>';   
                 $itemContainer .= '<option value="date">Newest</option>';  
             $itemContainer .= '</select>';     
             $itemContainer .= '<input type="hidden" name="paged" value="1">';   
@@ -141,6 +145,9 @@ function yfn_woocommerce_products_supplies_layout() {
     
     if( $orderby === 'date' ) {
         $order = 'desc';
+    } else if ( $orderby === 'name-desc' ) {
+        $orderby = 'name';
+        $order = 'desc';
     }
     
     $args = array(
@@ -156,7 +163,8 @@ function yfn_woocommerce_products_supplies_layout() {
         $itemContainer .= '<form class="woocommerce-ordering custom-form" method="get">';
             $itemContainer .= '<select name="orderby" class="orderby" aria-label="Shop order">';
                 $itemContainer .= '<option value="menu_order">Default</option>'; 
-                $itemContainer .= '<option value="name">Name</option>';   
+                $itemContainer .= '<option value="name">Name</option>';  
+                $itemContainer .= '<option value="name-desc">Name (Reversed)</option>'; 
                 $itemContainer .= '<option value="date">Newest</option>';   
             $itemContainer .= '</select>';     
             $itemContainer .= '<input type="hidden" name="paged" value="1">';   
