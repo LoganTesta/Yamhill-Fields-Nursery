@@ -436,7 +436,18 @@ ul { }
 .woocommerce #respond input#submit, 
 .woocommerce a.button, 
 .woocommerce button.button, 
-.woocommerce input.button { padding: 10px 15px; border: 1px solid #4f7942; border-radius: 5px; line-height: initial;  }
+.woocommerce input.button { padding: 10px 15px; border: 1px solid #4f7942; border-radius: 5px; line-height: initial; }
+#add_payment_method table.cart td.actions .coupon .input-text, 
+.woocommerce-cart table.cart td.actions .coupon .input-text, 
+.woocommerce-checkout table.cart td.actions .coupon .input-text { width: auto; }
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt { background-color: #4f7942; }
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover, 
+.woocommerce input.button.alt:hover { background-color: #71bc78; }
 
 .products { width: 100%; }
 .product { width: 100%; margin-bottom: 50px; }
@@ -451,10 +462,7 @@ ul { }
 .woocommerce-cart-total { position: absolute; top: 232px; right: 20px; padding: 4px 5px; border: 3px solid rgba(79, 121, 66, 0.8); border-radius: 8px; background-color: #ffffff; }
 
 /*WooCommerce Checkout page*/
-.woocommerce #respond input#submit.alt, 
-.woocommerce a.button.alt, 
-.woocommerce button.button.alt, 
-.woocommerce input.button.alt { background-color: #4f7942; }
+
 
 
 
