@@ -441,6 +441,12 @@ ul { }
 /*WooCommerce shopping cart icon*/
 .woocommerce-cart-total { position: absolute; top: 232px; right: 20px; padding: 4px 5px; border: 3px solid rgba(79, 121, 66, 0.8); border-radius: 8px; background-color: #ffffff; }
 
+/*WooCommerce Checkout page*/
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt { background-color: #4f7942; }
+
 
 
 /* Clearing variable width columns */
