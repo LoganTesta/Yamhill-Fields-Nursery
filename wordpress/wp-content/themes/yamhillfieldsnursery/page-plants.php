@@ -1,6 +1,6 @@
 <?php
-/*Template Name: Plants page custom template
- Description: the customized index page layout for this site. */
+
+/*Description: Plants page custom template*/
 get_header(); 
 ?>
 

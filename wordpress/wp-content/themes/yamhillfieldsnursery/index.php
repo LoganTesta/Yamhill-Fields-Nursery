@@ -1,4 +1,5 @@
 <?php
+
 //The default page template and layout.
 get_header(); 
 ?>

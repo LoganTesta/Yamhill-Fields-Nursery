@@ -1,6 +1,6 @@
 <?php
-/*Template Name: Supplies page custom template
- Description: the customized index page layout for this site. */
+
+/*Description: Supplies page custom template*/
 get_header(); 
 ?>
 

@@ -1,6 +1,6 @@
 <?php
-/*Template Name: About page custom template
- Description: the customized index page layout for this site. */
+
+/*Description: About page custom template*/
 get_header(); 
 ?>
 
