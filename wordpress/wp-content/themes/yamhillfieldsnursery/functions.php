@@ -129,7 +129,7 @@ function yfn_woocommerce_products_plants_layout() {
         
         while( $products->have_posts() ) : $products->the_post(); global $product;  
             $itemContainer .= '<div class="item col-sma-4">';
-                $itemContainer .= '<h4 class="item__title">' . get_the_title() . '</h4>';
+                $itemContainer .= '<h4 class="item__title"><a class="item__title__link" href="' . get_the_permalink( ) . '">' . get_the_title() . '</a></h4>';
                 $itemContainer .= '<div class="item__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
                 $itemContainer .= '<div class="item__zoom-in-container-close">X</div>';
                 $itemContainer .= '<div class="item__zoom-in-container">';
@@ -194,7 +194,7 @@ function yfn_woocommerce_products_supplies_layout() {
     
         while( $products->have_posts() ) : $products->the_post(); global $product;  
             $itemContainer .= '<div class="item col-sma-4">';
-                $itemContainer .= '<h4 class="item__title">' . get_the_title() . '</h4>';
+                $itemContainer .= '<h4 class="item__title"><a class="item__title__link" href="' . get_the_permalink( ) . '">' . get_the_title() . '</a></h4>';
                 $itemContainer .= '<div class="item__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
                 $itemContainer .= '<div class="item__zoom-in-container-close">X</div>';
                 $itemContainer .= '<div class="item__zoom-in-container">';
