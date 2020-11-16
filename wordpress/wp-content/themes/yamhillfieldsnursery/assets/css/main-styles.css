@@ -468,6 +468,9 @@ ul { }
 /*WooCommerce shopping cart icon*/
 .woocommerce-cart-total { position: absolute; top: 232px; right: 20px; padding: 4px 5px; border: 3px solid rgba(79, 121, 66, 0.8); border-radius: 8px; background-color: #ffffff; }
 
+/*WooCommerce Cart page*/
+.woocommerce .quantity .qty { width: auto; }
+
 /*WooCommerce Checkout page*/
 
 
