@@ -8,10 +8,14 @@ get_header();
     <div class="content page-content">
         <div class="content-row">
             <div class="col-sma-12">
-                <?php while( have_posts() ) : 
+                <?php 
+                do_action( 'woocommerce_before_main_content' );
+                while( have_posts() ) : 
                 the_post();
                 wc_get_template_part( 'content', 'single-product' );
-                endwhile ?>
+                endwhile;
+                do_action( 'woocommerce_after_main_content' );
+                ?>
             </div>
         </div>
     </div>
