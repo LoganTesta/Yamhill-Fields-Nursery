@@ -86,6 +86,7 @@ add_action( 'wp_enqueue_scripts', function() {
 
 function yfn_woocommerce_products_plants_layout() {   
     $itemContainer = "";   
+    $orderbyquery = get_query_var('orderby');
     $orderby = get_query_var('orderby');
     $order = 'asc';
     $metakey = '';
@@ -117,12 +118,12 @@ function yfn_woocommerce_products_plants_layout() {
     
         $itemContainer .= '<form class="woocommerce-ordering custom-form" method="get">';
             $itemContainer .= '<select name="orderby" class="orderby" aria-label="Shop order">';
-                $itemContainer .= '<option value="menu_order">Default</option>'; 
-                $itemContainer .= '<option value="name">Name</option>';   
-                $itemContainer .= '<option value="name-desc">Name (Reversed)</option>';   
-                $itemContainer .= '<option value="date">Newest</option>';  
-                $itemContainer .= '<option value="price">Price (Low to High)</option>';
-                $itemContainer .= '<option value="price-desc">Price (High to Low)</option>';
+                $itemContainer .= '<option value="menu_order"'; ?><?php if( $orderbyquery === "meu-order" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Default</option>'; 
+                $itemContainer .= '<option value="name"'; ?><?php if( $orderbyquery === "name" ) { $itemContainer .= "selected=selected"; } ?><?php $itemContainer .= '>Name</option>';   
+                $itemContainer .= '<option value="name-desc"'; ?><?php if( $orderbyquery === "name-desc" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Name (Reversed)</option>';   
+                $itemContainer .= '<option value="date"'; ?><?php if( $orderbyquery === "date" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Newest</option>';  
+                $itemContainer .= '<option value="price"'; ?><?php if( $orderbyquery === "price" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Price (Low to High)</option>';
+                $itemContainer .= '<option value="price-desc"'; ?><?php if( $orderbyquery === "price-desc" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Price (High to Low)</option>';
             $itemContainer .= '</select>';     
             $itemContainer .= '<input type="hidden" name="paged" value="1">';   
         $itemContainer .= '</form>';  
@@ -151,6 +152,7 @@ add_shortcode( 'yfn_woocommerce_products_plants', 'yfn_woocommerce_products_plan
 
 function yfn_woocommerce_products_supplies_layout() {
     $itemContainer = "";
+    $orderbyquery = get_query_var('orderby');
     $orderby = get_query_var('orderby');
     $order = 'asc';
     $metakey = '';
@@ -182,12 +184,12 @@ function yfn_woocommerce_products_supplies_layout() {
     
         $itemContainer .= '<form class="woocommerce-ordering custom-form" method="get">';
             $itemContainer .= '<select name="orderby" class="orderby" aria-label="Shop order">';
-                $itemContainer .= '<option value="menu_order">Default</option>'; 
-                $itemContainer .= '<option value="name">Name</option>';  
-                $itemContainer .= '<option value="name-desc">Name (Reversed)</option>'; 
-                $itemContainer .= '<option value="date">Newest</option>';   
-                $itemContainer .= '<option value="price">Price (Low to High)</option>';
-                $itemContainer .= '<option value="price-desc">Price (High to Low)</option>';
+                $itemContainer .= '<option value="menu_order"'; ?><?php if( $orderbyquery === "meu-order" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Default</option>'; 
+                $itemContainer .= '<option value="name"'; ?><?php if( $orderbyquery === "name" ) { $itemContainer .= "selected=selected"; } ?><?php $itemContainer .= '>Name</option>';   
+                $itemContainer .= '<option value="name-desc"'; ?><?php if( $orderbyquery === "name-desc" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Name (Reversed)</option>';   
+                $itemContainer .= '<option value="date"'; ?><?php if( $orderbyquery === "date" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Newest</option>';  
+                $itemContainer .= '<option value="price"'; ?><?php if( $orderbyquery === "price" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Price (Low to High)</option>';
+                $itemContainer .= '<option value="price-desc"'; ?><?php if( $orderbyquery === "price-desc" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Price (High to Low)</option>';
             $itemContainer .= '</select>';     
             $itemContainer .= '<input type="hidden" name="paged" value="1">';   
         $itemContainer .= '</form>';  
