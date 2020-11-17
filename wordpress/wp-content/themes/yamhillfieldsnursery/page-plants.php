@@ -12,7 +12,7 @@ get_header();
             <?php the_content(); ?>
             </div>
         </div>
-        <?php echo do_shortcode( '[yfn_woocommerce_products_plants]' ); ?>
+        <?php echo do_shortcode( '[yfn_woocommerce_products_products category="plants"]' ); ?>
     </div>
 </div>
                              
