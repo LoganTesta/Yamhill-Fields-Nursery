@@ -126,8 +126,11 @@ function yfn_woocommerce_products_plants_layout() {
                 $itemContainer .= '<option value="price-desc"'; ?><?php if( $orderbyquery === "price-desc" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Price (High to Low)</option>';
             $itemContainer .= '</select>';     
             $itemContainer .= '<input type="hidden" name="paged" value="1">';   
+            $itemContainer .= '<div class="custom-form__sort-results">Showing ' . $products->post_count . ' product'; 
+            if ( $products->post_count > 1 ) { $itemContainer .= 's'; }
+            $itemContainer .= '.</div>';
         $itemContainer .= '</form>';  
-        
+            
         while( $products->have_posts() ) : $products->the_post(); global $product;  
             $itemContainer .= '<div class="item col-sma-4">';
                 $itemContainer .= '<h4 class="item__title"><a class="item__title__link" href="' . get_the_permalink( ) . '">' . get_the_title() . '</a></h4>';
@@ -192,6 +195,9 @@ function yfn_woocommerce_products_supplies_layout() {
                 $itemContainer .= '<option value="price-desc"'; ?><?php if( $orderbyquery === "price-desc" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Price (High to Low)</option>';
             $itemContainer .= '</select>';     
             $itemContainer .= '<input type="hidden" name="paged" value="1">';   
+            $itemContainer .= '<div class="custom-form__sort-results">Showing ' . $products->post_count . ' product'; 
+            if ( $products->post_count > 1 ) { $itemContainer .= 's'; }
+            $itemContainer .= '.</div>';
         $itemContainer .= '</form>';  
     
         while( $products->have_posts() ) : $products->the_post(); global $product;  

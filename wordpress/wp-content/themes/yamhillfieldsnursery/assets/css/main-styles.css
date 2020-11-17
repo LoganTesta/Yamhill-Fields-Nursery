@@ -461,6 +461,7 @@ ul { }
 /*Products, supplies*/
 .woocommerce-ordering.custom-form { padding-bottom: 15px; }
 .woocommerce-ordering select { padding: 10px 15px; border: 1px solid #000000; border-radius: 5px; }
+.custom-form__sort-results { display: inline-block; padding-left: 15px; }
 
 .added_to_cart.wc-forward { padding-left: 20px; font-size: inherit; font-weight: inherit; color: #999999; }
 
