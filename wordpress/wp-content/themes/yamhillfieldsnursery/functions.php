@@ -87,13 +87,13 @@ add_action( 'wp_enqueue_scripts', function() {
 function yfn_woocommerce_products_products_layout( $info ) {   
     
     $extractedInfo = shortcode_atts( array( 'category' => ''), $info );
-    
-    $itemContainer = "";  
+     
     $productCat = $extractedInfo['category'];
-    $orderbyquery = get_query_var('orderby');
-    $orderby = get_query_var('orderby');
+    $orderbyquery = get_query_var( 'orderby' );
+    $orderby = get_query_var( 'orderby' );
     $order = 'asc';
     $metakey = '';
+    $itemContainer = ""; 
     
     if ( $orderby === 'date' ) {
         $order = 'desc';
