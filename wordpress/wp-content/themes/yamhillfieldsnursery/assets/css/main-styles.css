@@ -458,6 +458,12 @@ ul { }
 .products { }
 .product { }
 
+/*WooCommerce prices*/
+.woocommerce div.product p.price, 
+.woocommerce div.product span.price,
+.woocommerce ul.products li.product .price { color: #4f7942; }
+.woocommerce div.product p.price span { }
+
 /*WooCommerce breadcrumbs*/
 
 /*Products, supplies*/

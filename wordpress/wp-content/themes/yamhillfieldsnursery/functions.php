@@ -83,7 +83,6 @@ add_action( 'wp_enqueue_scripts', function() {
 
 
 
-
 function yfn_woocommerce_products_products_layout( $info ) {   
     
     $extractedInfo = shortcode_atts( array( 'category' => ''), $info );
