@@ -560,7 +560,7 @@ ul { }
     .woocommerce button.button { margin-top: 0; }
     
     /*WooCommerce breadcrumbs*/
-    .woocommerce .woocommerce-breadcrumb { padding-left: 15px; }
+    .archive.woocommerce .woocommerce-breadcrumb { padding-left: 15px; }
     
     /*Products, supplies*/
     .woocommerce-ordering.custom-form { padding-left: 15px; }
