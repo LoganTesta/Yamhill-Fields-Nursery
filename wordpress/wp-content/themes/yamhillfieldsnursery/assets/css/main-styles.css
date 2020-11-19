@@ -465,6 +465,9 @@ ul { }
 .woocommerce div.product p.price span { }
 
 /*WooCommerce breadcrumbs*/
+.woocommerce .woocommerce-breadcrumb { padding-bottom: 15px; margin-bottom: 0; }
+.woocommerce .woocommerce-breadcrumb, 
+.woocommerce .woocommerce-breadcrumb a { font-size: 18px; }
 
 /*Products, supplies*/
 .woocommerce-ordering.custom-form { float: none; padding-bottom: 15px; margin: 0; }
