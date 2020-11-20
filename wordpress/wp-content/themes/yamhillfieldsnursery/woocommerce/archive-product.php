@@ -34,7 +34,7 @@ get_header();
 
         $args = array(
             'post_type' => 'product',
-            'product_cat' => 'supplies',
+            'product_cat' => $productCat,
             'meta_key' => $metakey,
             'orderby' => $orderby,
             'order' => $order
