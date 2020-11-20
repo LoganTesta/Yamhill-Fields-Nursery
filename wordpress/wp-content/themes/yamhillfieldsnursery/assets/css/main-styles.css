@@ -430,6 +430,8 @@ ul { }
 .woocommerce input, 
 .woocommerce textarea, 
 .woocommerce select { width: 100%; padding: 10px 15px; border: 1px solid #000000; border-radius: 5px; }
+.woocommerce #review_form #respond .form-submit input { width: auto; background-color: #4f7942; color: #ffffff; }
+.woocommerce #review_form #respond .form-submit input:hover { background-color: #71bc78; }
 .woocommerce label { display: inline-block; padding-bottom: 0; font-size: 19px; font-weight: bold; color: #4f7942; }
 #add_payment_method table.cart td.actions .coupon .input-text, 
 .woocommerce-cart table.cart td.actions .coupon .input-text, 
@@ -437,7 +439,7 @@ ul { }
 .woocommerce #respond input#submit, 
 .woocommerce a.button, 
 .woocommerce button.button, 
-.woocommerce input.button { padding: 10px 15px; border: 1px solid #4f7942; border-radius: 5px; line-height: initial; }
+.woocommerce input.button { padding: 10px 15px; border: 1px solid #000000; border-radius: 5px; line-height: initial; }
 .woocommerce button.button { margin-top: 15px; }
 #add_payment_method table.cart td.actions .coupon .input-text, 
 .woocommerce-cart table.cart td.actions .coupon .input-text, 
@@ -445,11 +447,11 @@ ul { }
 .woocommerce #respond input#submit.alt, 
 .woocommerce a.button.alt, 
 .woocommerce button.button.alt, 
-.woocommerce input.button.alt { background-color: #4f7942; }
+.woocommerce input.button.alt { background-color: #4f7942; transition: 0.2s; }
 .woocommerce #respond input#submit.alt:hover, 
 .woocommerce a.button.alt:hover, 
 .woocommerce button.button.alt:hover, 
-.woocommerce input.button.alt:hover { background-color: #71bc78; }
+.woocommerce input.button.alt:hover { background-color: #71bc78; transition: 0.2s; }
 .select2-container .select2-selection--single .select2-selection__rendered { padding: 10px 15px; }
 .select2-container .select2-selection--single { height: auto; }
 .select2-container--default .select2-selection--single .select2-selection__arrow { top: 12px; }
