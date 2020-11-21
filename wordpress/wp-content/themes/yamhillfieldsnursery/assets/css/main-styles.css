@@ -487,6 +487,8 @@ ul { }
 .entry-summary .star-rating__number { display: none; }
 .entry-summary .woocommerce-review-link { display: inline-block; }
 
+.comment_container .star-rating__average-and-number { display: none; }
+
 /*Products, supplies*/
 .woocommerce-ordering.custom-form { float: none; padding-bottom: 15px; margin: 0; }
 .woocommerce .woocommerce-ordering select,
