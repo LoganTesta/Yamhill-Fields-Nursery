@@ -46,7 +46,23 @@
                         </div>
                     <?php } else { ?>
                         <div class="subtitle-container">
-                            <h2 class="subtitle-container__subtitle"><?php if ( !is_404() ) { single_post_title(); } else { echo "404 Error"; } ?></h2>
+                            <h2 class="subtitle-container__subtitle">
+                                <?php 
+                                if ( !is_404() ) { 
+                                    if( !is_product_category() ) { 
+                                        if ( !is_shop() ) {
+                                             single_post_title(); 
+                                        } else { 
+                                            echo "Shop";
+                                        }
+                                    } else { 
+                                        single_cat_title(); 
+                                    }
+                                } else { 
+                                    echo "404 Error"; 
+                                } 
+                                ?>
+                            </h2>
                         </div>
                     <?php } ?>
                 </div>

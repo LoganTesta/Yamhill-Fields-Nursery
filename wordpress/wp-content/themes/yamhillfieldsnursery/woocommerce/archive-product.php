@@ -12,7 +12,10 @@ get_header();
         $currentUrl = home_url( $wp->request );
 
         $productCat = basename( $currentUrl );  
-       
+        if ( $productCat === "shop" ){
+            $productCat = "";
+        }
+
         echo do_shortcode( '[yfn_woocommerce_products_products category="' . $productCat . '"]' ); 
         
         ?>
