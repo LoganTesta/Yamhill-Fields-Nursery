@@ -128,7 +128,7 @@ function yfn_woocommerce_products_products_layout( $info ) {
     
         $itemContainer .= '<form class="woocommerce-ordering custom-form" method="get">';
             $itemContainer .= '<select name="orderby" class="orderby" aria-label="Shop order">';
-                $itemContainer .= '<option value="menu_order"'; ?><?php if( $orderbyquery === "meu-order" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Default</option>'; 
+                $itemContainer .= '<option value="menu_order"'; ?><?php if( $orderbyquery === "menu-order" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Default</option>'; 
                 $itemContainer .= '<option value="name"'; ?><?php if( $orderbyquery === "name" ) { $itemContainer .= "selected=selected"; } ?><?php $itemContainer .= '>Name</option>';   
                 $itemContainer .= '<option value="name-desc"'; ?><?php if( $orderbyquery === "name-desc" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Name (Reversed)</option>';   
                 $itemContainer .= '<option value="date"'; ?><?php if( $orderbyquery === "date" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Newest</option>';  
