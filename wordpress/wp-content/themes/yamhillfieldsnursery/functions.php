@@ -99,6 +99,13 @@ function yfn_woocommerce_products_products_layout( $info ) {
     } else if ( $orderby === 'name-desc' ) {
         $orderby = 'name';
         $order = 'desc';
+    } else if ( $orderby === 'rating' ) {
+        $orderby = 'meta_value_num';
+        $metakey = '_wc_average_rating';
+    } else if ( $orderby === 'rating-desc' ) {
+        $orderby = 'meta_value_num';
+        $order = 'desc';
+        $metakey = '_wc_average_rating';
     } else if ( $orderby === 'price' ) {
         $orderby = 'meta_value_num';
         $metakey = '_price';
@@ -125,6 +132,8 @@ function yfn_woocommerce_products_products_layout( $info ) {
                 $itemContainer .= '<option value="name"'; ?><?php if( $orderbyquery === "name" ) { $itemContainer .= "selected=selected"; } ?><?php $itemContainer .= '>Name</option>';   
                 $itemContainer .= '<option value="name-desc"'; ?><?php if( $orderbyquery === "name-desc" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Name (Reversed)</option>';   
                 $itemContainer .= '<option value="date"'; ?><?php if( $orderbyquery === "date" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Newest</option>';  
+                $itemContainer .= '<option value="rating"'; ?><?php if( $orderbyquery === "rating" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Rating (Low to High)</option>';  
+                $itemContainer .= '<option value="rating-desc"'; ?><?php if( $orderbyquery === "rating-desc" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Rating (High to Low)</option>';  
                 $itemContainer .= '<option value="price"'; ?><?php if( $orderbyquery === "price" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Price (Low to High)</option>';
                 $itemContainer .= '<option value="price-desc"'; ?><?php if( $orderbyquery === "price-desc" ) { $itemContainer .= "selected='selected'"; } ?><?php $itemContainer .= '>Price (High to Low)</option>';
             $itemContainer .= '</select>';     
