@@ -165,6 +165,7 @@ function yfn_woocommerce_products_products_layout( $info ) {
 add_shortcode( 'yfn_woocommerce_products_products', 'yfn_woocommerce_products_products_layout' );
 
 
+
 function yfm_update_cart(){
     global $woocommerce;
     ob_start();
@@ -175,3 +176,16 @@ function yfm_update_cart(){
     return $fragments;
 }
 add_filter( 'woocommerce_add_to_cart_fragments', 'yfm_update_cart' );
+
+
+
+function yfn_woocommerce_product_get_rating_html( $result, $rating, $count ){
+    $result = '<div class="star-rating">';
+    $result .= wc_get_star_rating_html( $rating, $count );
+    $result .= '</div>';
+    $result .= '<div class="star-rating__average-and-number"><div class="star-rating__average">' . $rating . '</div><div class="star-rating__number">(' . $count . ' reviews)</div></div>';
+         
+    return $result;
+}
+
+add_filter( 'woocommerce_product_get_rating_html', 'yfn_woocommerce_product_get_rating_html', 10, 3 );
