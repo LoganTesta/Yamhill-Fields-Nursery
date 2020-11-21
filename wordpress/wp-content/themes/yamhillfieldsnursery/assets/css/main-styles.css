@@ -457,6 +457,7 @@ ul { }
 .select2-container--default .select2-selection--single .select2-selection__arrow { top: 12px; }
 .woocommerce .quantity .qty { width: auto; }
 .woocommerce .star-rating span { font-family: star; color: #4f7942; }
+.woocommerce ul.products li.product .star-rating { font-size: 16px; }
 
 .products { }
 .product { }
