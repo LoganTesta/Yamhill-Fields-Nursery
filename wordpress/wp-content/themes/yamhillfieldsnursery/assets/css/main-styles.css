@@ -460,6 +460,14 @@ ul { }
 .select2-container .select2-selection--single { height: auto; }
 .select2-container--default .select2-selection--single .select2-selection__arrow { top: 12px; }
 .woocommerce .quantity .qty { width: auto; }
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt { background-color: #4f7942; color: #ffffff; }
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover, 
+.woocommerce input.button.alt:hover { background-color: #71bc78; }
 
 .products { }
 .product { }
