@@ -447,6 +447,8 @@ ul { }
 .woocommerce button.button:hover, 
 .woocommerce input.button:hover { background-color: #71bc78; color: #ffffff; }
 
+.woocommerce form .form-row input.input-text, 
+.woocommerce form .form-row textarea { height: auto; }
 .woocommerce #review_form #respond .form-submit input { width: auto; }
 #add_payment_method table.cart td.actions .coupon .input-text, 
 .woocommerce-cart table.cart td.actions .coupon .input-text, 
@@ -514,6 +516,7 @@ ul { }
 /*WooCommerce Cart page*/
 
 /*WooCommerce Checkout page*/
+.woocommerce .checkout_coupon.woocommerce-form-coupon .button { margin-top: 0; }
 
 /*WooCommerce Account page*/
 
