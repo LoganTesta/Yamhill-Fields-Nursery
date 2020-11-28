@@ -250,7 +250,7 @@ ul { }
 
 .footer { position: relative; text-align: center; }
 .footer__addditional-wrapper { padding-top: 60px; padding-bottom: 60px; }
-.footer__background { position: absolute; top: 0; width: 100%; min-height: 431px; opacity: 0.35;
+.footer__background { position: absolute; top: 0; width: 100%; min-height: 447px; opacity: 0.35;
                       background: url('../images/greenhouse-with-variety-of-plants.jpg') 50% 50%/cover no-repeat; }
 .footer__copyright { width: 90%; margin-left: auto; margin-right: auto; padding-bottom: 40px; font-size: 17px; font-weight: bold; color: rgba(0, 0, 0, 0.92); }
 .footer__location { width: 90%; padding-bottom: 40px; margin-left: auto; margin-right: auto; }
