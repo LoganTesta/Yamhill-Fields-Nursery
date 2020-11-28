@@ -12,6 +12,11 @@
                             <div class="footer__location-hours">Open Mon-Sat 9:00 am-9:00 pm, closed Sunday.</div>
                             <div class="footer__phone">503-538-8204</div>
                         </div>	
+                        <div class="footer__nav">
+                            <div class="footer__nav__item">
+                                <a class="footer__nav__item__link" href="privacy-policy">Privacy Policy</a>
+                            </div>
+                        </div>
                         <div class="footer__social">
                             <div class="footer__social-item">
                                 <a href="/" class="footer__social-link">
