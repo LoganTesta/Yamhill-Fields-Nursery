@@ -14,7 +14,10 @@
                         </div>	
                         <div class="footer__nav">
                             <div class="footer__nav__item">
-                                <a class="footer__nav__item__link" href="privacy-policy">Privacy Policy</a>
+                                <a class="footer__nav__item__link" href="privacy-policy">
+                                    <div class="footer__nav__item__background"></div>
+                                    <span class="footer__nav__item__link__text">Privacy Policy</span>
+                                </a>
                             </div>
                         </div>
                         <div class="footer__social">

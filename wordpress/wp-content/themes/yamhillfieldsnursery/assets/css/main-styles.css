@@ -250,7 +250,7 @@ ul { }
 
 .footer { position: relative; text-align: center; }
 .footer__addditional-wrapper { padding-top: 60px; padding-bottom: 60px; }
-.footer__background { position: absolute; top: 0; width: 100%; min-height: 512px; opacity: 0.35;
+.footer__background { position: absolute; top: 0; width: 100%; min-height: 532px; opacity: 0.35;
                       background: url('../images/greenhouse-with-variety-of-plants.jpg') 50% 50%/cover no-repeat; }
 .footer__copyright { width: 90%; margin-left: auto; margin-right: auto; padding-bottom: 40px; font-size: 17px; font-weight: bold; color: rgba(0, 0, 0, 0.92); }
 .footer__location { width: 90%; padding-bottom: 40px; margin-left: auto; margin-right: auto; }
@@ -258,12 +258,17 @@ ul { }
 .footer__location-address { padding-bottom: 10px; font-size: 17px; font-weight: bold; color: rgba(0, 0, 0, 0.92); }
 .footer__location-hours { padding-bottom: 10px; font-size: 17px; font-weight: bold; color: rgba(0, 0, 0, 0.92); }
 .footer__phone { font-size: 17px; font-weight: bold; color: rgba(0, 0, 0, 0.92); }
+
 .footer__nav { padding-bottom: 40px; }
-.footer__nav__item { }
-.footer__nav__item__link { font-size: 20px; font-weight: bold; transition: 0.2s; }
-.footer__nav__item__link:hover { padding: 10px 15px; border-radius: 28px;  
-        background: radial-gradient(rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.92) 40%, rgba(255, 255, 255, 0) 100%); color: rgba(113, 188, 120, 0.92); 
-        transition: 0.2s; }
+.footer__nav__item { display: inline-block; position: relative; }
+.footer__nav__item__link { display: block; position: relative; padding: 10px 15px; }
+.footer__nav__item__background { display: block; position: absolute; top: 0; left: 0; opacity: 0; width: 100%; height: 45px; border-radius: 28px;
+                                 background: radial-gradient(rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.92) 40%, rgba(255, 255, 255, 0) 100%);
+                                 filter: blur(2px); transition: 0.4s ease-in; }
+.footer__nav__item__link__text { position: relative; top: 0; left: 0; font-size: 20px; font-weight: bold; transition: 0.4s ease-in; }
+.footer__nav__item__link:hover .footer__nav__item__link__text { color: rgba(113, 188, 120, 0.92); transition: 0.4s ease-in; }
+.footer__nav__item__link:hover .footer__nav__item__background { opacity: 1; transition: 0.4s ease-in; }
+
 .footer__social { width: 90%; margin-left: auto; margin-right: auto; font-size: 0; }
 .footer__social-item { display: inline-block; position: relative; padding: 0 18px; cursor: pointer; }
 .footer .footer__social-link { display: block; position: relative; width: 32px; height: 32px; color: rgba(79, 121, 66, 0.92); transition: 0.4s ease-in; }
@@ -553,7 +558,7 @@ ul { }
 
     .logo { width: 84px; height: 84px; border-width: 4px; }
     
-    .footer__background { min-height: 450px; }
+    .footer__background { min-height: 470px; }
 
     .main-title-container { border-width: 4px; }
     
@@ -633,7 +638,7 @@ ul { }
     .logo { position: absolute; top: 20px; left: auto; right: 20px; width: 104px; height: 104px; }
 
     .footer { }
-    .footer__background { min-height: 460px; }
+    .footer__background { min-height: 480px; }
     .footer__location-header { font-size: 24px; }
     .footer__copyright { font-size: 19px; }
     .footer__location-address { font-size: 19px; }
