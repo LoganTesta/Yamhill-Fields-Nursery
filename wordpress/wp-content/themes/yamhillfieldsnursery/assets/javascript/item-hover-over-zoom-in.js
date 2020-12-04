@@ -3,7 +3,7 @@ window.addEventListener("load", function() {
 
     let numberOfItems;
 
-    function loadItems(){
+    function loadItems() {
         numberOfItems = document.getElementsByClassName("item").length;
 
         for (let i = 0; i < numberOfItems; i++) {
