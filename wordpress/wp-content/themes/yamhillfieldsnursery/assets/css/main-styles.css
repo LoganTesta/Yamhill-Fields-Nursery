@@ -525,6 +525,15 @@ ul { }
 .woocommerce-cart-total { position: absolute; top: 232px; right: 20px; padding: 4px 5px; border: 3px solid rgba(79, 121, 66, 0.8); border-radius: 8px; background-color: #ffffff; }
 
 /*WooCommerce Cart page*/
+.woocommerce table.shop_table_responsive tr .product-thumbnail::before, 
+.woocommerce-page table.shop_table_responsive tr .product-thumbnail::before { content: ""; }
+.woocommerce #content table.cart .product-thumbnail, 
+.woocommerce table.cart .product-thumbnail, 
+.woocommerce-page #content table.cart .product-thumbnail, 
+.woocommerce-page table.cart .product-thumbnail { display: block; }
+#add_payment_method table.cart img, 
+.woocommerce-cart table.cart img, 
+.woocommerce-checkout table.cart img { width: 60px; }
 
 /*WooCommerce Checkout page*/
 .woocommerce .checkout_coupon.woocommerce-form-coupon .button { margin-top: 0; }
