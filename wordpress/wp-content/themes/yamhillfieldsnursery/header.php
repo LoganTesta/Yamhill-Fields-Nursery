@@ -69,7 +69,9 @@ global $woocommerce;
                     <?php } ?>
                     <?php if ( $woocommerce->cart->cart_contents_count > 0 ) { ?>
                         <div class="cart-icon">
-                            <?php echo $woocommerce->cart->cart_contents_count; ?>
+                            <a class="cart-icon__link" href="cart">
+                                <?php echo $woocommerce->cart->cart_contents_count; ?>
+                            </a>
                         </div>
                     <?php } ?>
                 </div>

@@ -542,8 +542,8 @@ ul { }
 /*WooCommerce Account page*/
 
 /*Shopping Cart Icon*/
-.cart-icon { position: absolute; right: 15px; top: 135px; padding: 2px 8px; border-radius: 4px; font-size: 20px; 
-            background-color: rgba(255, 255, 255, 0.4); color: #ffffff; }
+.cart-icon { position: absolute; right: 10px; top: 135px; background-color: rgba(255, 255, 255, 0.4); }
+a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px; border: 2px solid #ffffff; border-radius: 4px; font-size: 20px; color: #ffffff; }
 
 
 /* Clearing variable width columns */
@@ -741,7 +741,7 @@ ul { }
     .star-rating__average-and-number { padding-bottom: 0; margin-top: -26px; margin-left: 105px; }
     
     /*Shopping Cart Icon*/
-    .cart-icon { top: 320px; }
+    .cart-icon { right: 20px; top: 320px; }
 
 }
 
