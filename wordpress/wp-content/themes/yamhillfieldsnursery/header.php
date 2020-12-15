@@ -1,5 +1,7 @@
 <?php
 //Header template.  
+
+global $woocommerce;
 ?>
 
 <!DOCTYPE html>
@@ -65,6 +67,11 @@
                             </h2>
                         </div>
                     <?php } ?>
+                    <?php if ( $woocommerce->cart->cart_contents_count > 0 ) { ?>
+                        <div class="cart-icon">
+                            <?php echo $woocommerce->cart->cart_contents_count; ?>
+                        </div>
+                    <?php } ?>
                 </div>
             </header>
             <nav class="nav mobile-nav" id="mobileNav">
@@ -81,4 +88,4 @@
                         wp_nav_menu( array( 'theme_location' => 'main-nav' ) );
                     ?>
                 </div>
-            </nav>
+            </nav>            
