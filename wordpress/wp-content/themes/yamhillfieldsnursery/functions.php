@@ -191,5 +191,14 @@ function yfn_woocommerce_product_get_rating_html( $result, $rating, $count ){
          
     return $result;
 }
-
 add_filter( 'woocommerce_product_get_rating_html', 'yfn_woocommerce_product_get_rating_html', 10, 3 );
+
+
+
+//Enable header cart total to update using AJAX.
+function yfn_add_to_cart_fragments( $parts ){
+    global $woocommerce;
+    $parts['.cart-icon__link'] = '<a class="cart-icon__link" href="cart">' . $woocommerce->cart->cart_contents_count . '</a>';
+    return $parts;
+}
+add_filter( 'woocommerce_add_to_cart_fragments', 'yfn_add_to_cart_fragments' );
