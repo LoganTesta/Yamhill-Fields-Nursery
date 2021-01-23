@@ -226,7 +226,7 @@ header { min-height: 270px; }
 #dropdownButton { position: absolute; top: 15px; left: 15px; width: 30px; height: 30px; 
                   background: url('../images/hamburger-nav.png') 50% 0%/cover no-repeat; cursor: pointer; }
 .nav { background-color: #71bc78; }
-ul { }
+.nav ul { font-size: 0; }
 .nav li { padding-bottom: 25px; text-align: center; }
 .nav li:last-of-type { padding-bottom: 0; }
 .nav a { font-size: 18px; color: #000000; transition: 0.1s ease-in; }
@@ -286,11 +286,12 @@ ul { }
                         background-color: rgba(252, 252, 252, 0.8); border-radius: 10px; transition: 0.6s; cursor: pointer; }
 .main-title-container:hover { background-color: rgba(252, 252, 252, 0.4); transition: 0.6s; }	
 .main-title-container__background { position: absolute; top: 0; left: 0; opacity: 0; width: 100%; height: 94px; border-radius: 10px;
-                                   background: linear-gradient(170deg, rgba(252, 252, 252, 0.5) 0%, rgba(252, 252, 252, 0.4) 35%, rgba(252, 252, 252, 0.1) 50%, rgba(252, 252, 252, 0.4) 65%, rgba(252, 252, 252, 0.5) 100%);
+                                   background: linear-gradient(170deg, rgba(252, 252, 252, 0.5) 0%, rgba(252, 252, 252, 0.3) 45%, rgba(252, 252, 252, 0.1) 60%, rgba(252, 252, 252, 0.3) 75%, rgba(252, 252, 252, 0.5) 100%);
                                    transition: 0.6s; }
 .main-title-container:hover .main-title-container__background { opacity: 1; transition: 0.6s; }
 .main-title-container__title { display: inline-block; position: relative; width: 100%; padding: 8px 10px; font-size: 32px; font-family: 'Calibri', sans-serif; font-weight: bold; 
                                color: #4f7942; text-shadow: 0.8px 1px #090909; }
+.main-title-container__title:hover { color: #4f7942; }
 
 .subtitle-container { position: relative; top: 82px; width: 100%; max-width: 270px; padding: 6px 8px;
                       margin-left: auto; margin-right: auto; border: 3px solid rgba(79, 121, 66, 0.8);
