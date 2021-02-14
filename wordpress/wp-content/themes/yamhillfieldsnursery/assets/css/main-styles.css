@@ -423,6 +423,7 @@ header { min-height: 270px; }
 /*Customized plugin styles.*/
 /*For testimonials*/
 .testimonial__provided-name { color: #4f7942; }
+.testimonial__comma { color: #4f7942; }
 .testimonial__link { color: #4f7942; }
 .testimonial__label { color: #707070; }
 
