@@ -421,14 +421,16 @@ header { min-height: 270px; }
 
 
 /*Customized plugin styles.*/
-/*For testimonials*/
+/*General Testimonials*/
+.testimonial { }
+.testimonial:last-of-type { padding-bottom: 0; }
 .testimonial__provided-name { color: #4f7942; }
 .testimonial__comma { color: #4f7942; }
 .testimonial__link { color: #4f7942; }
 .testimonial__label { color: #707070; }
 
 
-/*Contact Form 7 customizations*/
+/*Contact Form 7*/
 .wpcf7 p { padding-bottom: 20px; }
 .wpcf7 input, .wpcf7 textarea { width: 100%; padding: 10px 15px; border: 1px solid #000000; border-radius: 5px; }
 .wpcf7 label { display: inline-block; padding-bottom: 0; font-size: 19px; font-weight: bold; color: #4f7942; }
@@ -441,7 +443,7 @@ header { min-height: 270px; }
 .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output { margin-left: 0; border-color: #4f7942; }
 
 
-/*WooCommerce customizations*/
+/*WooCommerce*/
 /*General WooCommerce Styling*/
 .woocommerce { }
 .woocommerce button { background-color: #4f7942; color: #ffffff; transition: 0.2s; }
@@ -617,7 +619,12 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     
     
     /*Customized plugin styles.*/
-    /*WooCommerce customizations*/
+    /*General Testimonials*/
+    .testimonial { padding-bottom: 15px; }
+    .testimonial:last-of-type { padding-bottom: 15px; }
+    
+    
+    /*WooCommerce*/
     .woocommerce button.button { margin-top: 0; }
     
     /*WooCommerce breadcrumbs*/
@@ -738,7 +745,7 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     
     
     /*Customized plugin styles.*/
-    /*WooCommerce customizations.*/
+    /*WooCommerce*/
     /*Ratings*/
     .star-rating__average-and-number { padding-bottom: 0; margin-top: -26px; margin-left: 105px; }
     
