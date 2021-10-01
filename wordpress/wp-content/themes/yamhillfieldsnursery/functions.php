@@ -69,7 +69,7 @@ add_action( 'wp_enqueue_scripts', function() {
  
     wp_register_script( 'javascript-functions', get_template_directory_uri() . '/assets/javascript/javascript-functions.js' );
     wp_enqueue_script( 'javascript-functions', get_template_directory_uri() . '/assets/javascript/javascript-functions.js' );  
-    wp_enqueue_style( 'styles', "" . get_template_directory_uri() . '/assets/css/main-styles.css?mod=09212021V9' );
+    wp_enqueue_style( 'styles', "" . get_template_directory_uri() . '/assets/css/main-styles.css?mod=09302021' );
     wp_enqueue_style( 'print-styles', "" . get_template_directory_uri() . '/assets/css/print-styles.css?mod=11092020' );
    
     wp_register_script( 'item-hover-over-zoom-in', get_template_directory_uri() . '/assets/javascript/item-hover-over-zoom-in.js' );
@@ -145,13 +145,13 @@ function yfn_woocommerce_products_products_layout( $info ) {
             
         while( $products->have_posts() ) : $products->the_post(); global $product;  
             $itemContainer .= '<div class="item col-sma-4">';
-                $itemContainer .= '<h4 class="item__title"><a class="item__title__link" href="' . get_the_permalink( ) . '">' . get_the_title() . '</a></h4>';
                 $itemContainer .= '<div class="item__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
                 $itemContainer .= '<div class="item__zoom-in-container-close">X</div>';
                 $itemContainer .= '<div class="item__zoom-in-container">';
                     $itemContainer .= '<div class="item__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
                 $itemContainer .= '</div>';
                 $itemContainer .= '<div class="item__inspect-background"></div>';
+                $itemContainer .= '<h4 class="item__title"><a class="item__title__link" href="' . get_the_permalink( ) . '">' . get_the_title() . '</a></h4>';
                 $itemContainer .= '<div class="item__notes">' . get_the_excerpt() . '</div>';
                 $itemContainer .= '<div class="item__rating-and-count">Rated <span class="item__rating">' . $product->get_average_rating() . '</span>' . 
                         ' out of 5 <span class="item__reviews">(' . $product->get_rating_count() . ' review';
