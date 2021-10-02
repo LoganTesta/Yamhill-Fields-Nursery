@@ -153,10 +153,12 @@ function yfn_woocommerce_products_products_layout( $info ) {
                 $itemContainer .= '<div class="item__inspect-background"></div>';
                 $itemContainer .= '<h4 class="item__title"><a class="item__title__link" href="' . get_the_permalink( ) . '">' . get_the_title() . '</a></h4>';
                 $itemContainer .= '<div class="item__notes">' . get_the_excerpt() . '</div>';
-                $itemContainer .= '<div class="item__rating-and-count">Rated <span class="item__rating">' . $product->get_average_rating() . '</span>' . 
-                        ' out of 5 <span class="item__reviews">(' . $product->get_rating_count() . ' review';
-                if ( $product->get_rating_count() > 1 ) { $itemContainer .= 's'; }
-                $itemContainer .= ')</span>.</div>';
+                if ( $product->get_rating_count() > 1 ) {
+                    $itemContainer .= '<div class="item__rating-and-count">Rated <span class="item__rating">' . $product->get_average_rating() . '</span>' . 
+                            ' out of 5 <span class="item__reviews">(' . $product->get_rating_count() . ' review';
+                    if ( $product->get_rating_count() === 0 || $product->get_rating_count() > 1 ) { $itemContainer .= 's'; }
+                    $itemContainer .= ')</span>.</div>';
+                }
                 $itemContainer .= '<div class="item__description">' . get_the_content() . '</div>';
                 $itemContainer .= '<div class="item__price">$' . $product->get_price() . 
                         '<a class="item__add-to-cart ajax_add_to_cart add_to_cart_button" href="' . $product->add_to_cart_url() . '" value="' . esc_attr( $product->get_id() ) . '" data-product_id="' . get_the_ID() . '" data-product_sku="' . esc_attr( $sku ) . '" aria-label="Add ' . the_title_attribute( 'echo=0' ) . ' to cart.">Add to Cart</a>';
