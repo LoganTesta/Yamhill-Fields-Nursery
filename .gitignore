@@ -30,3 +30,4 @@ yarn-error.log
 /wordpress/wp-content/uploads/
 /wordpress/wp-content/plugins/woocommerce-payments/
 /wordpress/wp-content/themes/twentytwentyone/
+/wordpress/wp-content/plugins/honeypot/
