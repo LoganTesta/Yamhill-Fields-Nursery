@@ -369,7 +369,7 @@ header { min-height: 270px; }
 .blog__image a:hover img { transform: scale(1.15); transition: 0.8s ease-in; }
 .blog__content { }
 .blog__content p:last-of-type { padding-bottom: 12px; }
-.blog__read-more { display: block; color: #4f7942; }
+.blog__read-more { display: inline-block; color: #4f7942; }
 .blog__read-more:hover { font-style: italic; }
 
 .subfooter-container { padding-bottom: 20px; }
