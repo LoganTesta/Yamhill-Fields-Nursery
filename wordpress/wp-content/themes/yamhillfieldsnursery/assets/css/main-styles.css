@@ -357,7 +357,7 @@ header { min-height: 270px; }
 .index-product.zero .index-product__image { background: url('../images/plants/trees-outside-nursery.jpg') 50% 50%/cover no-repeat; }
 .index-product.one .index-product__image { background: url('../images/supplies/two-watering-cans.jpg') 50% 50%/cover no-repeat; }
 
-.blog-post { padding-bottom: 25px; }
+.blog-post { padding-bottom: 60px; }
 .blog-post__title { display: block; padding-bottom: 2px; font-size: 20px; color: #4f7942; }
 .blog-post__title__link { font-size: inherit; color: inherit; }
 .blog__categories { padding-bottom: 2px; text-transform: uppercase; color: #325b53; }
@@ -367,6 +367,7 @@ header { min-height: 270px; }
 .blog__image img { display: block; width: 150px; height: 150px; transition: 0.8s ease-in; } 
 .blog__image a:hover { box-shadow: 0 0 4px 6px #4f7942; transition: 0.5s ease-in; }
 .blog__image a:hover img { transform: scale(1.15); transition: 0.8s ease-in; }
+.blog__read-more { display: block; color: #4f7942; }
 
 .subfooter-container { padding-bottom: 20px; }
 .page.index .subfooter-container__background { background: url('../images/cacti-inside-sunny-greenhouse.jpg') 50% 50%/cover no-repeat; }
