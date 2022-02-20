@@ -370,6 +370,7 @@ header { min-height: 270px; }
 .blog__content { }
 .blog__content p:last-of-type { padding-bottom: 12px; }
 .blog__read-more { display: block; color: #4f7942; }
+.blog__read-more:hover { font-style: italic; }
 
 .subfooter-container { padding-bottom: 20px; }
 .page.index .subfooter-container__background { background: url('../images/cacti-inside-sunny-greenhouse.jpg') 50% 50%/cover no-repeat; }
