@@ -229,9 +229,10 @@ header { min-height: 270px; }
 .nav ul { font-size: 0; }
 .nav li { padding-bottom: 25px; text-align: center; }
 .nav li:last-of-type { padding-bottom: 0; }
-.nav a { font-size: 18px; color: #000000; transition: 0.1s ease-in; }
-.nav a:hover { text-decoration: underline; color: #ffffff; transition: 0.1s ease-in; }
-.nav .current_page_item { text-decoration: underline; }
+.nav a { border-bottom: 2px solid rgba(0, 0, 0, 0); font-size: 18px; color: #000000; transition: 0.1s all ease-in; }
+.nav a:hover { border-bottom: 2px solid rgba(255, 255, 255, 1); color: #ffffff; transition: 0.1s all ease-in; }
+.nav .current_page_item a { border-bottom: 2px solid rgba(0, 0, 0, 1); }
+.nav .current_page_item a:hover { border-bottom: 2px solid rgba(255, 255, 255, 1); }
 
 #dropdownContent { padding: 0; background: none; transition: 0.8s all ease-in; }    
 #dropdownContent .menu-main-nav-container li { display: block; height: 0; padding-bottom: 0px; opacity: 0; transition: 0.8s all ease-in; }
