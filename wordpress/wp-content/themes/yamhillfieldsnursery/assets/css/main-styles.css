@@ -171,6 +171,8 @@ Color 3: green-yellow              77874a     (119, 135, 74)
  
 
 Color 4: light fern green          71bc78     (113, 188, 120)
+Color 5: dark fern green           204b13     (32, 75, 19)
+Color 6: light green-yellow        c1cf9b     (193, 207, 155)
 
 */
 
@@ -225,14 +227,14 @@ header { min-height: 270px; }
 .desktop-nav { display: none; }
 #dropdownButton { position: absolute; top: 15px; left: 15px; width: 30px; height: 30px; 
                   background: url('../images/hamburger-nav.png') 50% 0%/cover no-repeat; cursor: pointer; }
-.nav { background-color: #71bc78; }
+.nav { background-color: #204b13; }
 .nav ul { font-size: 0; }
 .nav li { padding-bottom: 25px; text-align: center; }
 .nav li:last-of-type { padding-bottom: 0; }
-.nav a { border-bottom: 2px solid rgba(0, 0, 0, 0); font-size: 18px; color: #000000; transition: 0.1s all ease-in; }
-.nav a:hover { border-bottom: 2px solid rgba(255, 255, 255, 1); color: #ffffff; transition: 0.1s all ease-in; }
-.nav .current_page_item a { border-bottom: 2px solid rgba(0, 0, 0, 1); }
-.nav .current_page_item a:hover { border-bottom: 2px solid rgba(255, 255, 255, 1); }
+.nav a { border-bottom: 2px solid rgba(255, 255, 255, 0); font-size: 18px; color: #ffffff; transition: 0.1s all ease-in; }
+.nav a:hover { border-bottom: 2px solid rgba(193, 207, 155, 1); color: #c1cf9b; transition: 0.1s all ease-in; }
+.nav .current_page_item a { border-bottom: 2px solid rgba(255, 255, 255, 1); }
+.nav .current_page_item a:hover { border-bottom: 2px solid rgba(193, 207, 155, 1); }
 
 #dropdownContent { padding: 0; background: none; transition: 0.8s all ease-in; }    
 #dropdownContent .menu-main-nav-container li { display: block; height: 0; padding-bottom: 0px; opacity: 0; transition: 0.8s all ease-in; }
