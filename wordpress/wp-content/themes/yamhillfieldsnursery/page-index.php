@@ -11,8 +11,7 @@ get_header();
                 <div class="slideshow">
                     <div class="slideshow__image">                   
                         <div class="slideshow__slide-background"></div>
-                        <a href="/" aria-label="" class="slideshow__image__link">
-                            <div class="slideshow__slide-description"></div>
+                            <a href="/" aria-label="" class="slideshow__image__link">
                         </a>
                     </div>
                     <div class="slideshow__icon left">
