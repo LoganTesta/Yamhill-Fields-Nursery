@@ -317,6 +317,7 @@ header { min-height: 270px; }
 
 .slideshow { position: relative; width: 100%; max-width: 670px; padding-bottom: 20px; margin-left: auto; margin-right: auto; background-color: #ffffff; }
 .slideshow__image { position: relative; height: 220px; padding-bottom: 0px; margin-left: auto; margin-right: auto; background: 50% 50%/cover no-repeat; }
+.slideshow__image:nth-of-type(2) { position: absolute; top: 0; left: 0; width: 100%; }
 .slideshow__slide-background { position: absolute; top: 0; left: 0; opacity: 0;  width: 100%; height: 220px;
                                background: radial-gradient(rgba(255, 255, 255, 0.1) 40%, rgba(50, 91, 83, 0.4) 80%); transition: 0.5s ease-in; }
 .slideshow__image:hover .slideshow__slide-background { opacity: 1; transition: 0.5s ease-in; }
