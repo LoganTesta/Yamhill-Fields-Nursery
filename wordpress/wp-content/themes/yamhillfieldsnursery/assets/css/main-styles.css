@@ -321,9 +321,9 @@ header { min-height: 270px; }
 .slideshow__slide-background { position: absolute; top: 0; left: 0; opacity: 0;  width: 100%; height: 220px;
                                background: radial-gradient(rgba(255, 255, 255, 0.1) 40%, rgba(50, 91, 83, 0.4) 80%); transition: 0.5s ease-in; }
 .slideshow__image:hover .slideshow__slide-background { opacity: 1; transition: 0.5s ease-in; }
-.slideshow .slideshow__image__link { display: block; position: absolute; top: 182px; right: 20px; border-bottom: 2px solid rgba(255, 255, 255, 0); 
-                                     text-align: right; font-size: 22px; font-weight: bold; color: #ffffff; text-shadow: 0.8px 1.2px #333333; 
-                                     transition: 0.2s ease-in; }
+.slideshow__image__link-wrapper { position: absolute; top: 158px; right: 20px; padding: 12px 15px; background-color: rgba(53, 97, 39, 0.92); }
+.slideshow .slideshow__image__link { display: block; border-bottom: 2px solid rgba(255, 255, 255, 0); text-align: right; font-size: 22px; font-weight: bold; 
+                                     color: #ffffff; text-shadow: 0.8px 1.2px #333333; transition: 0.2s ease-in; }
 .slideshow .slideshow__image__link:hover { border-bottom: 4px solid rgba(255, 255, 255, 1); transition: 0.2s ease-in; }
 
 .slideshow__buttons { display: flex; flex-wrap: wrap; justify-content: center; border-radius: 0 0 15px 15px; }
@@ -602,7 +602,8 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .slideshow { padding-bottom: 0; }
     .slideshow__image { height: 260px; }
     .slideshow__slide-background { height: 260px; }
-    .slideshow .slideshow__image__link { top: 225px; }
+    .slideshow__image__link-wrapper { top: 201px; }
+    .slideshow .slideshow__image__link { }
     .slideshow__icon { width: 33px; height: 33px; }
     .slideshow__icon.left { position: absolute; top: 114px; }
     .slideshow__icon.right { position: absolute; top: 114px; }
@@ -721,7 +722,8 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .slideshow { position: relative; margin-left: auto; margin-right: 0px; }
     .slideshow__image { padding-bottom: 56.25%; }
     .slideshow__slide-background { padding-bottom: 56.25%; }
-    .slideshow .slideshow__image__link { top: 324px; right: 60px; font-size: 28px; }
+    .slideshow__image__link-wrapper { top: 300px; right: 60px; }
+    .slideshow .slideshow__image__link { font-size: 28px; }
     
     .slideshow__icon { width: 36px; height: 36px; }
     .slideshow__icon.left { position: absolute; top: 170px; left: 3%; }

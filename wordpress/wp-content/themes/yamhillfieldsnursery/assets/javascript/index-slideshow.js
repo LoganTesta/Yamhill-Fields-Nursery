@@ -175,7 +175,7 @@ window.addEventListener("load", function() {
     pausePlay.addEventListener("click", togglePausePlay, false);
 
     function setSlide(slideNumber) {
-        slideshowCounter = 50;
+        slideshowCounter = 400;
         currentSlideNumber = slideNumber;
         paused = false;
         pausePlayButton.classList.remove("paused");
