@@ -15,6 +15,9 @@ get_header();
                     </div>
                     <div class="slideshow__image__link-wrapper">
                         <a href="/" aria-label="" class="slideshow__image__link"></a>
+                        <div class="slideshow__image__link-decoration-container">
+                            <div class="slideshow__image__link-decoration"></div>
+                        </div>
                     </div>
                     <div class="slideshow__icon left">
                         <div class="slideshow__icon__link">&#10094;</div>
