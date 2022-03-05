@@ -78,9 +78,13 @@ get_header();
         <div class="content-row">
             <?php
             global $post;
-            $args = array('posts_per_page' => 3);
+            $numberOfPosts = (int)( wp_count_posts()->publish );
+            $offSetNumberPosts = $numberOfPosts - 3;
+
+            $args = array( 'numberposts' => 3, 'offset' => $offSetNumberPosts, 'orderby' => 'post_date', 'order' => 'ASC' );
             $postsToDisplay = get_posts($args);
-            foreach ($postsToDisplay as $post) : setup_postdata($post);
+
+            foreach ( $postsToDisplay as $post ) : setup_postdata( $post );
                 ?>      
                 <div class="col-sma-6 col-lar-4">
                     <div class="blog-post">
