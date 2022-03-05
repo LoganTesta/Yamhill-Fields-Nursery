@@ -28,13 +28,15 @@ if ( function_exists( 'yamhill_fields_nursery_setup' ) === false ) {
 
         add_theme_support( "woocommerce" );
         
+        add_image_size( "medium-400_400", 400, 400, true );
+        
         //Allow cropping for medium thumbnail images.
         if ( false === get_option( "medium_crop" ) ) {
             add_option( "medium_crop", "1" );
         } else {
             update_option( "medium_crop", "1" );
         }
-        
+             
         //Add support for additional nav menus.
         register_nav_menus(
             array(

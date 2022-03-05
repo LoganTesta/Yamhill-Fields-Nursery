@@ -110,7 +110,7 @@ get_header();
                             ?>
                         </div>
                         <div class="blog__date"><?php the_date(); ?></div>
-                        <div class="blog__image"><a href="blog#<?php the_title(); ?>"><?php the_post_thumbnail( 'thumbnail' ); ?></a> <div class="clear-both"></div></div>
+                        <div class="blog__image"><a href="blog#<?php the_title(); ?>"><?php the_post_thumbnail( 'medium-400_400' ); ?></a> <div class="clear-both"></div></div>
                         <div class="blog__content"><?php the_excerpt(); ?><a href="blog#<?php the_title(); ?>"><span class="blog__read-more">Read more &#10132;</span></a></div>
                         <div class="clear-both"></div>
                     </div>
