@@ -28,15 +28,13 @@ if ( function_exists( 'yamhill_fields_nursery_setup' ) === false ) {
 
         add_theme_support( "woocommerce" );
         
-        add_image_size( "medium-400_400", 400, 400, true );
-        
         //Allow cropping for medium thumbnail images.
         if ( false === get_option( "medium_crop" ) ) {
             add_option( "medium_crop", "1" );
         } else {
             update_option( "medium_crop", "1" );
         }
-             
+        
         //Add support for additional nav menus.
         register_nav_menus(
             array(
@@ -71,7 +69,7 @@ add_action( 'wp_enqueue_scripts', function() {
  
     wp_register_script( 'javascript-functions', get_template_directory_uri() . '/assets/javascript/javascript-functions.js' );
     wp_enqueue_script( 'javascript-functions', get_template_directory_uri() . '/assets/javascript/javascript-functions.js' );  
-    wp_enqueue_style( 'styles', "" . get_template_directory_uri() . '/assets/css/main-styles.css?mod=03042022V2' );
+    wp_enqueue_style( 'styles', "" . get_template_directory_uri() . '/assets/css/main-styles.css?mod=03052022' );
     wp_enqueue_style( 'print-styles', "" . get_template_directory_uri() . '/assets/css/print-styles.css?mod=11092020' );
    
     wp_register_script( 'item-hover-over-zoom-in', get_template_directory_uri() . '/assets/javascript/item-hover-over-zoom-in.js' );

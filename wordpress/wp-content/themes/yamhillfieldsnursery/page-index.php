@@ -88,6 +88,7 @@ get_header();
                 ?>      
                 <div class="col-sma-6 col-lar-4">
                     <div class="blog-post">
+                         <div class="blog__image"><a href="blog#<?php the_title(); ?>"><?php the_post_thumbnail( 'thumbnail' ); ?></a> <div class="clear-both"></div></div>
                         <h4 class="blog-post__title"><a href="blog#<?php the_title(); ?>" class="blog-post__title__link"><?php the_title(); ?></a></h4>
                         <div class="blog__categories"><?php
                             $categories = get_the_category();
@@ -110,7 +111,6 @@ get_header();
                             ?>
                         </div>
                         <div class="blog__date"><?php the_date(); ?></div>
-                        <div class="blog__image"><a href="blog#<?php the_title(); ?>"><?php the_post_thumbnail( 'medium-400_400' ); ?></a> <div class="clear-both"></div></div>
                         <div class="blog__content"><?php the_excerpt(); ?><a href="blog#<?php the_title(); ?>"><span class="blog__read-more">Read more &#10132;</span></a></div>
                         <div class="clear-both"></div>
                     </div>
