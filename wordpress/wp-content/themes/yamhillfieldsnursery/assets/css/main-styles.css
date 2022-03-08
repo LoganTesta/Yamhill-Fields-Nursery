@@ -310,6 +310,8 @@ header { min-height: 270px; }
 
 
 /*Shared styles*/
+.breadcrumbs { padding-bottom: 10px; }
+.breadcrumbs__link { font-size: 20px; font-weight: bold; }
 
 
 /*Index page*/
@@ -439,6 +441,12 @@ header { min-height: 270px; }
 
 /*500*/
 .five00-one { background: url('../images/watering-can-green.png') 50% 50%/cover no-repeat; }
+
+
+/*Single blog posts*/
+.blog-post__title { }
+.blog-post__image-container { padding-bottom: 20px; }
+.blog-post__image { height: 320px; }
 
 
 /*Customized plugin styles.*/
