@@ -23,7 +23,7 @@ get_header();
                     } else {  
                         //For the posts (blog) page.
                         ?>
-                        <div class="col-sma-12">
+                        <div class="col-sma-9">
                             <h3>Our Blog</h3>                 
                             <div class="blog-posts" id="blogPosts">
                                 <?php
@@ -34,7 +34,7 @@ get_header();
                                     ?>                                                       
                                     <div class="blog-post" id="<?php the_title(); ?>">
                                         <?php if ( has_post_thumbnail() ) { ?><div class="blog__image"><?php the_post_thumbnail( 'medium' ); ?></div><?php } ?>
-                                        <h4 class="blog-post__title"><?php the_title(); ?></h4>
+                                        <h4 class="blog-post__title"><a class="blog-post__title__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                                         <div class="blog__categories"><?php
                                             $categories = get_the_category();
                                             $h = 0;

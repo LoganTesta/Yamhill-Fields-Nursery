@@ -212,7 +212,7 @@ body { }
 h1, h2, h3, h4 { font-weight: bold; }
 h1 { }
 h2 { font-size: 22px; color: #325b53; }
-h3 { font-size: 20px; padding: 0 0 20px 0; color: #77874a; }
+h3 { font-size: 20px; padding: 0 0 10px 0; color: #77874a; }
 h4 { padding: 0 0 10px 0; color: #4f7942; }
 
 a, a:link, a:visited { color: #4f7942; transition: 0.2s; }
@@ -404,8 +404,8 @@ header { min-height: 270px; }
 
 /*Blog page*/
 .blog-posts .blog-post { padding-bottom: 40px; }
-.blog-post__title { display: block; padding-bottom: 12px; font-size: 20px; color: #4f7942; }
-.blog-post__title__link { font-size: inherit; color: inherit; }
+.blog-posts .blog-post__title { display: block; padding-bottom: 12px; }
+.blog-posts .blog-post__title__link { font-size: 20px; font-weight: bold; color: #4f7942; }
 .blog__categories { padding-bottom: 4px; text-transform: uppercase; color: #325b53; }
 .blog__date { padding-bottom: 10px; font-weight: bold; color: #707070; }
 .blog__image { float: left; height: auto; padding-right: 15px; padding-bottom: 15px; }
