@@ -56,7 +56,7 @@ get_header();
                                             ?>
                                         </div>
                                         <div class="blog__date"><?php the_date(); ?></div>
-                                        <div class="blog__content"><?php the_content(); ?></div>
+                                        <div class="blog__content"><?php the_excerpt(); ?></div>
                                         <div class="clear-both"></div>
                                     </div>
                                 <?php endforeach; ?>
