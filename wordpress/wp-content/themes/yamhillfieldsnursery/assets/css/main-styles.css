@@ -310,8 +310,6 @@ header { min-height: 270px; }
 
 
 /*Shared styles*/
-.breadcrumbs { padding-bottom: 10px; }
-.breadcrumbs__link { font-size: 20px; font-weight: bold; }
 
 
 /*Index page*/
@@ -444,9 +442,9 @@ header { min-height: 270px; }
 
 
 /*Single blog posts*/
-.blog-post__title { }
-.blog-post__image-container { padding-bottom: 20px; }
-.blog-post__image { height: 320px; }
+.single-post .content-background-container { padding-bottom: 20px; }
+.blog-page-breadcrumbs { float: right; padding-bottom: 10px; }
+.blog-page-breadcrumbs__link { font-size: 20px; font-weight: bold; }
 
 
 /*Customized plugin styles.*/
