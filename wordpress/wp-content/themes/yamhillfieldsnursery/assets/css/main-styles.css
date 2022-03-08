@@ -218,7 +218,7 @@ h4 { padding: 0 0 10px 0; color: #4f7942; }
 a, a:link, a:visited { color: #4f7942; transition: 0.2s; }
 a:hover { color: #77874a; transition: 0.2s; }
 
-input:focus, textarea:focus { box-shadow: 0px 0px 3px 3px rgba(79, 121, 66, 0.6); transition: 0.2s; }
+input:focus, textarea:focus, select:focus { box-shadow: 0px 0px 3px 3px rgba(79, 121, 66, 0.6); transition: 0.2s; }
 input::placeholder, textarea::placeholder { color: #4f7942; opacity: 0.8; }
 
 header { min-height: 270px; }
