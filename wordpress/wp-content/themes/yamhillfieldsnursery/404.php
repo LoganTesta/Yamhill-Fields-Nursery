@@ -13,7 +13,7 @@ get_header();
             </div>
             <div class="col-sma-7">
                 <div class="content-background-container">
-                    <div class="content__content-image <?php if ( esc_url( trim( the_post_thumbnail_url() ) ) === "" ) { echo "hide"; } ?>" style="background: url('<?php echo esc_url( the_post_thumbnail_url() ); ?>') 50% 50%/cover no-repeat;"></div>    
+                    <div class="content__content-image" style="background: url('<?php echo get_template_directory_uri(); ?>/assets/images/cacti-inside-sunny-greenhouse.jpg') 50% 50%/cover no-repeat;"></div>    
                 </div>
             </div>
         </div>
