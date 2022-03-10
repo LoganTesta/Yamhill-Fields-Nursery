@@ -12,9 +12,13 @@ get_header();
                 //The general page layout.
                 if ( is_home() === false ){ ?>
                     <?php while ( have_posts() ) : the_post(); //A while loop is necessary to call the_content(). ?>
-                        <div class="col-sma-12"> 
-                            <div class="content__the-content"><?php the_content(); ?></div>
-                            <div class="content__content-image <?php if ( esc_url( trim( the_post_thumbnail_url() ) ) === "" ) { echo "hide"; } ?>" style="background-image: url('<?php echo esc_url( the_post_thumbnail_url() ); ?>')"></div>    
+                        <div class="col-sma-5">
+                            <?php the_content(); ?>
+                        </div>
+                        <div class="col-sma-7">
+                            <div class="content-background-container">
+                                <div class="content__content-image <?php if ( esc_url( trim( the_post_thumbnail_url() ) ) === "" ) { echo "hide"; } ?>" style="background: url('<?php echo esc_url( the_post_thumbnail_url() ); ?>') 50% 50%/cover no-repeat;"></div>    
+                            </div>
                         </div>
                     <?php 
                     endwhile;
