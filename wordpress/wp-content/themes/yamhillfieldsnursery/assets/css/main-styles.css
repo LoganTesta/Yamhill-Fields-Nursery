@@ -304,6 +304,7 @@ header { min-height: 270px; }
 /*General use classes*/
 .content-backround-container { }
 
+.content-background-container.general-layout { padding-bottom: 20px; }
 .content__highlighted-phrase { font-size: 17px; font-weight: bold; color: #444444; }
 .content__content-image { display: block; width: 100%; min-height: 200px; margin: 0 auto; }
 .content__content-image.hide { display: none; }
@@ -609,6 +610,7 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .subtitle-container { border-width: 4px; }
     
     /*General use classes*/
+    .content-background-container.general-layout { float: right; width: 60%; padding-bottom: 0; padding-left: 30px; }
     .content__highlighted-phrase { font-size: 18px; }
 
     
