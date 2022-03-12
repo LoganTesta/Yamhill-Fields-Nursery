@@ -24,7 +24,7 @@ get_header();
                 <?php } else {  
                     //For the posts (blog) page.
                     ?>
-                    <div class="col-sma-9">
+                    <div class="col-lar-9">
                         <h3>Our Blog</h3>                 
                         <div class="blog-posts" id="blogPosts">
                             <?php
@@ -35,29 +35,31 @@ get_header();
                                 ?>                                                       
                                 <div class="blog-post" id="<?php the_title(); ?>">
                                     <?php if ( has_post_thumbnail() ) { ?><div class="blog__image" style="background: url('<?php echo esc_url( the_post_thumbnail_url( 'medium' ) ); ?>') 50% 50%/cover no-repeat"></div><?php } ?>
-                                    <h4 class="blog-post__title"><a class="blog-post__title__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                    <div class="blog__categories"><?php
-                                        $categories = get_the_category();
-                                        $h = 0;
-                                        foreach ( $categories as $category ) {
-                                            $h++;
-                                        }
-                                        $h = $h - 1;
-                                        $i = 0;
-                                        foreach ( $categories as $category ) {
-                                            $result = "";
-                                            if ( $i < $h ) {
-                                                $result .= $category->name . ", ";
-                                            } else {
-                                                $result .= $category->name;
+                                    <div class="blog__content-wrapper">
+                                        <h4 class="blog-post__title"><a class="blog-post__title__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                                        <div class="blog__categories"><?php
+                                            $categories = get_the_category();
+                                            $h = 0;
+                                            foreach ( $categories as $category ) {
+                                                $h++;
                                             }
-                                            echo $result;
-                                            $i++;
-                                        }
-                                        ?>
+                                            $h = $h - 1;
+                                            $i = 0;
+                                            foreach ( $categories as $category ) {
+                                                $result = "";
+                                                if ( $i < $h ) {
+                                                    $result .= $category->name . ", ";
+                                                } else {
+                                                    $result .= $category->name;
+                                                }
+                                                echo $result;
+                                                $i++;
+                                            }
+                                            ?>
+                                        </div>
+                                        <div class="blog__date"><?php the_date(); ?></div>
+                                        <div class="blog__content"><?php the_excerpt(); ?></div>
                                     </div>
-                                    <div class="blog__date"><?php the_date(); ?></div>
-                                    <div class="blog__content"><?php the_excerpt(); ?></div>
                                     <div class="clear-both"></div>
                                 </div>
                             <?php endforeach; ?>
