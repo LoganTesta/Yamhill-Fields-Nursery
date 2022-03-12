@@ -407,7 +407,7 @@ header { min-height: 270px; }
 /*Blog page*/
 .blog-posts .blog-post { padding-bottom: 40px; }
 .blog-posts .blog-post__title { display: block; padding-bottom: 12px; }
-.blog-posts .blog-post__title__link { font-size: 20px; font-weight: bold; color: #4f7942; }
+.blog-post__title__link { font-size: 20px; font-weight: bold; color: #4f7942; }
 .blog__categories { padding-bottom: 4px; text-transform: uppercase; color: #325b53; }
 .blog__date { padding-bottom: 10px; font-weight: bold; color: #707070; }
 .blog__image { display: block; float: left; width: 30%; height: 90px; }
