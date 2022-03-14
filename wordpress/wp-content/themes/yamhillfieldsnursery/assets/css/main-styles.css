@@ -296,7 +296,7 @@ header { min-height: 270px; }
                                font-weight: bold; color: #4f7942; text-shadow: 0.8px 1px #090909; }
 .main-title-container__title:hover { color: #4f7942; }
 
-.subtitle-container { position: relative; top: 82px; width: 100%; max-width: 270px; text-align: center;  }
+.subtitle-container { position: relative; top: 82px; width: 100%; max-width: 270px; margin-left: auto; margin-right: auto; text-align: center;  }
 .subtitle-container__subtitle { display: inline-block; padding: 6px 8px; border: 3px solid rgba(79, 121, 66, 0.9); border-radius: 10px; font-family: 'Cabin', sans-serif; 
                                background-color: rgba(252, 252, 252, 0.9); text-shadow: 0.8px 1px #f9f9f9; }
 
