@@ -77,7 +77,9 @@ global $woocommerce;
                 </div>
             </header>
             <nav class="nav mobile-nav" id="mobileNav">
-                <div id="dropdownButton"></div>
+                <div class="dropdown-button-wrapper">
+                    <div id="dropdownButton"></div>
+                </div>
                 <div id="dropdownContent">
                     <?php
                         wp_nav_menu( array( 'theme_location' => 'main-nav' ) );
