@@ -238,7 +238,8 @@ header { min-height: 270px; }
 .desktop-nav { display: none; }
 .dropdown-button-wrapper { position: absolute; top: 18px; left: 15px; width: 34px; height: 34px;
                            background-color: rgba(255, 255, 255, 0.85); box-shadow: 0 0 6px 8px rgba(255, 255, 255, 0.85); transition: 0.4s ease-in; }
-.dropdown-button-wrapper:hover { background-color: rgba(255, 255, 255, 0.7); box-shadow: 0 0 6px 8px rgba(255, 255, 255, 0.7); transition: 0.4s ease-in; }
+.dropdown-button-wrapper:hover,
+.dropdown-button-wrapper:focus { background-color: rgba(255, 255, 255, 0.7); box-shadow: 0 0 6px 8px rgba(255, 255, 255, 0.7); transition: 0.4s ease-in; }
 #dropdownButton { width: 34px; height: 34px; background: url('../images/hamburger-nav.png') 50% 0%/cover no-repeat; cursor: pointer; }
 
 #dropdownContent { padding: 0; background: none; transition: 0.8s all ease-in; }    
