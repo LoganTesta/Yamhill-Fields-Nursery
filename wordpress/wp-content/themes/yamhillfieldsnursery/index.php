@@ -24,7 +24,7 @@ get_header();
                 <?php } else {  
                     //For the posts (blog) page.
                     ?>
-                    <div class="col-lar-9">
+                    <div class="col-lar-9 blog-col-left">
                         <h3>Our Blog</h3>                 
                         <div class="blog-posts" id="blogPosts">
                             <?php
@@ -64,6 +64,12 @@ get_header();
                                 </div>
                             <?php endforeach; ?>
                         </div>               
+                    </div>
+                    <div class="col-lar-3 blog-col-right">
+                        <h3>Visit us at</h3>
+                        <p>45202 Oak Highway, Dundee, OR 97115</p>
+                        <p>Open Mon-Sat 9:00 am-9:00 pm, closed Sunday.</p>
+                        <div class="blog-col-right__bg-img"></div>
                     </div>
                     <?php
                 }

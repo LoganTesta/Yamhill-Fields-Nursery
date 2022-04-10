@@ -417,6 +417,8 @@ header { min-height: 270px; }
 .blog__read-more { display: inline-block; color: #4f7942; }
 .blog__read-more:hover { font-style: italic; }
 
+.blog-col-right__bg-img { width: 100%; max-width: 280px; height: 180px; margin-left: auto; margin-right: auto; background: url('../images/greenhouse-with-variety-of-plants.jpg') 50% 50%/cover no-repeat; }
+
 
 /*About Us page*/
 
@@ -591,6 +593,8 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     
     /*Blog page*/
     .blog__image { height: 120px; }
+    
+    .blog-col-right__bg-img { margin-left: 0; margin-right: 0; }
 }
 
 
@@ -645,6 +649,8 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     
     /*Blog page*/
     .blog__image { width: 30%; max-width: 240px; height: 160px; }
+    
+    .blog-col-right__bg-img { max-width: 500px; }
     
     
     /*Contact Us page*/
@@ -774,6 +780,8 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     
     /*Blog*/
     .blog-posts .blog-post { padding-bottom: 50px; }
+    
+    .blog-col-right__bg-img {width: auto; height: 130px; }
     
     
     /*Customized plugin styles.*/
