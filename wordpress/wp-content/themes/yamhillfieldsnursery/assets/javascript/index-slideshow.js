@@ -182,5 +182,32 @@ window.addEventListener("load", function() {
         updateSlideSettings = true;
         switchText = true;
     }
+    
+    
+    
+    // Allow touch events to interact with slideshow.
+    var initialTouchX = 0;
 
+    let slideshowImage = document.getElementsByClassName("slideshow")[0];
+    slideshowImage.addEventListener("touchstart", getTouchCoords, false);
+    slideshowImage.addEventListener("touchend", getFinalTouchCoords, false);
+
+    function getTouchCoords(event){
+        let touchX = event.touches[0].clientX;
+        let touchY = event.touches[0].clientY;
+
+        initialTouchX = touchX;  
+    }
+
+    function getFinalTouchCoords(event){
+        let finalTouchX = event.changedTouches[0].clientX;
+        let finalTouchY = event.changedTouches[0].clientY;
+
+        if (finalTouchX - initialTouchX > 120){
+            setSlide(currentSlideNumber + 1);
+        } else if (initialTouchX - finalTouchX > 120){
+            setSlide(currentSlideNumber - 1);
+        }
+    }
+    
 }, "false");
