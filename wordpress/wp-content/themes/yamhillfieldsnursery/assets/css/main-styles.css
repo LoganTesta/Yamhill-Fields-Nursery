@@ -222,8 +222,8 @@ input, textarea, select { border: 1px solid #aaaaaa; }
 input:focus, textarea:focus, select:focus { border: 1px solid #aaaaaa; box-shadow: 0px 0px 3px 3px rgba(79, 121, 66, 0.6); transition: 0.2s; }
 input::placeholder, textarea::placeholder { color: #4f7942; opacity: 0.8; }
 
-header { min-height: 270px; }
-.header__background { position: absolute; top: 0; width: 100%; min-height: 270px; }
+header { min-height: 220px; }
+.header__background { position: absolute; top: 0; width: 100%; min-height: 220px; }
 
 .nav { background-color: #356127; }
 .nav ul { font-size: 0; }
@@ -236,7 +236,7 @@ header { min-height: 270px; }
 
 .mobile-nav { display: block; }
 .desktop-nav { display: none; }
-.dropdown-button-wrapper { position: absolute; top: 18px; left: 15px; width: 34px; height: 34px; background-color: rgba(255, 255, 255, 0.85); 
+.dropdown-button-wrapper { position: absolute; top: 18px; left: 10px; width: 34px; height: 34px; background-color: rgba(255, 255, 255, 0.85); 
                           box-shadow: 0 0 6px 8px rgba(255, 255, 255, 0.85); }
 #dropdownButton { width: 34px; height: 34px; background: url('../images/hamburger-nav.png') 50% 0%/cover no-repeat; cursor: pointer; }
 
@@ -287,19 +287,19 @@ header { min-height: 270px; }
 .footer .footer__social-link:hover .footer__social-icon::before { color: rgba(113, 188, 120, 0.92); transition: 0.4s ease-in; }
 
 
-.main-title-container { position: relative; top: 74px; left: 0px; width: 242px; 
+.main-title-container { position: relative; top: 74px; left: 0px; width: 240px; 
                         margin-left: auto; margin-right: auto; border: 3px solid rgba(79, 121, 66, 0.9); text-align: center; 
                         background-color: rgba(252, 252, 252, 0.9); border-radius: 10px; transition: 0.6s; cursor: pointer; }
 .main-title-container:hover { background-color: rgba(252, 252, 252, 0.75); transition: 0.6s; }	
 .main-title-container__background { position: absolute; top: 0; left: 0; opacity: 0; width: 100%; height: 94px; border-radius: 10px; transition: 0.6s; }
 .main-title-container:hover .main-title-container__background { opacity: 1; transition: 0.6s; }
-.main-title-container__title { display: inline-block; position: relative; width: 100%; padding: 8px 10px; font-size: 32px; font-family: 'Calibri', sans-serif; 
-                               font-weight: bold; color: #4f7942; text-shadow: 0.8px 1px #090909; }
+.main-title-container__title { display: inline-block; position: relative; width: 100%; padding: 4px 6px; font-size: 24px; font-family: 'Calibri', sans-serif; 
+                               font-weight: bold; color: #4f7942; text-shadow: 0.4px 0.5px #090909; }
 .main-title-container__title:hover { color: #4f7942; }
 
 .subtitle-container { position: relative; top: 82px; width: 100%; max-width: 270px; margin-left: auto; margin-right: auto; text-align: center;  }
-.subtitle-container__subtitle { display: inline-block; padding: 6px 8px; border: 3px solid rgba(79, 121, 66, 0.9); border-radius: 10px; font-family: 'Cabin', sans-serif; 
-                               background-color: rgba(252, 252, 252, 0.9); text-shadow: 0.8px 1px #f9f9f9; }
+.subtitle-container__subtitle { display: inline-block; padding: 3px 4px; border: 3px solid rgba(79, 121, 66, 0.9); border-radius: 10px; font-family: 'Cabin', sans-serif; 
+                                font-size: 21px; background-color: rgba(252, 252, 252, 0.9); text-shadow: 0.4px 0.5px #f9f9f9; }
 
 
 /*General use classes*/
@@ -319,14 +319,14 @@ header { min-height: 270px; }
 
 
 .slideshow { position: relative; width: 100%; max-width: 670px; padding-bottom: 20px; margin-left: auto; margin-right: auto; background-color: #ffffff; }
-.slideshow__image { position: relative; height: 220px; padding-bottom: 0px; margin-left: auto; margin-right: auto; background: 50% 50%/cover no-repeat; }
+.slideshow__image { position: relative; height: 160px; padding-bottom: 0px; margin-left: auto; margin-right: auto; background: 50% 50%/cover no-repeat; }
 .slideshow__image:nth-of-type(2) { position: absolute; top: 0; left: 0; width: 100%; }
-.slideshow__slide-background { position: absolute; top: 0; left: 0; opacity: 0;  width: 100%; height: 220px;
+.slideshow__slide-background { position: absolute; top: 0; left: 0; opacity: 0;  width: 100%; height: 160px;
                                background: radial-gradient(rgba(255, 255, 255, 0.1) 40%, rgba(50, 91, 83, 0.4) 80%); transition: 0.5s ease-in; }
 .slideshow__image:hover .slideshow__slide-background { opacity: 1; transition: 0.5s ease-in; }
-.slideshow__image__link-wrapper { position: absolute; top: 165px; right: 25px; }
-.slideshow .slideshow__image__link { display: block;  text-align: right; font-size: 18px; font-weight: bold; 
-                                    background-color: rgba(53, 97, 39, 0.88); box-shadow: 0 0 2px 15px rgba(53, 97, 39, 0.88);
+.slideshow__image__link-wrapper { position: absolute; top: 118px; right: 25px; }
+.slideshow .slideshow__image__link { display: block; text-align: right; font-size: 16px; font-weight: bold; 
+                                    background-color: rgba(53, 97, 39, 0.88); box-shadow: 0 0 2px 10px rgba(53, 97, 39, 0.88);
                                     color: #ffffff; text-shadow: 0.8px 1.2px #333333; }
 .slideshow__image__link-decoration-container { position: relative; }
 .slideshow__image__link-decoration { position: absolute; width: 100%; height: 2px; background-color: rgba(255, 255, 255, 0); transition: 0.3s ease-in; }
@@ -343,8 +343,8 @@ header { min-height: 270px; }
 
 .slideshow__icon { width: 27px; height: 27px; border-radius: 5px; background-color: rgba( 255, 255, 255, 0.8); user-select: none; transition: 0.2s; }
 .slideshow__icon:hover { background-color: rgba( 255, 255, 255, 0.95); transition: 0.2s; }
-.slideshow__icon.left { position: absolute; top: 96px; left: 3%; }
-.slideshow__icon.right { position: absolute; top: 96px; right: 3%; }
+.slideshow__icon.left { position: absolute; top: 71px; left: 3%; }
+.slideshow__icon.right { position: absolute; top: 71px; right: 3%; }
 
 .slideshow__icon__link { display: block; font-size: 20px; line-height: 27px; color: rgba(50, 91, 83, 0.8); text-align: center; transition: 0.2s; }
 .slideshow__icon:hover .slideshow__icon__link { color: rgba(50, 91, 83, 0.95); transition: 0.2s; }
@@ -591,6 +591,20 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
 
 @media only screen and (min-width: 500px){
     
+    header { min-height: 240px; }
+    .header__background { min-height: 240px; }
+    
+    
+    /*Index page*/    
+    .slideshow__image { height: 220px; }
+    .slideshow__slide-background { height: 220px; }
+    
+    .slideshow__image__link-wrapper { top: 175px; }
+    
+    .slideshow__icon.left { top: 91px; }
+    .slideshow__icon.right { top: 91px; }
+    
+    
     /*Blog page*/
     .blog__image { height: 120px; }
     
@@ -610,9 +624,11 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     
     .footer__background { min-height: 470px; }
 
-    .main-title-container { border-width: 4px; }
+    .main-title-container { width: 242px; border-width: 4px; }
+    .main-title-container__title { padding: 8px 10px; font-size: 32px; text-shadow: 0.8px 1px #090909; }
     
     .subtitle-container { border-width: 4px; }
+    .subtitle-container__subtitle { padding: 6px 8px; font-size: 22px; text-shadow: 0.8px 1px #f9f9f9; }
     
     /*General use classes*/
     .content-background-container.general-layout { float: right; width: 60%; padding-bottom: 0; padding-left: 30px; }
@@ -631,7 +647,7 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .slideshow__image { height: 260px; }
     .slideshow__slide-background { height: 260px; }
     .slideshow__image__link-wrapper { top: 201px; }
-    .slideshow .slideshow__image__link { font-size: 22px; }
+    .slideshow .slideshow__image__link { font-size: 22px; box-shadow: 0 0 2px 15px rgba(53, 97, 39, 0.88); }
     .slideshow__icon { width: 33px; height: 33px; }
     .slideshow__icon.left { position: absolute; top: 114px; }
     .slideshow__icon.right { position: absolute; top: 114px; }
@@ -714,6 +730,7 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .main-title-container__title { padding: 12px 10px; font-size: 48px; line-height: 50px; }
 
     .subtitle-container { display: inline-block; top: 100px; left: 70px; width: auto; max-width: none; }
+    .subtitle-container__subtitle { font-size: 32px; }
 
 
     /*General use classes*/
