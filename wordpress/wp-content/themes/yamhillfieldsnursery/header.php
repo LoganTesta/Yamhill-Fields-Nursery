@@ -13,7 +13,7 @@ global $woocommerce;
             /* Header styles */
             .header { 
                 <?php if ( get_header_image() ) { ?> 
-                    background: url('<?php echo esc_url( header_image() ); ?>') 50% 58%/cover no-repeat; 
+                    background: url('<?php echo esc_url( header_image() ); ?>') 50% 70%/cover no-repeat; 
                 <?php } ?>  
             }
         </style>

@@ -26,8 +26,7 @@ get_header();
                     //For the posts (blog) page.
                     ?>
                     <div class="col-lar-9 blog-col-left">
-                        <h2><?php single_post_title(); ?></h2>
-                        <h3>Our Blog</h3>                 
+                        <h2><?php single_post_title(); ?></h2>               
                         <div class="blog-posts" id="blogPosts">
                             <?php
                             global $post;
