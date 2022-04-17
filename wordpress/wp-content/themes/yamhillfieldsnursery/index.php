@@ -16,6 +16,7 @@ get_header();
                             <div class="content-background-container general-layout">
                                 <div class="content__content-image <?php if ( esc_url( trim( the_post_thumbnail_url() ) ) === "" ) { echo "hide"; } ?>" style="background: url('<?php echo esc_url( the_post_thumbnail_url() ); ?>') 50% 50%/cover no-repeat;"></div>    
                             </div>
+                            <h2><?php single_post_title(); ?></h2>
                             <?php the_content(); ?>
                         </div>
                     <?php 
@@ -25,6 +26,7 @@ get_header();
                     //For the posts (blog) page.
                     ?>
                     <div class="col-lar-9 blog-col-left">
+                        <h2><?php single_post_title(); ?></h2>
                         <h3>Our Blog</h3>                 
                         <div class="blog-posts" id="blogPosts">
                             <?php

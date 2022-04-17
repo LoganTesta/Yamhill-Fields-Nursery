@@ -42,31 +42,6 @@ global $woocommerce;
                             </a>
                         </div>
                     <?php } ?>
-                    <?php if ( is_front_page() && trim( get_bloginfo( 'description' ) ) !== "" ) { ?>
-                        <div class="subtitle-container">
-                            <h2 class="subtitle-container__subtitle"><?php echo esc_html( get_bloginfo( 'description' ) ); ?></h2>
-                        </div>
-                    <?php } else { ?>
-                        <div class="subtitle-container">
-                            <h2 class="subtitle-container__subtitle">
-                                <?php 
-                                if ( !is_404() ) { 
-                                    if( !is_product_category() ) { 
-                                        if ( !is_shop() ) {
-                                             single_post_title(); 
-                                        } else { 
-                                            echo "Shop";
-                                        }
-                                    } else { 
-                                        single_cat_title(); 
-                                    }
-                                } else { 
-                                    echo "404 Error"; 
-                                } 
-                                ?>
-                            </h2>
-                        </div>
-                    <?php } ?>
                     <?php if ( $woocommerce->cart->cart_contents_count > 0 ) { ?>
                         <div class="cart-icon">
                             <a class="cart-icon__link" href="cart">

@@ -8,7 +8,7 @@ get_header();
     <div class="content page-content">
         <div class="content-row">
             <div class="form contact-form col-sma-12 col-lar-6">
-                <h3>Contact Us</h3>
+                <h2><?php single_post_title(); ?></h2>
                 <?php the_content(); ?>
             </div>
             <div class="col-sma-12 col-lar-6">

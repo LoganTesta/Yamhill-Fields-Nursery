@@ -8,7 +8,7 @@ get_header();
     <div class="content page-content">
         <div class="content-row">
             <div class="col-sma-5">
-                <h3>404 Error</h3>
+                <h2>404 Error</h2>
                 <p>Sorry, it looks like the page is not found.  Please use the navigation and continue.</p>
             </div>
             <div class="col-sma-7">

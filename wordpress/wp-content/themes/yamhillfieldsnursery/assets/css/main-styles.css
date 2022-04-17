@@ -211,8 +211,8 @@ html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, bu
 body { }
 h1, h2, h3, h4 { font-weight: bold; }
 h1 { }
-h2 { font-size: 22px; color: #325b53; }
-h3 { font-size: 20px; padding: 0 0 10px 0; color: #77874a; }
+h2 { padding: 0 0 15px 0; font-size: 22px; color: #325b53; }
+h3 { padding: 0 0 10px 0; font-size: 20px; color: #77874a; }
 h4 { padding: 0 0 10px 0; color: #4f7942; }
 
 a, a:link, a:visited { color: #4f7942; transition: 0.2s; }
@@ -296,10 +296,6 @@ header { min-height: 220px; }
 .main-title-container__title { display: inline-block; position: relative; width: 100%; padding: 4px 6px; font-size: 24px; font-family: 'Calibri', sans-serif; 
                                font-weight: bold; color: #4f7942; text-shadow: 0.4px 0.5px #090909; }
 .main-title-container__title:hover { color: #4f7942; }
-
-.subtitle-container { position: relative; top: 82px; width: 100%; max-width: 260px; margin-left: auto; margin-right: auto; text-align: center; }
-.subtitle-container__subtitle { display: inline-block; padding: 3px 4px; border: 3px solid rgba(79, 121, 66, 0.9); border-radius: 10px; font-family: 'Cabin', sans-serif; 
-                                font-size: 21px; background-color: rgba(252, 252, 252, 0.9); text-shadow: 0.4px 0.5px #f9f9f9; }
 
 
 /*General use classes*/
@@ -627,9 +623,6 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .main-title-container { width: 242px; border-width: 4px; }
     .main-title-container__title { padding: 8px 10px; font-size: 32px; text-shadow: 0.8px 1px #090909; }
     
-    .subtitle-container { max-width: 270px; border-width: 4px; }
-    .subtitle-container__subtitle { padding: 6px 8px; font-size: 22px; text-shadow: 0.8px 1px #f9f9f9; }
-    
     /*General use classes*/
     .content-background-container.general-layout { float: right; width: 60%; padding-bottom: 0; padding-left: 30px; }
     .content__highlighted-phrase { font-size: 18px; }
@@ -729,16 +722,13 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .main-title-container__background { height: 74px; }
     .main-title-container__title { padding: 12px 10px; font-size: 48px; line-height: 50px; }
 
-    .subtitle-container { display: inline-block; top: 100px; left: 70px; width: auto; max-width: none; }
-    .subtitle-container__subtitle { font-size: 32px; }
-
 
     /*General use classes*/
     .content__content-image { height: 360px; }
 
     
     /*Shared styles*/
-    .main-title-container, .subtitle-container { margin-left: 0; margin-right: 0; }
+    .main-title-container { margin-left: 0; margin-right: 0; }
     
 
     /*Products in custom WooCommerce shortcode.*/
