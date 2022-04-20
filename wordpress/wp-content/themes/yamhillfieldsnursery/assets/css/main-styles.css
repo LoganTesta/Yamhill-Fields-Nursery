@@ -211,7 +211,7 @@ html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, bu
 body { }
 h1, h2, h3, h4 { font-weight: bold; }
 h1 { }
-h2 { padding: 0 0 15px 0; font-size: 22px; color: #77874a; }
+h2 { padding: 0 0 15px 0; color: #77874a; }
 h3 { padding: 0 0 10px 0; font-size: 20px; color: #77874a; }
 h4 { padding: 0 0 10px 0; color: #4f7942; }
 
@@ -236,7 +236,7 @@ header { min-height: 220px; }
 
 .mobile-nav { display: block; }
 .desktop-nav { display: none; }
-.dropdown-button-wrapper { position: absolute; top: 24px; left: 10px; width: 30px; height: 30px; }
+.dropdown-button-wrapper { position: absolute; top: 13px; left: 10px; width: 30px; height: 30px; }
 #dropdownButton { width: 30px; height: 30px; background: url('../images/hamburger-nav.png') 50% 0%/cover no-repeat; cursor: pointer; }
 
 #dropdownContent { padding: 0; background-color: #4f7942; background-image: linear-gradient(#4f7942, #71bc78, #4f7942); transition: 0.8s all ease-in; }    
@@ -245,7 +245,7 @@ header { min-height: 220px; }
 #dropdownContent.show .menu-main-nav-container li{ height: 21px; margin-bottom: 20px; opacity: 1; transition: 0.8s all ease-in; }
 #dropdownContent.show .menu-main-nav-container li:last-of-type { margin-bottom: 0; } 
 
-.logo { position: absolute; top: 13px; left: auto; right: 10px; width: 52px; height: 52px; border: 3px solid rgba(79, 121, 66, 0.8);
+.logo { position: absolute; top: 6px; left: auto; right: 10px; width: 44px; height: 44px; border: 3px solid rgba(79, 121, 66, 0.8);
        border-radius: 12px; background-color: rgba(255, 255, 255, 0.9); }
 .logo__link { display: block; border-radius: 12px; cursor: pointer; }
 .logo__image { display: block; transition: 0.4s ease-in; }
@@ -286,12 +286,12 @@ header { min-height: 220px; }
 .footer .footer__social-link:hover .footer__social-icon::before { color: rgba(113, 188, 120, 0.92); transition: 0.4s ease-in; }
 
 
-.main-title-container { position: relative; top: 0; left: 0; width: 100%; min-height: 78px; text-align: center; background-color: rgba(252, 252, 252, 0.9); 
+.main-title-container { position: relative; top: 0; left: 0; width: 100%; padding: 5px 0; text-align: center; background-color: rgba(252, 252, 252, 0.9); 
                        transition: 0.6s; cursor: pointer; }
 .main-title-container__background { position: absolute; top: 0; left: 0; opacity: 0; width: 100%; height: 94px; border-radius: 10px; transition: 0.6s; }
 .main-title-container:hover .main-title-container__background { opacity: 1; transition: 0.6s; }
-.main-title-container__title { display: inline-block; position: relative; width: 180px; padding: 10px 6px; font-size: 24px; font-family: 'Calibri', sans-serif; 
-                               font-weight: bold; color: #4f7942; text-shadow: 0.4px 0.5px #090909; }
+.main-title-container__title { display: inline-block; position: relative; padding: 10px 6px; font-size: 21px; font-family: 'Calibri', sans-serif; 
+                               font-weight: bold; color: #4f7942; text-shadow: 0.2px 0.25px #090909; }
 .main-title-container__title:hover { color: #4f7942; }
 
 
