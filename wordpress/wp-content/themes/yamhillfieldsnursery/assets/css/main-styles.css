@@ -208,7 +208,7 @@ html, body, div, span, p, img, a, br, ul, li, ol, header, nav, footer, table, bu
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-html, body { -webkit-text-size-adjust: 100%; }
+html, body, body * { -webkit-text-size-adjust: 100%; }
 h1, h2, h3, h4 { font-weight: bold; }
 h1 { }
 h2 { padding: 0 0 15px 0; color: #77874a; }
