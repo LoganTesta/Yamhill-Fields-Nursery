@@ -204,9 +204,9 @@ window.addEventListener("load", function() {
         let finalTouchY = event.changedTouches[0].clientY;
 
         if (finalTouchX - initialTouchX > 80){
-            setSlide(currentSlideNumber + 1);
-        } else if (initialTouchX - finalTouchX > 80){
             setSlide(currentSlideNumber - 1);
+        } else if (initialTouchX - finalTouchX > 80){
+            setSlide(currentSlideNumber + 1);
         }
     }
     
