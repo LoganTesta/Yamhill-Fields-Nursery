@@ -90,7 +90,7 @@ get_header();
                 <div class="col-sma-6 col-lar-4">
                     <div class="index-blog-post">
                          <div class="index-blog__image"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thumbnail' ); ?></a> <div class="clear-both"></div></div>
-                        <h4 class="index-blog-post__title"><a href="<?php the_permalink(); ?>" class="index-blog-post__title__link"><?php the_title(); ?></a></h4>
+                        <h3 class="index-blog-post__title"><a href="<?php the_permalink(); ?>" class="index-blog-post__title__link"><?php the_title(); ?></a></h3>
                         <div class="index-blog__categories"><?php
                             $categories = get_the_category();
                             $h = 0;
