@@ -691,8 +691,8 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
 
 @media only screen and (min-width: 1200px){      
 
-    h2 { font-size: 28px; }
-    h3 { font-size: 24px; }
+    h2 { font-size: 30px; }
+    h3 { font-size: 26px; }
 
     .body-wrapper {  }
     .inner-wrapper { width: 1200px; }

@@ -37,7 +37,7 @@ get_header();
                                 <div class="blog-post" id="<?php the_title(); ?>">
                                     <?php if ( has_post_thumbnail() ) { ?><div class="blog__image" style="background: url('<?php echo esc_url( the_post_thumbnail_url( 'medium' ) ); ?>') 50% 50%/cover no-repeat"></div><?php } ?>
                                     <div class="blog__content-wrapper">
-                                        <h4 class="blog-post__title"><a class="blog-post__title__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                                        <h3 class="blog-post__title"><a class="blog-post__title__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                         <div class="blog__categories"><?php
                                             $categories = get_the_category();
                                             $h = 0;

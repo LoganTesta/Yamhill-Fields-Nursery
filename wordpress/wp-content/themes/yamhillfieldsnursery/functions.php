@@ -151,7 +151,7 @@ function yfn_woocommerce_products_products_layout( $info ) {
                     $itemContainer .= '<div class="item__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
                 $itemContainer .= '</div>';
                 $itemContainer .= '<div class="item__inspect-background"></div>';
-                $itemContainer .= '<h4 class="item__title"><a class="item__title__link" href="' . get_the_permalink( ) . '">' . get_the_title() . '</a></h4>';
+                $itemContainer .= '<h3 class="item__title"><a class="item__title__link" href="' . get_the_permalink( ) . '">' . get_the_title() . '</a></h3>';
                 $itemContainer .= '<div class="item__notes">' . get_the_excerpt() . '</div>';
                 if ( $product->get_rating_count() > 1 ) {
                     $itemContainer .= '<div class="item__rating-and-count">Rated <span class="item__rating">' . $product->get_average_rating() . '</span>' . 
