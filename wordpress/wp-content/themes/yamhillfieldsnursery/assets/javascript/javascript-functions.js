@@ -5,7 +5,7 @@ window.addEventListener("load", function() {
     dropdownButton.addEventListener("click", toggleHamburgerMenu, "false");
 
     function toggleHamburgerMenu() {
-        document.getElementById("dropdownContent").classList.toggle("show");
+        document.getElementById("mobileNav").classList.toggle("show");
     }
     
 }, "false");
