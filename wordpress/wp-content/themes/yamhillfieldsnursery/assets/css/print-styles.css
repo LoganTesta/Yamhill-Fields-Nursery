@@ -14,7 +14,8 @@
 
 .item__background-image,
 .blog__image,
-.blog-col-right__bg-img { break-inside: avoid; page-break-inside: avoid; /*Older version*/ }
+.blog-col-right__bg-img,
+.content__content-image { break-inside: avoid; page-break-inside: avoid; /*Older version*/ }
 
 
 
