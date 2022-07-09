@@ -15,9 +15,8 @@
 .item__background-image,
 .blog__image,
 .blog-col-right__bg-img,
-.content__content-image { break-inside: avoid; page-break-inside: avoid; /*Older version*/ }
-
-
+.content__content-image,
+ul.products { break-inside: avoid; page-break-inside: avoid; /*Older version*/ }
 
 @media only print and (min-width: 500px){
     
