@@ -186,7 +186,7 @@ window.addEventListener("load", function() {
     
     
     // Allow touch events to interact with slideshow.
-    var initialTouchX = 0;
+    let initialTouchX = 0;
 
     let slideshowImage = document.getElementsByClassName("slideshow")[0];
     slideshowImage.addEventListener("touchstart", getTouchCoords, false);
@@ -209,5 +209,30 @@ window.addEventListener("load", function() {
             setSlide(currentSlideNumber + 1);
         }
     }
+    
+    
+    // Allow mouse dragging events to interact with slideshow.
+    slideshowImage.addEventListener("mousedown", getMouseDownCoords, false);
+    slideshowImage.addEventListener("mouseup", getMouseUpsCoords, false);
+    let mouseDown = false;
+    
+    let initialMouseDownX = 0;
+    
+    function getMouseDownCoords(event){  
+        let mouseX = event.offsetX;
+        initialMouseDownX = mouseX;
+        slideshowImage.style.cursor = "grabbing";
+    }
+    
+    function getMouseUpsCoords(event){  
+        let mouseFinalX = event.offsetX;
+        slideshowImage.style.cursor = "grab";
+        if (mouseFinalX - initialMouseDownX > 100){
+            setSlide(currentSlideNumber - 1);
+        } else if (initialMouseDownX - mouseFinalX > 100){
+            setSlide(currentSlideNumber + 1);
+        }            
+    }
+    
     
 }, "false");
