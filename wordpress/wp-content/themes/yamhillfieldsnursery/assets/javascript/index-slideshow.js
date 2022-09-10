@@ -226,7 +226,7 @@ window.addEventListener("load", function() {
     
     function getMouseUpsCoords(event){  
         let mouseFinalX = event.offsetX;
-        slideshowImage.style.cursor = "grab";
+        slideshowImage.style.cursor = "default";
         if (mouseFinalX - initialMouseDownX > 100){
             setSlide(currentSlideNumber - 1);
         } else if (initialMouseDownX - mouseFinalX > 100){
