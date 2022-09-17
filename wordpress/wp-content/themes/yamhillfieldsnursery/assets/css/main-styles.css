@@ -703,8 +703,8 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .body-wrapper {  }
     .inner-wrapper { width: 1200px; }
 
-    header { min-height: 300px; }
-    .header__background { min-height: 300px; }
+    header { min-height: 260px; }
+    .header__background { min-height: 260px; }
 
     .mobile-nav { display: none; }
     .desktop-nav { display: block; }
@@ -760,19 +760,8 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .woocommerce-cart-total { position: absolute; top: 300px; right: 20px; }
     
     
-    /*Index page */
+    /*Index page*/
     .index-content-image { height: 400px; }
-    
-    .slideshow { position: relative; margin-left: auto; margin-right: 0px; }
-    .slideshow__image { padding-bottom: 56.25%; }
-    .slideshow__slide-background { padding-bottom: 56.25%; }
-    .slideshow__image__link-wrapper { top: 300px; right: 60px; }
-    .slideshow .slideshow__image__link { font-size: 28px; }
-    
-    .slideshow__icon { width: 36px; height: 36px; }
-    .slideshow__icon.left { position: absolute; top: 170px; left: 3%; }
-    .slideshow__icon.right { position: absolute; top: 170px; right: 3%; }
-    .slideshow__icon__link { font-size: 27px; line-height: 36px; }
    
     .index-product { padding-bottom: 0; }
     .index-product__name { padding-left: 15px; text-align: left; }
@@ -810,7 +799,19 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
 
 @media only screen and (min-width: 1600px){
 
+    header { min-height: 300px; }
+    .header__background { min-height: 300px; }
+    
+    /*Index page*/
+    .slideshow { position: relative; margin-left: auto; margin-right: 0px; }
+    .slideshow__image { padding-bottom: 56.25%; }
+    .slideshow__slide-background { padding-bottom: 56.25%; }
+    .slideshow__image__link-wrapper { top: 300px; right: 60px; }
+     .slideshow .slideshow__image__link { font-size: 28px; }
+    
+    .slideshow__icon { width: 36px; height: 36px; }
+    .slideshow__icon.left { position: absolute; top: 170px; left: 3%; }
+    .slideshow__icon.right { position: absolute; top: 170px; right: 3%; }
+    .slideshow__icon__link { font-size: 27px; line-height: 36px; }
+    
 }
-
-
-
