@@ -449,7 +449,7 @@ header { min-height: 210px; }
 
 
 /*Categories pages*/
-.category-section { padding-bottom: 50px; }
+.category-blog-post { float: left; padding-bottom: 50px; }
 
 
 /*Customized plugin styles.*/
