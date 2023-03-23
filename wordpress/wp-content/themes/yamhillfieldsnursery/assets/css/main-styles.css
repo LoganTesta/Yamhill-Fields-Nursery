@@ -448,6 +448,10 @@ header { min-height: 210px; }
 .blog-page-breadcrumbs__link { font-size: 20px; font-weight: bold; }
 
 
+/*Categories pages*/
+.category-section { padding-bottom: 50px; }
+
+
 /*Customized plugin styles.*/
 /*General Testimonials*/
 .testimonial { }
