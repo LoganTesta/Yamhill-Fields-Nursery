@@ -49,9 +49,9 @@ get_header();
                                             foreach ( $categories as $category ) {
                                                 $result = "";
                                                 if ( $i < $h ) {
-                                                    $result .= $category->name . ", ";
+                                                    $result .= "<a href='" . get_category_link( $category ) . "'>" . $category->name . "</a>, ";
                                                 } else {
-                                                    $result .= $category->name;
+                                                    $result .= "<a href='" . get_category_link( $category ) . "'>" . $category->name . "</a>";
                                                 }
                                                 echo $result;
                                                 $i++;
