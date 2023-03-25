@@ -9,7 +9,18 @@ get_header();
     <div class="content page-content">
         <div class="content-row">     
             <div class="col-lar-9 blog-col-left">
-                <h2>Category: <?php echo single_cat_title(); ?></h2>            
+                <h2>Category: <?php echo single_cat_title(); ?></h2> 
+                <div class="breadcrumbs">
+                    <div class="breadcrumbs__breadcrumb">
+                        <a class="breadcrumbs__breadcrumb__link" href="<?php echo get_site_url(); ?>/blog">Blog</a>
+                    </div>
+                    <div class="breadcrumbs__breadcrumb">
+                        <div class="breadcrumbs__breadcrumb__content">/</div>
+                    </div>
+                    <div class="breadcrumbs__breadcrumb">
+                         <div class="breadcrumbs__breadcrumb__content"><?php echo single_cat_title(); ?></div>
+                    </div>
+                </div> 
                 <div class="blog-posts" id="blogPosts">
                     <?php
                     global $post;

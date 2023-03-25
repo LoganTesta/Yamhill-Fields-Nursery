@@ -312,6 +312,11 @@ header { min-height: 210px; }
 
 
 /*Shared styles*/
+/*Breadcrumbs*/
+.breadcrumbs { padding-bottom: 30px; }
+.breadcrumbs__breadcrumb { display: inline-block; }
+.breadcrumbs__breadcrumb__link,
+.breadcrumbs__breadcrumb__content { font-size: 18px; color: #4f7942; }
 
 
 /*Index page*/
