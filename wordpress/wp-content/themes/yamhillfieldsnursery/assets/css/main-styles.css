@@ -532,7 +532,7 @@ header { min-height: 210px; }
 .woocommerce div.product p.price span { }
 
 /*WooCommerce breadcrumbs*/
-.woocommerce .woocommerce-breadcrumb { padding-bottom: 15px; margin-bottom: 0; }
+.woocommerce .woocommerce-breadcrumb { padding-bottom: 30px; margin-bottom: 0; }
 .woocommerce .woocommerce-breadcrumb, 
 .woocommerce .woocommerce-breadcrumb a { font-size: 18px; color: #4f7942; }
 
