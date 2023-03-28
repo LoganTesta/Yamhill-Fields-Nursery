@@ -5,9 +5,10 @@ get_header();
 ?>
 
 <div class="inner-wrapper">
-    <div class="content page-content">
+    <div class="content page-content blog-post-content">
         <div class="content-row">
             <div class="col-sma-12">
+                <h2 class="blog-post__title"><?php the_title(); ?></h2>
                 <div class="breadcrumbs">
                     <div class="breadcrumbs__breadcrumb">
                         <a class="breadcrumbs__breadcrumb__link" href="<?php echo get_site_url(); ?>/blog">Blog</a>
@@ -19,11 +20,6 @@ get_header();
                          <div class="breadcrumbs__breadcrumb__content"><?php the_title(); ?></div>
                     </div>
                 </div> 
-                <div class="content-background-container">
-                    <div class="content__content-image <?php if ( esc_url( trim( the_post_thumbnail_url() ) ) === "" ) { echo "hide"; } ?>" style="background: url('<?php echo esc_url( the_post_thumbnail_url() ); ?>') 50% 50%/cover no-repeat;"></div>    
-                </div>
-                <div class="blog-page-breadcrumbs"><a class="blog-page-breadcrumbs__link" href="<?php echo get_site_url(); ?>/blog">View all blog posts</a></div> 
-                <h3 class="blog-post__title"><?php the_title(); ?></h3>
                 <div class="blog__date"><?php echo get_the_date(); ?></div>
                 <div class="blog__categories"><?php
                     $categories = get_the_category();
@@ -45,7 +41,9 @@ get_header();
                     }
                     ?>
                 </div>
-         
+                <div class="content-background-container">
+                    <div class="content__content-image <?php if ( esc_url( trim( the_post_thumbnail_url() ) ) === "" ) { echo "hide"; } ?>" style="background: url('<?php echo esc_url( the_post_thumbnail_url() ); ?>') 50% 50%/cover no-repeat;"></div>    
+                </div>
                 <?php the_content(); ?>
             </div>
         </div>

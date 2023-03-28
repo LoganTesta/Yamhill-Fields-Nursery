@@ -425,6 +425,11 @@ header { min-height: 210px; }
 .blog-col-right__bg-img { width: 100%; max-width: 280px; height: 180px; margin-left: auto; margin-right: auto; background: url('../images/greenhouse-with-variety-of-plants.jpg') 50% 50%/cover no-repeat; }
 
 
+/*Blog page*/
+.blog-post-content .blog__categories { padding-bottom: 30px; }
+.blog-post-content .breadcrumbs { padding-bottom: 10px; }
+
+
 /*About Us page*/
 
 
@@ -449,8 +454,6 @@ header { min-height: 210px; }
 
 /*Single blog posts*/
 .single-post .content-background-container { padding-bottom: 20px; }
-.blog-page-breadcrumbs { float: right; padding-bottom: 10px; }
-.blog-page-breadcrumbs__link { font-size: 20px; font-weight: bold; }
 
 
 /*Categories pages*/
