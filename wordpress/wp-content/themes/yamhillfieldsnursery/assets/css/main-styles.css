@@ -459,6 +459,8 @@ header { min-height: 210px; }
 
 
 /*Categories pages*/
+.categories-list { }
+.categories-list__category { padding-bottom: 5px;}
 
 
 /*Customized plugin styles.*/
