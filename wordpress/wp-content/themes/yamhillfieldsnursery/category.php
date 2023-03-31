@@ -58,6 +58,9 @@ get_header();
                             <div class="clear-both"></div>
                         </div>
                     <?php endforeach; ?>
+                    <div class="all-categories">
+                        <a class="all-categories__link" href="<?php echo get_site_url(); ?>/all-categories">See all categories</a>
+                    </div>
                 </div>               
             </div>
             <div class="col-lar-3 blog-col-right">
