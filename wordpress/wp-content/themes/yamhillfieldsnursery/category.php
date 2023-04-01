@@ -1,6 +1,6 @@
 <?php
 
-//The default page template and layout.
+//The single category page template and layout.
 get_header(); 
 ?>
 
