@@ -26,7 +26,9 @@ get_header();
                         $allCategories = get_categories();
                         $result = "";
                         foreach($allCategories as $category){
-                            $result .= "<div class='categories-list__category'><a href='" . get_category_link( $category->term_id ) . "' >" . $category->name . "</a></div>";
+                            $result .= "<div class='categories-list__category'>"
+                                    . "<a class='categories-list__category-link' href='" . get_category_link( $category->term_id ) . "' >" . $category->name . "</a>"
+                                    . "</div>";
                         }
                         echo $result;
                     ?>
