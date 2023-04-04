@@ -204,3 +204,13 @@ function yfn_add_to_cart_fragments( $parts ){
     return $parts;
 }
 add_filter( 'woocommerce_add_to_cart_fragments', 'yfn_add_to_cart_fragments' );
+
+
+//Adjust the page title if it is a category page.
+function yfn_change_title ( $pageTitle ) {
+    if ( is_category() ) { 
+       $pageTitle = "Category: " . $pageTitle;
+    }
+    return $pageTitle;
+}
+add_filter( 'document_title', 'yfn_change_title', 10, 1 );
