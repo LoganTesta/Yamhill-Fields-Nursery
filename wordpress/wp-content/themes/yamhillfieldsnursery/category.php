@@ -24,7 +24,8 @@ get_header();
                 <div class="blog-posts" id="blogPosts">
                     <?php
                     global $post;
-                    $args = array( 'posts_per_page' => 1000 );
+                    $categoryName = "" . single_cat_title( '', false );
+                    $args = array( 'posts_per_page' => 1000, 'category_name' => $categoryName );
                     $postsToDisplay = get_posts( $args );
                     foreach ( $postsToDisplay as $post ) : setup_postdata( $post );
                         ?>                                                       
