@@ -82,6 +82,14 @@ add_action( 'wp_enqueue_scripts', function() {
 });
 
 
+function yfn_handle_archive_pages(){
+    if ( is_archive( ) && is_category() === false ) {
+        wp_safe_redirect( 'blog' );
+        exit;
+    }
+}
+add_action( 'template_redirect', 'yfn_handle_archive_pages' );
+
 
 function yfn_woocommerce_products_products_layout( $info ) {   
     
@@ -214,3 +222,4 @@ function yfn_change_title ( $pageTitle ) {
     return $pageTitle;
 }
 add_filter( 'document_title', 'yfn_change_title', 10, 1 );
+
