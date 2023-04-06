@@ -462,8 +462,8 @@ header { min-height: 210px; }
 .all-categories__link { font-size: 20px; font-weight: bold; }
 
 .categories-list { }
-.categories-list__category { padding-bottom: 10px; }
-.categories-list__category-link { font-weight: bold; }
+.categories-list__category { padding-bottom: 15px; }
+.categories-list__category-link { font-size: 20px; font-weight: bold; }
 
 
 /*Customized plugin styles.*/
