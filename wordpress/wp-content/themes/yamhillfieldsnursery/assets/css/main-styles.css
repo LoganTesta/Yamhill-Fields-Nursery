@@ -338,13 +338,13 @@ header { min-height: 210px; }
 .slideshow__image__link-wrapper:hover .slideshow__image__link-decoration { height: 2px; background-color: rgba(255, 255, 255, 1); transition: 0.3s ease-in; }
 
 .slideshow__buttons { display: flex; flex-wrap: wrap; justify-content: center; border-radius: 0 0 15px 15px; }
-.slideshow__slide-button { display: block; float: left; opacity: 0.4; width: 20px; height: 20px; margin-top: 10px; margin-left: 18px; background-color: #4f7942;
+.slideshow__slide-button { display: block; float: left; opacity: 0.45; width: 20px; height: 20px; margin-top: 10px; margin-left: 18px; background-color: #4f7942;
                 border-radius: 5px; cursor: pointer; transition: 0.2s; }
 .slideshow__slide-button:hover { opacity: 0.25; transition: 0.2s; }
 .slideshow__button-text { }
 
 .pause-play-button { opacity: 1; margin-left: 0; font-size: 0; background-color: transparent; }
-.pause-play-button:hover { opacity: 0.85; }
+.pause-play-button:hover { opacity: 0.8; }
 
 .pause-button-left,
 .pause-button-right { display: inline-block; opacity: 1; width: 5px; height: 20px; background-color: #4f7942; }
@@ -366,7 +366,7 @@ header { min-height: 210px; }
 .slideshow__icon:hover .slideshow__icon__link { color: rgba(50, 91, 83, 0.95); transition: 0.2s; }
  
 .currentSlideButton { opacity: 1; }
-.slideshow__slide-button.currentSlideButton:hover { opacity: 0.85; }
+.slideshow__slide-button.currentSlideButton:hover { opacity: 0.8; }
 
 .index-product { position: relative; padding-bottom: 25px; }
 .index-product__name { padding-bottom: 5px; text-align: center; }
