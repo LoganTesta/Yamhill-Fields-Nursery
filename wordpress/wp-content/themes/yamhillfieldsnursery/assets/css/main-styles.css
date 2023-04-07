@@ -342,8 +342,19 @@ header { min-height: 210px; }
                 border-radius: 5px; cursor: pointer; transition: 0.2s; }
 .slideshow__slide-button:hover { opacity: 0.25; transition: 0.2s; }
 .slideshow__button-text { }
-#pausePlayButton { opacity: 1; margin-left: 0; border-radius: 2px; background: url(../images/pause-button.png) 50% 50%/cover no-repeat; }
-#pausePlayButton.paused { background: url(../images/play-button.png) 50% 50%/cover no-repeat; }
+
+.pause-play-button { opacity: 1; margin-left: 0; font-size: 0; background-color: transparent; }
+.pause-play-button:hover { opacity: 0.85; }
+
+.pause-button-left,
+.pause-button-right { display: inline-block; opacity: 1; width: 5px; height: 20px; background-color: #4f7942; }
+.pause-button-left { margin-left: 2px; margin-right: 6px; }
+.pause-play-button.paused .pause-button-left,
+.pause-play-button.paused .pause-button-right { display: none; opacity: 1; border: 0; }
+
+.pause-play-button.paused .play-button { width: 0; height: 0; margin-left: 1px; border-top: 10px solid transparent; border-left: 18px solid #4f7942; border-bottom: 10px solid transparent; border-radius: 0; background-color: transparent; }
+
+
 #slideButton3 { margin-bottom: 10px; }
 
 .slideshow__icon { width: 27px; height: 27px; border-radius: 5px; background-color: rgba( 255, 255, 255, 0.8); user-select: none; transition: 0.2s; }
