@@ -429,6 +429,7 @@ header { min-height: 210px; }
 .blog__categories__link:hover { text-decoration: underline; }
 .blog__date { padding-bottom: 10px; font-weight: bold; color: #707070; }
 .blog__image { display: block; float: left; width: 30%; height: 90px; }
+.blog__image-link { display: inline-block; width: 100%; height: 100%; }
 .blog__content-wrapper { float: left; width: 70%; padding-left: 15px; }
 .blog__content { }
 .blog__content p:last-of-type { padding-bottom: 12px; }
