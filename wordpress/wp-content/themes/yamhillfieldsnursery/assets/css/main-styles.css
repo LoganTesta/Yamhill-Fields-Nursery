@@ -313,8 +313,8 @@ header { min-height: 210px; }
 
 /*Shared styles*/
 /*Breadcrumbs*/
-.breadcrumbs { padding-bottom: 30px; }
-.breadcrumbs__breadcrumb { display: inline-block; }
+.breadcrumbs { padding-bottom: 30px; font-size: 0; }
+.breadcrumbs__breadcrumb { display: inline-block; padding-right: 10px; }
 .breadcrumbs__breadcrumb__link,
 .breadcrumbs__breadcrumb__content { font-size: 18px; color: #4f7942; }
 
