@@ -555,8 +555,9 @@ header { min-height: 210px; }
 
 /*WooCommerce breadcrumbs*/
 .woocommerce .woocommerce-breadcrumb { padding-bottom: 30px; margin-bottom: 0; }
-.woocommerce .woocommerce-breadcrumb, 
-.woocommerce .woocommerce-breadcrumb a { font-size: 18px; color: #4f7942; }
+.woocommerce .woocommerce-breadcrumb a,
+.woocommerce .woocommerce-breadcrumb span { font-size: 18px; color: #4f7942; }
+.woocommerce .wc-delimiter { padding-left: 10px; padding-right: 10px; }
 
 /*Ratings*/
 .woocommerce .star-rating span { font-family: star; color: #4f7942; }
