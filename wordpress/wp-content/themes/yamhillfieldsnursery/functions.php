@@ -223,3 +223,10 @@ function yfn_change_title ( $pageTitle ) {
 }
 add_filter( 'document_title', 'yfn_change_title', 10, 1 );
 
+
+//Adjust the WooCommerce breadcrumb separator.
+add_filter( 'woocommerce_breadcrumb_defaults', 'yfn_wcc_change_breadcrumb_delimiter' );
+function yfn_wcc_change_breadcrumb_delimiter( $defaults ) {
+    $defaults['delimiter'] = '&sol;';
+    return $defaults;
+}
