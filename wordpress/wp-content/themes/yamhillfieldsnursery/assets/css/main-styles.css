@@ -412,7 +412,7 @@ header { min-height: 210px; }
 .item__notes { padding-bottom: 5px; font-weight: bold; color: #325b53; }
 .item__rating-and-count { padding-bottom: 8px; color: #4f7942; }
 .item__rating { font-weight: bold; }
-.item__reviews { padding-left: 10px; font-weight: bold; }
+.item__reviews { padding-left: 10px; }
 .item__description { padding-bottom: 5px; }
 .item__price { font-size: 18px; font-weight: bold; text-align: center; color: #325b53; }
 .item__add-to-cart { padding-left: 20px; font-size: inherit; font-weight: inherit; }
