@@ -407,12 +407,13 @@ header { min-height: 210px; }
 .item__inspect-background { display: none; }
 .item__zoom-in-container-close { display: none; }
 .item__zoom-in-container { display: none; }
-.item__title { padding-left: 25px; padding-right: 25px; text-align: center; }
+.item__title { min-height: 76px; padding-left: 25px; padding-right: 25px; text-align: center; }
 .item__title__link { font-size: 20px; font-weight: bold; color: #4f7942; }
 .item__notes { padding-bottom: 5px; font-weight: bold; color: #325b53; }
 .item__rating-and-count { padding-bottom: 8px; color: #4f7942; }
 .item__rating { font-weight: bold; }
-.item__reviews { padding-left: 10px; }
+.woocommerce.product-page-products .star-rating { float: left; }
+.item__reviews { float: left; padding-left: 10px; }
 .item__description { padding-bottom: 5px; }
 .item__price { font-size: 18px; font-weight: bold; text-align: center; color: #325b53; }
 .item__add-to-cart { padding-left: 20px; font-size: inherit; font-weight: inherit; }

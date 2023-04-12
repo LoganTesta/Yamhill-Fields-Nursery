@@ -69,8 +69,8 @@ add_action( 'wp_enqueue_scripts', function() {
  
     wp_register_script( 'javascript-functions', get_template_directory_uri() . '/assets/javascript/javascript-functions.js' );
     wp_enqueue_script( 'javascript-functions', get_template_directory_uri() . '/assets/javascript/javascript-functions.js' );  
-    wp_enqueue_style( 'styles', "" . get_template_directory_uri() . '/assets/css/main-styles.css?mod=04102023' );
-    wp_enqueue_style( 'print-styles', "" . get_template_directory_uri() . '/assets/css/print-styles.css?mod=04102023' );
+    wp_enqueue_style( 'styles', "" . get_template_directory_uri() . '/assets/css/main-styles.css?mod=04112023' );
+    wp_enqueue_style( 'print-styles', "" . get_template_directory_uri() . '/assets/css/print-styles.css?mod=04112023' );
    
     wp_register_script( 'item-hover-over-zoom-in', get_template_directory_uri() . '/assets/javascript/item-hover-over-zoom-in.js' );
     wp_enqueue_script( 'item-hover-over-zoom-in', get_template_directory_uri() . '/assets/javascript/item-hover-over-zoom-in.js' );
@@ -170,6 +170,7 @@ function yfn_woocommerce_products_products_layout( $info ) {
                         $itemContainer .= '<div class="item__reviews">' . $product->get_rating_count() . ' review';
                         if ( $product->get_rating_count() === 0 || $product->get_rating_count() > 1 ) { $itemContainer .= 's'; }
                         $itemContainer .= '</div>';
+                        $itemContainer .= '<div class="clear-both"></div>';
                     }
                     $itemContainer .= '<div class="item__price">$' . $product->get_price() . 
                             '<a class="item__add-to-cart ajax_add_to_cart add_to_cart_button" href="' . $product->add_to_cart_url() . '" value="' . esc_attr( $product->get_id() ) . '" data-product_id="' . get_the_ID() . '" data-product_sku="' . esc_attr( $product->get_sku() ) . '" aria-label="Add ' . the_title_attribute( 'echo=0' ) . ' to cart.">Add to Cart</a>';
