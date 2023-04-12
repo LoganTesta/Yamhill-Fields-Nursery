@@ -151,7 +151,7 @@ function yfn_woocommerce_products_products_layout( $info ) {
             $itemContainer .= '.</div>';
         $itemContainer .= '</form>';  
         
-        $itemContainer .= '<div class="woocommerce">';
+        $itemContainer .= '<div class="woocommerce product-page-products">';
             while( $products->have_posts() ) : $products->the_post(); global $product;  
                 $itemContainer .= '<div class="item col-sma-4">';
                     $itemContainer .= '<div class="item__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';

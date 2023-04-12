@@ -578,6 +578,7 @@ header { min-height: 210px; }
 .woocommerce .woocommerce-ordering select,
 .woocommerce-ordering select { vertical-align: initial; width: auto; padding: 10px 15px; border: 1px solid #aaaaaa; border-radius: 5px; }
 .custom-form__sort-results { padding-top: 5px; font-size: 18px; }
+.woocommerce.product-page-products .star-rating { float: left; }
 
 .added_to_cart.wc-forward { padding-left: 20px; font-size: inherit; font-weight: inherit; color: #999999; }
 
