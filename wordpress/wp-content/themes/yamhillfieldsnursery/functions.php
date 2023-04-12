@@ -150,29 +150,31 @@ function yfn_woocommerce_products_products_layout( $info ) {
             if ( $products->post_count > 1 ) { $itemContainer .= 's'; }
             $itemContainer .= '.</div>';
         $itemContainer .= '</form>';  
-            
-        while( $products->have_posts() ) : $products->the_post(); global $product;  
-            $itemContainer .= '<div class="item col-sma-4">';
-                $itemContainer .= '<div class="item__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
-                $itemContainer .= '<div class="item__zoom-in-container-close">X</div>';
-                $itemContainer .= '<div class="item__zoom-in-container">';
-                    $itemContainer .= '<div class="item__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
-                $itemContainer .= '</div>';
-                $itemContainer .= '<div class="item__inspect-background"></div>';
-                $itemContainer .= '<h3 class="item__title"><a class="item__title__link" href="' . get_the_permalink( ) . '">' . get_the_title() . '</a></h3>';
-                $itemContainer .= '<div class="item__notes">' . get_the_excerpt() . '</div>';
-                $itemContainer .= '<div class="item__description">' . get_the_content() . '</div>';
-                if ( $product->get_rating_count() > 0 ) {
-                    $itemContainer .= '<div class="item__rating-and-count"><span class="item__rating">' . $product->get_average_rating() . ' / 5</span>' . 
-                            '<span class="item__reviews">' . $product->get_rating_count() . ' review';
-                    if ( $product->get_rating_count() === 0 || $product->get_rating_count() > 1 ) { $itemContainer .= 's'; }
-                    $itemContainer .= '</span></div>';
-                }
-                $itemContainer .= '<div class="item__price">$' . $product->get_price() . 
-                        '<a class="item__add-to-cart ajax_add_to_cart add_to_cart_button" href="' . $product->add_to_cart_url() . '" value="' . esc_attr( $product->get_id() ) . '" data-product_id="' . get_the_ID() . '" data-product_sku="' . esc_attr( $product->get_sku() ) . '" aria-label="Add ' . the_title_attribute( 'echo=0' ) . ' to cart.">Add to Cart</a>';
-                $itemContainer .= '</div>';
-            $itemContainer .= '</div>';       
-        endwhile;
+        
+        $itemContainer .= '<div class="woocommerce">';
+            while( $products->have_posts() ) : $products->the_post(); global $product;  
+                $itemContainer .= '<div class="item col-sma-4">';
+                    $itemContainer .= '<div class="item__background-image" style="background: url(' . get_the_post_thumbnail_url() . ') 0% 0%/cover no-repeat"></div>';
+                    $itemContainer .= '<div class="item__zoom-in-container-close">X</div>';
+                    $itemContainer .= '<div class="item__zoom-in-container">';
+                        $itemContainer .= '<div class="item__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
+                    $itemContainer .= '</div>';
+                    $itemContainer .= '<div class="item__inspect-background"></div>';
+                    $itemContainer .= '<h3 class="item__title"><a class="item__title__link" href="' . get_the_permalink( ) . '">' . get_the_title() . '</a></h3>';
+                    $itemContainer .= '<div class="item__notes">' . get_the_excerpt() . '</div>';
+                    $itemContainer .= '<div class="item__description">' . get_the_content() . '</div>';
+                    if ( $product->get_rating_count() > 0 ) {
+                        $itemContainer .= '<div class="star-rating item__rating-and-count"><span class="item__rating">' . $product->get_average_rating() . ' / 5</span>' . 
+                                '<span class="item__reviews">' . $product->get_rating_count() . ' review';
+                        if ( $product->get_rating_count() === 0 || $product->get_rating_count() > 1 ) { $itemContainer .= 's'; }
+                        $itemContainer .= '</span></div>';
+                    }
+                    $itemContainer .= '<div class="item__price">$' . $product->get_price() . 
+                            '<a class="item__add-to-cart ajax_add_to_cart add_to_cart_button" href="' . $product->add_to_cart_url() . '" value="' . esc_attr( $product->get_id() ) . '" data-product_id="' . get_the_ID() . '" data-product_sku="' . esc_attr( $product->get_sku() ) . '" aria-label="Add ' . the_title_attribute( 'echo=0' ) . ' to cart.">Add to Cart</a>';
+                    $itemContainer .= '</div>';
+                $itemContainer .= '</div>';       
+            endwhile;
+        $itemContainer .= '</div>';     
     $itemContainer .= '</div>'; 
     return $itemContainer;
 }
