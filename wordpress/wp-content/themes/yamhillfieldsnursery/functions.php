@@ -165,7 +165,7 @@ function yfn_woocommerce_products_products_layout( $info ) {
                     $itemContainer .= '<div class="item__description">' . get_the_content() . '</div>';
                     if ( $product->get_rating_count() > 0 ) {
                         $itemContainer .= '<div class="star-rating item__rating-and-count">';
-                            $itemContainer .= '<span class="item__rating" style="width:' . ( ( $product->get_average_rating() / 5 ) * 100 ) . '%">' . $product->get_average_rating() . ' / 5</span>'; 
+                            $itemContainer .= '<span class="item__rating" style="width:' . ( ( $product->get_average_rating() / 5 ) * 100 ) . '%"></span>'; 
                         $itemContainer .= '</div>';
                         $itemContainer .= '<div class="item__reviews">' . $product->get_rating_count() . ' review';
                         if ( $product->get_rating_count() === 0 || $product->get_rating_count() > 1 ) { $itemContainer .= 's'; }
