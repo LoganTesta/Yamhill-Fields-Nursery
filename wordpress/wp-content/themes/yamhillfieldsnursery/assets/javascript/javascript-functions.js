@@ -8,4 +8,8 @@ window.addEventListener("load", function() {
         document.getElementById("mobileNav").classList.toggle("show");
     }
     
+    
+    //WooCommerce: remove required attribute on product ratings comments.
+    document.getElementById("comment").removeAttribute("required"); 
+    
 }, "false");

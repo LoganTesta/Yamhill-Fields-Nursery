@@ -547,6 +547,7 @@ header { min-height: 210px; }
 
 .products { }
 .product { }
+.comment-form-comment .required { display: none; }
 
 /*WooCommerce prices*/
 .woocommerce div.product p.price, 

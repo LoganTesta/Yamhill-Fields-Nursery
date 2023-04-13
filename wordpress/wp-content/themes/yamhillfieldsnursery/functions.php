@@ -69,8 +69,8 @@ add_action( 'wp_enqueue_scripts', function() {
  
     wp_register_script( 'javascript-functions', get_template_directory_uri() . '/assets/javascript/javascript-functions.js' );
     wp_enqueue_script( 'javascript-functions', get_template_directory_uri() . '/assets/javascript/javascript-functions.js' );  
-    wp_enqueue_style( 'styles', "" . get_template_directory_uri() . '/assets/css/main-styles.css?mod=04112023' );
-    wp_enqueue_style( 'print-styles', "" . get_template_directory_uri() . '/assets/css/print-styles.css?mod=04112023' );
+    wp_enqueue_style( 'styles', "" . get_template_directory_uri() . '/assets/css/main-styles.css?mod=04122023' );
+    wp_enqueue_style( 'print-styles', "" . get_template_directory_uri() . '/assets/css/print-styles.css?mod=04122023' );
    
     wp_register_script( 'item-hover-over-zoom-in', get_template_directory_uri() . '/assets/javascript/item-hover-over-zoom-in.js' );
     wp_enqueue_script( 'item-hover-over-zoom-in', get_template_directory_uri() . '/assets/javascript/item-hover-over-zoom-in.js' );
@@ -235,3 +235,6 @@ function yfn_wcc_change_breadcrumb_delimiter( $defaults ) {
     $defaults['delimiter'] = '&sol;';
     return $defaults;
 }
+
+//For WooCommerce products, let users leave ratings without needing to leave a comment.
+add_filter( 'allow_empty_comment', '__return_true' );
