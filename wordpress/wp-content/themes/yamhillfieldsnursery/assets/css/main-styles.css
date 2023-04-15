@@ -479,6 +479,10 @@ header { min-height: 210px; }
 .categories-list__category-link { font-size: 20px; font-weight: bold; }
 
 
+/*Archive pages*/
+.archive-title-text { display: inline-block; font-size: inherit; font-weight: inherit; font-style: italic; }
+
+
 /*Customized plugin styles.*/
 /*General Testimonials*/
 .testimonial { }
