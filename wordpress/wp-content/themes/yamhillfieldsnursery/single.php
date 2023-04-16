@@ -52,9 +52,9 @@ get_header();
                     foreach ( $tags as $tag ) {
                         $result = "";
                         if ( $i < $h ) {
-                            $result .= "<a class='blog__tag__link' href='" . get_tag_link( $tag ) . "'>#" . $tag->name . "</a>, ";
+                            $result .= "<a class='blog__tag__link' href='" . get_tag_link( $tag ) . "'>#" . str_replace( " ", "-", $tag->name ) . "</a>, ";
                         } else {
-                            $result .= "<a class='blog__tag__link' href='" . get_tag_link( $tag ) . "'>#" . $tag->name . "</a>";
+                            $result .= "<a class='blog__tag__link' href='" . get_tag_link( $tag ) . "'>#" . str_replace( " ", "-", $tag->name ) . "</a>";
                         }
                         echo $result;
                         $i++;
