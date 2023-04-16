@@ -441,8 +441,10 @@ header { min-height: 210px; }
 
 
 /*Blog page*/
-.blog-post-content .blog__categories { padding-bottom: 30px; }
 .blog-post-content .breadcrumbs { padding-bottom: 10px; }
+.blog-post-content .blog__date { font-size: 18px; }
+.blog-post-content .blog__categories { padding-bottom: 8px;  }
+.blog-post-content .blog__tags { padding-bottom: 30px; }
 
 
 /*About Us page*/

@@ -41,6 +41,26 @@ get_header();
                     }
                     ?>
                 </div>
+                <div class="blog__tags"><?php
+                    $tags = get_the_tags();
+                    $h = 0;
+                    foreach ( $tags as $tag ) {
+                        $h++;
+                    }
+                    $h = $h - 1;
+                    $i = 0;
+                    foreach ( $tags as $tag ) {
+                        $result = "";
+                        if ( $i < $h ) {
+                            $result .= "<a class='blog__tag__link' href='" . get_tag_link( $tag ) . "'>#" . $tag->name . "</a>, ";
+                        } else {
+                            $result .= "<a class='blog__tag__link' href='" . get_tag_link( $tag ) . "'>#" . $tag->name . "</a>";
+                        }
+                        echo $result;
+                        $i++;
+                    }
+                    ?>
+                </div>
                 <div class="content-background-container">
                     <div class="content__content-image <?php if ( esc_url( trim( the_post_thumbnail_url() ) ) === "" ) { echo "hide"; } ?>" style="background: url('<?php echo esc_url( the_post_thumbnail_url() ); ?>') 50% 50%/cover no-repeat;"></div>    
                 </div>
