@@ -211,10 +211,12 @@ function yfn_add_to_cart_fragments( $parts ){
 add_filter( 'woocommerce_add_to_cart_fragments', 'yfn_add_to_cart_fragments' );
 
 
-//Adjust the page title if it is a category page.
+//Adjust the page title if it is a category or product category page.
 function yfn_change_title ( $pageTitle ) {
     if ( is_category() ) { 
-       $pageTitle = "Category: " . $pageTitle;
+       $pageTitle = "Cat: " . $pageTitle;
+    } else if ( is_product_category() ) { 
+       $pageTitle = "Pr Cat: " . $pageTitle;
     }
     return $pageTitle;
 }
