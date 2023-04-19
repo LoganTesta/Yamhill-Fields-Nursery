@@ -105,10 +105,10 @@ get_header();
                             $i = 0;
                             foreach ($categories as $category) {
                                 $result = "";
-                                if ($i < $h) {
-                                    $result .= $category->name . ", ";
+                                if ( $i < $h ) {
+                                    $result .= "<a class='index-blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>, ";
                                 } else {
-                                    $result .= $category->name;
+                                    $result .= "<a class='index-blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>";
                                 }
                                 echo $result;
                                 $i++;

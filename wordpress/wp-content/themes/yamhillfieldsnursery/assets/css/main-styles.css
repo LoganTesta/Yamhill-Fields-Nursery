@@ -384,7 +384,8 @@ header { min-height: 210px; }
 .index-blog-post { padding-bottom: 60px; }
 .index-blog-post__title { display: block; padding-bottom: 12px; font-size: 20px; color: #4f7942; }
 .index-blog-post__title__link { font-size: inherit; color: inherit; }
-.index-blog__categories { padding-bottom: 4px; text-transform: uppercase; color: #325b53; }
+.index-blog__categories { padding-bottom: 4px; }
+.index-blog__categories__link { text-transform: uppercase; }
 .index-blog__date { padding-bottom: 12px; font-weight: bold; color: #707070; }
 .index-blog__image { float: right; height: auto; padding-left: 15px; padding-bottom: 15px; }
 .index-blog__image a { display: block; overflow: hidden; border-radius: 2px; transition: 0.5s ease-in; }
