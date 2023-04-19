@@ -10,6 +10,8 @@ window.addEventListener("load", function() {
     
     
     //WooCommerce: remove required attribute on product ratings comments.
-    document.getElementById("comment").removeAttribute("required"); 
+    if(document.getElementById("comment") !== null){
+        document.getElementById("comment").removeAttribute("required"); 
+    } 
     
 }, "false");
