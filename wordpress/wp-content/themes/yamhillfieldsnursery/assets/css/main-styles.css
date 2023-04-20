@@ -327,11 +327,11 @@ header { min-height: 210px; }
 .blog__categories { padding-bottom: 4px; }
 .blog__categories__link { text-transform: uppercase; }
 .blog__date { padding-bottom: 12px; font-weight: bold; color: #707070; }
-.blog__image { float: right; height: auto; margin-left: 15px; margin-bottom: 15px; }
-.blog__image a { display: block; overflow: hidden; border-radius: 2px; transition: 0.5s ease-in; }
-.blog__image img { display: block; width: 150px; height: 150px; transition: 0.8s ease-in; } 
-.blog__image a:hover { box-shadow: 0 0 6px 0px #325b53; transition: 0.5s ease-in; }
-.blog__image a:hover img { transform: scale(1.12); transition: 0.8s ease-in; }
+.blog__image-container { float: right; height: auto; margin-left: 15px; margin-bottom: 15px; }
+.blog__image-link { display: block; overflow: hidden; border-radius: 2px; transition: 0.5s ease-in; }
+.blog__image { display: block; width: 150px; height: 150px; transition: 0.8s ease-in; } 
+.blog__image-container:hover .blog__image-link { box-shadow: 0 0 6px 0px #325b53; transition: 0.5s ease-in; }
+.blog__image-container:hover .blog__image { transform: scale(1.12); transition: 0.8s ease-in; }
 .blog__content { }
 .blog__content p:last-of-type { padding-bottom: 12px; }
 .blog__read-more { display: inline-block; color: #4f7942; }
