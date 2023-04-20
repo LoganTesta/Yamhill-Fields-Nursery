@@ -9,7 +9,7 @@ get_header();
     <div class="content page-content">
         <div class="content-row">    
             <div class="col-lar-9 blog-col-left">
-                <h2 class="">Showing all posts for: <span class="archive-title-text"><?php echo strip_tags( get_the_archive_title() ); ?></span></h2>
+                <h2 class="">Showing all posts for <span class="archive-title-text"><?php echo strip_tags( get_the_archive_title() ); ?></span></h2>
                 <div class="blog-posts" id="blogPosts">
                     <?php
                     while( have_posts() ) { 
