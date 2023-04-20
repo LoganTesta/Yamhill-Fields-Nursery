@@ -213,7 +213,7 @@ body { }
 h1, h2, h3, h4 { font-weight: bold; }
 h1 { }
 h2 { padding: 0 0 15px 0; color: #77874a; }
-h3 { padding: 0 0 10px 0; font-size: 20px; color: #77874a; }
+h3 { padding: 0 0 12px 0; font-size: 20px; color: #77874a; }
 h4 { padding: 0 0 10px 0; color: #4f7942; }
 
 a, a:link, a:visited { color: #4f7942; transition: 0.2s; }
@@ -306,6 +306,7 @@ header { min-height: 210px; }
 .content-backround-container { }
 
 .content-background-container.general-layout { padding-bottom: 20px; }
+.content__subheader { text-align: center; }
 .content__highlighted-phrase { font-size: 17px; font-weight: bold; color: #444444; }
 .content__content-image { display: block; width: 100%; min-height: 200px; margin: 0 auto; }
 .content__content-image.hide { display: none; }
@@ -399,7 +400,6 @@ header { min-height: 210px; }
 
 .subfooter-container { padding-bottom: 20px; }
 .page.index .subfooter-container__background { background: url('../images/cacti-inside-sunny-greenhouse.jpg') 50% 50%/cover no-repeat; }
-.nursery-view__subheader { text-align: center; }
 
 
 /*Products in custom WooCommerce shortcode.*/

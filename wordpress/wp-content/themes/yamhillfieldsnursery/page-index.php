@@ -142,7 +142,7 @@ get_header();
         <div class="content-row">
             <div class="col-sma-12">
                 <div class="subfooter-container">
-                    <div class="nursery-view__subheader"><h3>You could be here looking at plants!</h3></div>
+                    <h3 class="content__subheader">You could be here looking at plants!</h3>
                     <div class="subfooter-container__background content__content-image"></div>
                 </div>
             </div>

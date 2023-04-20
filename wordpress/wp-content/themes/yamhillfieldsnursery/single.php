@@ -67,6 +67,49 @@ get_header();
                 <?php the_content(); ?>
             </div>
         </div>
+        <div class="content-row">
+            <h3 class="content__subheader">More to Read...</h3>
+            <?php
+            global $post;
+            $numberOfPosts = (int)( wp_count_posts()->publish );
+            $offSetNumberPosts = $numberOfPosts - 3;
+
+            $args = array( 'numberposts' => 3, 'offset' => $offSetNumberPosts, 'orderby' => 'post_date', 'order' => 'ASC' );
+            $postsToDisplay = get_posts($args);
+
+            foreach ( $postsToDisplay as $post ) : setup_postdata( $post );
+                ?>      
+                <div class="col-sma-6 col-lar-4">
+                    <div class="index-blog-post">
+                         <div class="index-blog__image"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thumbnail' ); ?></a> <div class="clear-both"></div></div>
+                        <h3 class="index-blog-post__title"><a href="<?php the_permalink(); ?>" class="index-blog-post__title__link"><?php the_title(); ?></a></h3>
+                        <div class="index-blog__categories"><?php
+                            $categories = get_the_category();
+                            $h = 0;
+                            foreach ($categories as $category) {
+                                $h++;
+                            }
+                            $h = $h - 1;
+                            $i = 0;
+                            foreach ($categories as $category) {
+                                $result = "";
+                                if ( $i < $h ) {
+                                    $result .= "<a class='index-blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>, ";
+                                } else {
+                                    $result .= "<a class='index-blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>";
+                                }
+                                echo $result;
+                                $i++;
+                            }
+                            ?>
+                        </div>
+                        <div class="index-blog__date"><?php the_date(); ?></div>
+                        <div class="index-blog__content"><?php the_excerpt(); ?><a href="blog#<?php the_title(); ?>"><span class="index-blog__read-more">More posts &#10132;</span></a></div>
+                        <div class="clear-both"></div>
+                    </div>
+                </div>
+            <?php endforeach; ?> 
+         </div>
     </div>
 </div>
                              
