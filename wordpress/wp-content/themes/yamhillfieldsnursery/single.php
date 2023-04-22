@@ -106,7 +106,7 @@ get_header();
                             ?>
                         </div>
                         <div class="blog__date"><?php the_date(); ?></div>
-                        <div class="blog__content"><?php the_excerpt(); ?><a href="blog#<?php the_title(); ?>"><span class="blog__read-more">More posts &#10132;</span></a></div>
+                        <div class="blog__content"><?php the_excerpt(); ?><a href="<?php the_permalink(); ?>"><span class="blog__read-more">Read more &#10132;</span></a></div>
                         <div class="clear-both"></div>
                     </div>
                 </div>
