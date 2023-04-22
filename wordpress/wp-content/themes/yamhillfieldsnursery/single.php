@@ -81,9 +81,13 @@ get_header();
                 ?>      
                 <div class="col-sma-6 col-lar-4">
                     <div class="blog-post">
-                        <?php if ( has_post_thumbnail() ) { ?><div class="blog__image" style="background: url('<?php echo esc_url( the_post_thumbnail_url( 'medium' ) ); ?>') 50% 50%/cover no-repeat">
-                            <a class="blog__image-link" href="<?php the_permalink(); ?>"></a>
-                        </div><?php } ?>
+                        <?php if ( has_post_thumbnail() ) { ?>
+                            <div class="blog__image-container">
+                                <a class="blog__image-link" href="<?php the_permalink(); ?>">
+                                    <div class="blog__image" style="background: url('<?php echo esc_url( the_post_thumbnail_url( 'medium' ) ); ?>') 50% 50%/cover no-repeat"></div>
+                                </a>
+                            </div>
+                        <?php } ?>
                         <h3 class="blog-post__title"><a href="<?php the_permalink(); ?>" class="blog-post__title__link"><?php the_title(); ?></a></h3>
                         <div class="blog__categories"><?php
                             $categories = get_the_category();
