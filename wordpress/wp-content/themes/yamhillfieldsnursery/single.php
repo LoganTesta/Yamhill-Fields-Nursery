@@ -24,7 +24,7 @@ get_header();
                 <?php
                 $categories = get_the_category();
                 $numberOfCategories = 0;
-                if ( !empty( $categories ) ) { ?>
+                if ( !empty ( $categories ) ) { ?>
                     <div class="blog__categories">
                         <?php foreach ( $categories as $category ) {
                             $numberOfCategories++;
