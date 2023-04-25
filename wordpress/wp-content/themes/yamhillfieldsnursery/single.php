@@ -21,46 +21,51 @@ get_header();
                     </div>
                 </div> 
                 <div class="blog__date"><?php echo get_the_date(); ?></div>
-                <div class="blog__categories"><?php
-                    $categories = get_the_category();
-                    $h = 0;
-                    foreach ( $categories as $category ) {
-                        $h++;
-                    }
-                    $h = $h - 1;
-                    $i = 0;
-                    foreach ( $categories as $category ) {
-                        $result = "";
-                        if ( $i < $h ) {
-                            $result .= "<a class='blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>, ";
-                        } else {
-                            $result .= "<a class='blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>";
+                <?php
+                $categories = get_the_category();
+                $h = 0;
+                if ( !empty( $categories ) ) { ?>
+                    <div class="blog__categories">
+                        <?php foreach ( $categories as $category ) {
+                            $h++;
                         }
-                        echo $result;
-                        $i++;
-                    }
-                    ?>
-                </div>
-                <div class="blog__tags"><?php
-                    $tags = get_the_tags();
-                    $h = 0;
-                    foreach ( $tags as $tag ) {
-                        $h++;
-                    }
-                    $h = $h - 1;
-                    $i = 0;
-                    foreach ( $tags as $tag ) {
-                        $result = "";
-                        if ( $i < $h ) {
-                            $result .= "<a class='blog__tag__link' href='" . get_tag_link( $tag ) . "'>#" . str_replace( " ", "-", $tag->name ) . "</a>, ";
-                        } else {
-                            $result .= "<a class='blog__tag__link' href='" . get_tag_link( $tag ) . "'>#" . str_replace( " ", "-", $tag->name ) . "</a>";
+                        $h = $h - 1;
+                        $i = 0;
+                        foreach ( $categories as $category ) {
+                            $result = "";
+                            if ( $i < $h ) {
+                                $result .= "<a class='blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>, ";
+                            } else {
+                                $result .= "<a class='blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>";
+                            }
+                            echo $result;
+                            $i++;
+                        } ?>
+                    </div>
+                <?php } ?>
+                
+                <?php
+                $tags = get_the_tags();
+                $h = 0;
+                if ( !empty($tags) ){ ?>
+                    <div class="blog__tags">
+                        <?php foreach ( $tags as $tag ) {
+                            $h++;
                         }
-                        echo $result;
-                        $i++;
-                    }
-                    ?>
-                </div>
+                        $h = $h - 1;
+                        $i = 0;
+                        foreach ( $tags as $tag ) {
+                            $result = "";
+                            if ( $i < $h ) {
+                                $result .= "<a class='blog__tag__link' href='" . get_tag_link( $tag ) . "'>#" . str_replace( " ", "-", $tag->name ) . "</a>, ";
+                            } else {
+                                $result .= "<a class='blog__tag__link' href='" . get_tag_link( $tag ) . "'>#" . str_replace( " ", "-", $tag->name ) . "</a>";
+                            }
+                            echo $result;
+                            $i++;
+                        } ?>
+                    </div>
+                <?php } ?>
                 <div class="content-background-container">
                     <div class="content__content-image <?php if ( esc_url( trim( the_post_thumbnail_url() ) ) === "" ) { echo "hide"; } ?>" style="background: url('<?php echo esc_url( the_post_thumbnail_url() ); ?>') 50% 50%/cover no-repeat;"></div>    
                 </div>
