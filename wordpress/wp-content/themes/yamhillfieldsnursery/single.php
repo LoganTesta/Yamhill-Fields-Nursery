@@ -42,7 +42,6 @@ get_header();
                         } ?>
                     </div>
                 <?php } ?>
-                
                 <?php
                 $tags = get_the_tags();
                 $numberOfTags = 0;

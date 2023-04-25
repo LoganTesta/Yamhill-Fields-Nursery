@@ -101,26 +101,27 @@ get_header();
                             </div>
                         <?php } ?>
                         <h3 class="blog-post__title"><a href="<?php the_permalink(); ?>" class="blog-post__title__link"><?php the_title(); ?></a></h3>
-                        <div class="blog__categories"><?php
-                            $categories = get_the_category();
-                            $h = 0;
-                            foreach ($categories as $category) {
-                                $h++;
-                            }
-                            $h = $h - 1;
-                            $i = 0;
-                            foreach ($categories as $category) {
-                                $result = "";
-                                if ( $i < $h ) {
-                                    $result .= "<a class='blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>, ";
-                                } else {
-                                    $result .= "<a class='blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>";
+                        <?php
+                        $categories = get_the_category();
+                        $numberOfCategories = 0;
+                        if ( !empty ( $categories ) ) { ?>
+                            <div class="blog__categories">
+                                <?php foreach ( $categories as $category ) {
+                                    $numberOfCategories++;
                                 }
-                                echo $result;
-                                $i++;
-                            }
-                            ?>
-                        </div>
+                                $i = 0;
+                                foreach ( $categories as $category ) {
+                                    $result = "";
+                                    if ( $i < $numberOfCategories - 1 ) {
+                                        $result .= "<a class='blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>, ";
+                                    } else {
+                                        $result .= "<a class='blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>";
+                                    }
+                                    echo $result;
+                                    $i++;
+                                } ?>
+                            </div>
+                        <?php } ?>
                         <div class="blog__date"><?php the_date(); ?></div>
                         <div class="blog__content"><?php the_excerpt(); ?><a href="blog#<?php the_title(); ?>"><span class="blog__read-more">More posts &#10132;</span></a></div>
                         <div class="clear-both"></div>
