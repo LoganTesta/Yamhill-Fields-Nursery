@@ -306,6 +306,7 @@ header { min-height: 210px; }
 .content-backround-container { }
 
 .content-background-container.general-layout { padding-bottom: 20px; }
+.content-background-container.hide { display: none; }
 .content__subheader { text-align: center; }
 .content__highlighted-phrase { font-size: 17px; font-weight: bold; color: #444444; }
 .content__content-image { display: block; width: 100%; min-height: 200px; margin: 0 auto; }
