@@ -29,7 +29,7 @@ get_header();
                     $postsToDisplay = get_posts( $args );
                     foreach ( $postsToDisplay as $post ) : setup_postdata( $post );
                         ?>                                                       
-                        <div class="blog-post" id="<?php the_title(); ?>">
+                        <div class="blog-post <?php if ( has_post_thumbnail() ) { echo "has-image"; } ?>" id="<?php the_title(); ?>">
                             <?php if ( has_post_thumbnail() ) { ?>
                                 <div class="blog__image-container">
                                     <a class="blog__image-link" href="<?php the_permalink(); ?>">
