@@ -9,16 +9,20 @@ get_header();
     <div class="content page-content">
         <div class="content-row">    
             <div class="col-lar-9 blog-col-left">
-                <h2 class="">Showing all posts for <span class="archive-title-text"><?php echo strip_tags( get_the_archive_title() ); ?></span></h2>
+                <h2 class="">Showing all posts for <span class="archive-title-text"><?php echo strip_tags( get_the_archive_title() ); ?></span></h2>                              
                 <div class="blog-posts" id="blogPosts">
-                    <?php
-                    while( have_posts() ) { 
+                    <?php 
+                    while ( have_posts() ) { 
                         the_post(); 
-                        ?>                                                       
-                        <div class="blog-post" id="<?php the_title(); ?>">
-                            <?php if ( has_post_thumbnail() ) { ?><div class="blog__image" style="background: url('<?php echo esc_url( the_post_thumbnail_url( 'medium' ) ); ?>') 50% 50%/cover no-repeat">
-                                <a class="blog__image-link" href="<?php the_permalink(); ?>"></a>
-                            </div><?php } ?>
+                        ?>                                                        
+                        <div class="blog-post <?php if ( has_post_thumbnail() ) { echo "has-image"; } ?>" id="<?php the_title(); ?>">
+                            <?php if ( has_post_thumbnail() ) { ?>
+                                <div class="blog__image-container">
+                                    <a class="blog__image-link" href="<?php the_permalink(); ?>">
+                                        <div class="blog__image" style="background: url('<?php echo esc_url( the_post_thumbnail_url( 'medium' ) ); ?>') 50% 50%/cover no-repeat"></div>
+                                    </a>
+                                </div>
+                            <?php } ?>
                             <div class="blog__content-wrapper">
                                 <h3 class="blog-post__title"><a class="blog-post__title__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                 <?php
@@ -48,7 +52,10 @@ get_header();
                             <div class="clear-both"></div>
                         </div>
                     <?php } ?>
-                </div>               
+                    <div class="all-categories">
+                        <a class="all-categories__link" href="<?php echo get_site_url(); ?>/all-categories">See all categories</a>
+                    </div>
+                </div>  
             </div>
             <div class="col-lar-3 blog-col-right">
                 <h3>Visit us at</h3>
