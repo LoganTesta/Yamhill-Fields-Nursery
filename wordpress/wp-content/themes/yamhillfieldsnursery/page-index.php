@@ -49,7 +49,7 @@ get_header();
             <div class="col-sma-5">
                 <h2>The Best Nursery in Yamhill County</h2>
                 <?php the_content(); ?>
-                <div class="content__featured-image <?php if ( esc_url( trim( the_post_thumbnail_url() ) ) === "" ) { echo "hide"; } ?>" style="background-image: url('<?php echo esc_url( the_post_thumbnail_url() ); ?>')"></div>    
+                <div class="content__content-image <?php if ( esc_url( trim( the_post_thumbnail_url() ) ) === "" ) { echo "hide"; } ?>" style="background-image: url('<?php echo esc_url( the_post_thumbnail_url() ); ?>')"></div>    
             </div>
         </div>
         <div class="content-row">

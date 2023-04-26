@@ -63,7 +63,7 @@ get_header();
                         } ?>
                     </div>
                 <?php } ?>
-                <?php if ( esc_url( the_post_thumbnail_url() ) !== "" ) { ?>
+                <?php if ( the_post_thumbnail_url() !== "" ) { ?>
                     <div class="content-background-container">
                         <div class="content__content-image <?php if ( esc_url( trim( the_post_thumbnail_url() ) ) === "" ) { echo "hide"; } ?>" style="background: url('<?php echo esc_url( the_post_thumbnail_url() ); ?>') 50% 50%/cover no-repeat;"></div>    
                     </div>
