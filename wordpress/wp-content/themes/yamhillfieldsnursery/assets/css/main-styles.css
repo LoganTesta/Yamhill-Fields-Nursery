@@ -439,7 +439,8 @@ header { min-height: 210px; }
 .blog-posts .blog__image-link { display: inline-block; width: 100%; height: 90px; }
 .blog-posts .blog__image { width: auto; height: 90px; }
 
-.blog-posts .blog__content-wrapper { float: left; width: 70%; padding-left: 15px; }
+.blog-posts .blog__content-wrapper { float: left; width: 70%; padding-left: 0; }
+.blog-posts .blog-post.has-image .blog__content-wrapper { padding-left: 15px; }
 .blog-posts .blog__content { }
 .blog-posts .blog__content p:last-of-type { padding-bottom: 12px; }
 .blog-posts .blog__read-more { display: inline-block; color: #4f7942; }
