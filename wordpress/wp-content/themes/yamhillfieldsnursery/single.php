@@ -2,6 +2,21 @@
 
 /*Description: Blog post page custom template*/
 get_header(); 
+
+$categories = get_the_category();
+$numberOfCategories = 0;
+
+foreach ( $categories as $category ) {
+    $numberOfCategories++;
+}
+
+$tags = get_the_tags();
+$numberOfTags = 0;
+
+foreach ( $tags as $tag ) {
+    $numberOfTags++;
+}
+
 ?>
 
 <div class="inner-wrapper">
@@ -22,13 +37,9 @@ get_header();
                 </div> 
                 <div class="blog__date"><?php echo get_the_date(); ?></div>
                 <?php
-                $categories = get_the_category();
-                $numberOfCategories = 0;
                 if ( !empty ( $categories ) ) { ?>
                     <div class="blog__categories">
-                        <?php foreach ( $categories as $category ) {
-                            $numberOfCategories++;
-                        }
+                        <?php 
                         $i = 0;
                         foreach ( $categories as $category ) {
                             $result = "";
@@ -43,13 +54,9 @@ get_header();
                     </div>
                 <?php } ?>
                 <?php
-                $tags = get_the_tags();
-                $numberOfTags = 0;
                 if ( !empty($tags) ){ ?>
                     <div class="blog__tags">
-                        <?php foreach ( $tags as $tag ) {
-                            $numberOfTags++;
-                        }
+                        <?php
                         $i = 0;
                         foreach ( $tags as $tag ) {
                             $result = "";
@@ -72,16 +79,19 @@ get_header();
             </div>
         </div>
         <div class="content-row single-blog-post-content">
-            <h3 class="content__subheader">More to Read...</h3>
             <?php
             global $post;
             $numberOfPosts = (int)( wp_count_posts()->publish );
             $offSetNumberPosts = $numberOfPosts - 3;
+            $randomNumberFromCategories = rand(0, $numberOfCategories - 1 );
+            $categoryIdSelected = "" . $categories[$randomNumberFromCategories]->term_id;
+            $categoryNameSelected = "" . $categories[$randomNumberFromCategories]->name;
+            $categorySlugSelected = "" . $categories[$randomNumberFromCategories]->slug;
 
-            $args = array( 'numberposts' => 3, 'offset' => $offSetNumberPosts, 'orderby' => 'post_date', 'order' => 'ASC' );
-            $postsToDisplay = get_posts($args);
-
-            foreach ( $postsToDisplay as $post ) : setup_postdata( $post );
+            $args = array( 'numberposts' => 3, 'category' => $categoryIdSelected, 'orderby' => 'post_date', 'order' => 'DESC' );
+            $postsToDisplay = get_posts($args); ?>
+            <h3 class="content__subheader">More to Read... Category: <?php echo $categoryNameSelected; ?></h3>
+            <?php foreach ( $postsToDisplay as $post ) : setup_postdata( $post );
                 ?>      
                 <div class="col-sma-6 col-lar-4">
                     <div class="blog-post">
