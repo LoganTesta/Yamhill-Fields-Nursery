@@ -6,15 +6,19 @@ get_header();
 $categories = get_the_category();
 $numberOfCategories = 0;
 
-foreach ( $categories as $category ) {
-    $numberOfCategories++;
+if ( !empty ( $categories ) ) {
+    foreach ( $categories as $category ) {
+        $numberOfCategories++;
+    }
 }
 
 $tags = get_the_tags();
 $numberOfTags = 0;
 
-foreach ( $tags as $tag ) {
-    $numberOfTags++;
+if ( !empty( $tags ) ) {
+    foreach ( $tags as $tag ) {
+        $numberOfTags++;
+    }
 }
 
 ?>
@@ -54,7 +58,7 @@ foreach ( $tags as $tag ) {
                     </div>
                 <?php } ?>
                 <?php
-                if ( !empty($tags) ){ ?>
+                if ( !empty( $tags ) ) { ?>
                     <div class="blog__tags">
                         <?php
                         $i = 0;
