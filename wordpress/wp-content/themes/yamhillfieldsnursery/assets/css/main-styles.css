@@ -843,8 +843,8 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     
     
     /*Single blog pages*/
-    .single-blog-post-content .blog__image-link { height: 250px; }
-    .single-blog-post-content .blog__image { height: 250px; }
+    .single-blog-post-content .blog__image-link { }
+    .single-blog-post-content .blog__image { }
     
     
     /*Customized plugin styles.*/

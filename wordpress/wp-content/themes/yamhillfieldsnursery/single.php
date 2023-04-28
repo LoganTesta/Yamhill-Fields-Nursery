@@ -93,7 +93,7 @@ foreach ( $tags as $tag ) {
             <h3 class="content__subheader">More to Read... Category: <?php echo $categoryNameSelected; ?></h3>
             <?php foreach ( $postsToDisplay as $post ) : setup_postdata( $post );
                 ?>      
-                <div class="col-sma-6 col-lar-4">
+                <div class="col-sma-6 col-lar-3">
                     <div class="blog-post">
                         <?php if ( has_post_thumbnail() ) { ?>
                             <div class="blog__image-container">
