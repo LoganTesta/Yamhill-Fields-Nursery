@@ -80,6 +80,7 @@ foreach ( $tags as $tag ) {
         </div>
         <div class="content-row single-blog-post-content">
             <?php
+            $currentPostId = get_the_ID();
             global $post;
             $numberOfPosts = (int)( wp_count_posts()->publish );
             $offSetNumberPosts = $numberOfPosts - 3;
@@ -88,9 +89,9 @@ foreach ( $tags as $tag ) {
             $categoryNameSelected = "" . $categories[$randomNumberFromCategories]->name;
             $categorySlugSelected = "" . $categories[$randomNumberFromCategories]->slug;
 
-            $args = array( 'numberposts' => 3, 'category' => $categoryIdSelected, 'orderby' => 'post_date', 'order' => 'DESC' );
+            $args = array( 'numberposts' => 3, 'category' => $categoryIdSelected, 'exclude' => $currentPostId, 'orderby' => 'post_date', 'order' => 'DESC' );
             $postsToDisplay = get_posts($args); ?>
-            <h3 class="content__subheader">More to Read... Category: <?php echo $categoryNameSelected; ?></h3>
+            <h3 class="content__subheader">More to read from category "<?php echo $categoryNameSelected; ?>"</h3>
             <?php foreach ( $postsToDisplay as $post ) : setup_postdata( $post );
                 ?>      
                 <div class="col-sma-6 col-lar-3">
