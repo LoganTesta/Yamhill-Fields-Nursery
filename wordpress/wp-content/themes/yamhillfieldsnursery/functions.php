@@ -225,7 +225,7 @@ add_filter( 'document_title', 'yfn_change_title', 10, 1 );
 
 //Set custom excerpt length.
 function yfn_set_excerpt_length( $length ){
-    return 25;
+    return 40;
 }
 add_filter( 'excerpt_length', 'yfn_set_excerpt_length', 999 );
 
