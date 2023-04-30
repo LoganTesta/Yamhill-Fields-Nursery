@@ -99,12 +99,7 @@ if ( !empty( $tags ) ) {
             ?>
             
             <div class="content-row">
-                <div class="col-lar-<?php echo 3 * count( $postsToDisplay ); ?> ">
-                    <h3 class="content__subheader">More in "<?php echo $categoryNameSelected; ?>"</h3>
-                </div>
-                <div class="col-lar-3">
-                <h3 class="content__subheader">Random post</h3>
-                </div>
+                <h3 class="content__subheader">More in "<?php echo $categoryNameSelected; ?>", plus a random post</h3>
             </div>
             
             <?php foreach ( $postsToDisplay as $post ) : setup_postdata( $post ); ?>      
