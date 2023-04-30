@@ -630,11 +630,17 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
 
 /* Clearing variable width columns */
 @media only screen and (min-width: 700px) {
+    /*Products in custom WooCommerce shortcode.*/
     .item:nth-of-type(3n+1){ content: ""; display: block; clear: both; }
 }
 
-@media only screen and (min-width: 1200px){   
-
+@media only screen and (min-width: 700px) and (max-width: 1199px) {
+     /*Index page*/  
+    .index-blog-posts .blog-post:nth-of-type(2n+1) { content: ""; display: block; clear: both; }
+    
+    
+    /*Single blog pages*/
+    .single-blog-post-content .blog-post:nth-of-type(2n) { content: ""; display: block; clear: both; }
 }
 
 

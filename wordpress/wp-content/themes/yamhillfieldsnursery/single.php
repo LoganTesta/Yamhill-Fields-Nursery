@@ -106,8 +106,8 @@ if ( !empty( $tags ) ) {
             <?php 
             $alreadyShownPostIds .= get_the_ID() . ", ";
             ?>              
-                <div class="col-sma-6 col-lar-3">
-                    <div class="blog-post">
+                <div class="col-sma-6 col-lar-3 blog-post">
+                    <div class="">
                         <?php if ( has_post_thumbnail() ) { ?>
                             <div class="blog__image-container">
                                 <a class="blog__image-link" href="<?php the_permalink(); ?>">
@@ -157,8 +157,8 @@ if ( !empty( $tags ) ) {
             ?>
 
             <?php foreach ( $postsToDisplayRandom as $post ) : setup_postdata( $post ); ?>      
-                <div class="col-sma-6 col-lar-3">
-                    <div class="blog-post">
+                <div class="col-sma-6 col-lar-3 blog-post">
+                    <div class="">
                         <?php if ( has_post_thumbnail() ) { ?>
                             <div class="blog__image-container">
                                 <a class="blog__image-link" href="<?php the_permalink(); ?>">

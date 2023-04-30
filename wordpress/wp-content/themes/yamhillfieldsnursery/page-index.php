@@ -91,8 +91,8 @@ get_header();
 
             foreach ( $postsToDisplay as $post ) : setup_postdata( $post );
                 ?>      
-                <div class="col-sma-6 col-lar-4">
-                    <div class="blog-post">     
+                <div class="col-sma-6 col-lar-4 blog-post">
+                    <div class="">     
                         <?php if ( has_post_thumbnail() ) { ?>
                             <div class="blog__image-container">
                                 <a class="blog__image-link" href="<?php the_permalink(); ?>">
