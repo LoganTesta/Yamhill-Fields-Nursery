@@ -88,16 +88,80 @@ if ( !empty( $tags ) ) {
             global $post;
             $numberOfPosts = (int)( wp_count_posts()->publish );
             $offSetNumberPosts = $numberOfPosts - 3;
-            $randomNumberFromCategories = rand(0, $numberOfCategories - 1 );
+            $randomNumberFromCategories = rand( 0, $numberOfCategories - 1 );
             $categoryIdSelected = "" . $categories[$randomNumberFromCategories]->term_id;
             $categoryNameSelected = "" . $categories[$randomNumberFromCategories]->name;
             $categorySlugSelected = "" . $categories[$randomNumberFromCategories]->slug;
 
             $args = array( 'numberposts' => 3, 'category' => $categoryIdSelected, 'exclude' => $currentPostId, 'orderby' => 'post_date', 'order' => 'DESC' );
-            $postsToDisplay = get_posts($args); ?>
-            <h3 class="content__subheader">More to read from category "<?php echo $categoryNameSelected; ?>"</h3>
-            <?php foreach ( $postsToDisplay as $post ) : setup_postdata( $post );
-                ?>      
+            $postsToDisplay = get_posts( $args );
+            $alreadyShownPostIds = "";
+            ?>
+            
+            <div class="content-row">
+                <div class="col-lar-<?php echo 3 * count( $postsToDisplay ); ?> ">
+                    <h3 class="content__subheader">More in "<?php echo $categoryNameSelected; ?>"</h3>
+                </div>
+                <div class="col-lar-3">
+                <h3 class="content__subheader">Random post</h3>
+                </div>
+            </div>
+            
+            <?php foreach ( $postsToDisplay as $post ) : setup_postdata( $post ); ?>      
+            <?php 
+            $alreadyShownPostIds .= get_the_ID() . ", ";
+            ?>              
+                <div class="col-sma-6 col-lar-3">
+                    <div class="blog-post">
+                        <?php if ( has_post_thumbnail() ) { ?>
+                            <div class="blog__image-container">
+                                <a class="blog__image-link" href="<?php the_permalink(); ?>">
+                                    <div class="blog__image" style="background: url('<?php echo esc_url( the_post_thumbnail_url( 'medium' ) ); ?>') 50% 50%/cover no-repeat"></div>
+                                </a>
+                            </div>
+                        <?php } ?>
+                        <h3 class="blog-post__title"><a href="<?php the_permalink(); ?>" class="blog-post__title__link"><?php the_title(); ?></a></h3>
+                        <div class="blog__categories"><?php
+                            $categories = get_the_category();
+                            $h = 0;
+                            foreach ($categories as $category) {
+                                $h++;
+                            }
+                            $h = $h - 1;
+                            $i = 0;
+                            foreach ($categories as $category) {
+                                $result = "";
+                                if ( $i < $h ) {
+                                    $result .= "<a class='blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>, ";
+                                } else {
+                                    $result .= "<a class='blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>";
+                                }
+                                echo $result;
+                                $i++;
+                            }
+                            ?>
+                        </div>
+                        <div class="blog__date"><?php the_date(); ?></div>
+                        <div class="blog__content"><?php the_excerpt(); ?><a href="<?php the_permalink(); ?>"><span class="blog__read-more">Read more &#10132;</span></a></div>
+                        <div class="clear-both"></div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+            
+            
+            <?php 
+            $alreadyShownPostIds .= $currentPostId;
+            $argsPostsNotShownYet = array( 'exclude' => $alreadyShownPostIds, 'orderby' => 'post_date', 'order' => 'DESC' );
+            $postsNotShownYet = get_posts( $argsPostsNotShownYet ); 
+        
+            $numberOfPostsNotShownYet = count( $postsNotShownYet );
+            $postToShowNumber =  rand( 0, $numberOfPostsNotShownYet - 1 );
+            $postsToShow = $postsNotShownYet[$postToShowNumber]->ID;
+            $argsPostsToDisplayRandom = array( 'numberposts' => 1, 'include' => $postsToShow, 'orderby' => 'post_date', 'order' => 'DESC' );
+            $postsToDisplayRandom = get_posts( $argsPostsToDisplayRandom );
+            ?>
+
+            <?php foreach ( $postsToDisplayRandom as $post ) : setup_postdata( $post ); ?>      
                 <div class="col-sma-6 col-lar-3">
                     <div class="blog-post">
                         <?php if ( has_post_thumbnail() ) { ?>
