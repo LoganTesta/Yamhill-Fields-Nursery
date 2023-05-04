@@ -23,6 +23,8 @@ if ( function_exists( 'yamhill_fields_nursery_setup' ) === false ) {
         add_theme_support( "custom-header" );
         add_theme_support( "title-tag" );
         add_theme_support( "automatic-feed-links" ); //Add default post and comment RSS links to head.
+        add_theme_support( "widgets" );
+        add_theme_support( "widgets-block-editor" );
       
         add_theme_support( "align-wide" ); // Add support for wide and full width aligned images in pages, etc. (Gutenberg only).
 
@@ -81,6 +83,14 @@ add_action( 'wp_enqueue_scripts', function() {
     }
 });
 
+
+function yfn_add_widget_area() { 
+    register_sidebar( array(
+        'name' => __( 'header-widgets-area' ),
+        'id' => __( 'header-widgets-area' ),
+    ) );
+}
+add_action( 'widgets-init', '' );
 
 
 function yfn_woocommerce_products_products_layout( $info ) {   
