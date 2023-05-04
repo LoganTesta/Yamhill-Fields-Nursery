@@ -339,6 +339,21 @@ header { min-height: 210px; }
 .blog__read-more:hover { font-style: italic; }
 
 
+/*Button styling*/
+.wp-block-search__button, 
+.wpcf7 .wpcf7-submit { width: 150px; padding: 10px 15px; margin-top: 0; border-radius: 15px; background-color: #4f7942; color: #f9f9f9; font-weight: bold; cursor: pointer; 
+                     transition: 0.4s ease-in; }
+.wp-block-search__button:hover, 
+.wpcf7 .wpcf7-submit:hover { background-color: #71bc78; transition: 0.4s ease-in; }
+
+
+/*Widgets*/
+/*Search widget*/
+.wp-block-search { position: absolute; width: 260px; top: 100px; right: 75px; } 
+.wp-block-search__label { font-size: 24px; font-weight: bold; color: #ffffff; }
+.wp-block-search__input { border-radius: 5px; }
+
+
 /*Index page*/
 .index-content-image { width: 100%; min-height: 220px; }
 
@@ -510,9 +525,8 @@ header { min-height: 210px; }
 .wpcf7 input, .wpcf7 textarea { width: 100%; padding: 10px 15px; border: 1px solid #aaaaaa; border-radius: 5px; }
 .wpcf7 label { display: inline-block; padding-bottom: 0; font-size: 19px; font-weight: bold; color: #4f7942; }
 .wpcf7-form-control { margin-top: 10px; }
-.wpcf7 .wpcf7-submit { width: 150px; padding: 10px 15px; margin-top: 0; border-radius: 15px; background-color: #4f7942; color: #f9f9f9; font-weight: bold; cursor: pointer; 
-                     transition: 0.4s ease-in; }
-.wpcf7 .wpcf7-submit:hover { background-color: #71bc78; transition: 0.4s ease-in; }
+.wpcf7 .wpcf7-submit { width: 150px; }
+.wpcf7 .wpcf7-submit:hover {}
 
 .wpcf7-response-output { font-size: 18px; font-weight: bold; }
 .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output { margin-left: 0; border-color: #4f7942; }
@@ -692,6 +706,11 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .content__highlighted-phrase { font-size: 18px; }
 
     
+    /*Widgets*/
+    /*Search widget*/
+    .wp-block-search { position: absolute; top: 225px; right: 90px; }
+
+    
     /*Products in custom WooCommerce shortcode.*/
     .item:last-of-type { padding-bottom: 0; }
     
@@ -793,6 +812,11 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     /*General use classes*/
     .content__content-image { height: 360px; }
 
+    
+    /*Widgets*/
+    /*Search widget*/
+    .wp-block-search { position: absolute; top: 205px; right: 100px; }
+    
     
     /*Shared styles*/
     .main-title-container { margin-left: 0; margin-right: 0; }
