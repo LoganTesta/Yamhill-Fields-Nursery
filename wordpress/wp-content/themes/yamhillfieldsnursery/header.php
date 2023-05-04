@@ -49,6 +49,11 @@ global $woocommerce;
                             </a>
                         </div>
                     <?php } ?>
+                    <?php if ( is_active_sidebar( 'header-widgets-area' ) ) { ?>
+                        <div class="header-widgets-area">
+                            <?php dynamic_sidebar( 'header-widgets-area' ); ?>
+                        </div>
+                    <?php } ?>
                 </div>
             </header>
             <nav class="nav mobile-nav" id="mobileNav">
@@ -71,4 +76,5 @@ global $woocommerce;
                         wp_nav_menu( array( 'theme_location' => 'main-nav' ) );
                     ?>
                 </div>
-            </nav>            
+            </nav>  
+                   

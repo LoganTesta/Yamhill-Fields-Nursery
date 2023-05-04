@@ -84,13 +84,13 @@ add_action( 'wp_enqueue_scripts', function() {
 });
 
 
-function yfn_add_widget_area() { 
+function arphabet_widgets_init() { 
     register_sidebar( array(
         'name' => __( 'header-widgets-area' ),
-        'id' => __( 'header-widgets-area' ),
+        'id'   => __( 'header-widgets-area' ),
     ) );
 }
-add_action( 'widgets-init', '' );
+add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 
 function yfn_woocommerce_products_products_layout( $info ) {   
