@@ -349,9 +349,10 @@ header { min-height: 210px; }
 
 /*Widgets*/
 /*Search widget*/
-.wp-block-search { position: absolute; width: 260px; top: 100px; right: 75px; } 
-.wp-block-search__label { font-size: 24px; font-weight: bold; color: #ffffff; }
-.wp-block-search__input { border-radius: 5px; }
+.wp-block-search { position: absolute; width: 260px; top: 125px; right: 10px; } 
+.wp-block-search__label { display: block; padding-bottom: 2px; font-size: 24px; font-weight: bold; color: #ffffff; }
+.wp-block-search__input { border-radius: 15px; }
+.wp-block-search__button { }
 
 
 /*Index page*/
