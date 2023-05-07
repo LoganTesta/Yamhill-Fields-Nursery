@@ -8,8 +8,9 @@ get_header();
 <div class="inner-wrapper">
     <div class="content page-content">
         <div class="content-row">    
-            <div class="col-lar-9 blog-col-left">
-                <h2 class="">Showing all posts for <span class="archive-title-text"><?php echo strip_tags( get_the_archive_title() ); ?></span></h2>                              
+            <div class="col-sma-12 search-results">
+                <h2 class="">Showing <?php echo $wp_query->found_posts; ?> result<?php if ( $wp_query->found_posts > 1 ) { echo "s"; } ?> for 
+                    <span class="search-query-text">&ldquo;<?php the_search_query(); ?>&rdquo;</span></h2>                              
                 <div class="blog-posts" id="blogPosts">
                     <?php 
                     while ( have_posts() ) { 
@@ -52,16 +53,7 @@ get_header();
                             <div class="clear-both"></div>
                         </div>
                     <?php } ?>
-                    <div class="all-categories">
-                        <a class="all-categories__link" href="<?php echo get_site_url(); ?>/all-categories">See all categories</a>
-                    </div>
                 </div>  
-            </div>
-            <div class="col-lar-3 blog-col-right">
-                <h3>Visit us at</h3>
-                <p>45202 Oak Highway, Dundee, OR 97115</p>
-                <p>Open Mon-Sat 9:00 am-9:00 pm, closed Sunday.</p>
-                <div class="blog-col-right__bg-img"></div>
             </div>
         </div>
     </div>
