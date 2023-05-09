@@ -15,6 +15,17 @@ get_header();
                     <?php 
                     while ( have_posts() ) { 
                         the_post(); 
+                        
+                        $titlePrefix = "";
+                        if ( get_post_type() === "post" ) {
+                            $titlePrefix = "(Post) ";
+                        } else if ( get_post_type() === "page" ) {
+                            $titlePrefix = "(Page) ";
+                        } else if ( get_post_type() === "product" ) {
+                            $titlePrefix = "(Product) ";
+                        } else if ( get_post_type() === "general-testimonials" ) {
+                            $titlePrefix = "(Testimonial) ";
+                        }
                         ?>                                                        
                         <div class="blog-post <?php if ( has_post_thumbnail() ) { echo "has-image"; } ?>" id="<?php the_title(); ?>">
                             <?php if ( has_post_thumbnail() ) { ?>
@@ -25,7 +36,7 @@ get_header();
                                 </div>
                             <?php } ?>
                             <div class="blog__content-wrapper">
-                                <h3 class="blog-post__title"><a class="blog-post__title__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                <h3 class="blog-post__title"><a class="blog-post__title__link" href="<?php the_permalink(); ?>"><?php echo $titlePrefix; ?><?php the_title(); ?></a></h3>
                                 <?php
                                 $categories = get_the_category();
                                 $numberOfCategories = 0;
