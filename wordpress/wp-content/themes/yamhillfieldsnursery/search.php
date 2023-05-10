@@ -18,13 +18,13 @@ get_header();
                         
                         $titlePrefix = "";
                         if ( get_post_type() === "post" ) {
-                            $titlePrefix = "(Post) ";
+                            $titlePrefix = "<span class='blog-post__title__prefix'>(Post)</span> ";
                         } else if ( get_post_type() === "page" ) {
-                            $titlePrefix = "(Page) ";
+                            $titlePrefix = "<span class='blog-post__title__prefix'>(Page)</span> ";
                         } else if ( get_post_type() === "product" ) {
-                            $titlePrefix = "(Product) ";
+                            $titlePrefix = "<span class='blog-post__title__prefix'>(Product)</span> ";
                         } else if ( get_post_type() === "general-testimonials" ) {
-                            $titlePrefix = "(Testimonial) ";
+                            $titlePrefix = "<span class='blog-post__title__prefix'>(Testimonial)</span> ";
                         }
                         ?>                                                        
                         <div class="blog-post <?php if ( has_post_thumbnail() ) { echo "has-image"; } ?>" id="<?php the_title(); ?>">
