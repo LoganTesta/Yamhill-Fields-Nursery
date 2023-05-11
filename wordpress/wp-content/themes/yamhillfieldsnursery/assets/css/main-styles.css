@@ -312,6 +312,8 @@ header { min-height: 210px; }
 .content__content-image { display: block; width: 100%; min-height: 200px; margin: 0 auto; }
 .content__content-image.hide { display: none; }
 
+.input-container { display: inline-block; }
+
 
 /*Shared styles*/
 /*Breadcrumbs*/
@@ -341,19 +343,21 @@ header { min-height: 210px; }
 
 
 /*Button styling*/
-.wp-block-search__button, 
+.search-form__button, 
 .wpcf7 .wpcf7-submit { padding: 10px 15px; margin-top: 0; border-radius: 15px; background-color: #4f7942; color: #f9f9f9; font-weight: bold; cursor: pointer; 
                      transition: 0.4s ease-in; }
-.wp-block-search__button:hover, 
+.search-form__button:hover, 
 .wpcf7 .wpcf7-submit:hover { background-color: #71bc78; transition: 0.4s ease-in; }
 
 
+/*Search form*/
+.search-form { position: absolute; top: 125px; right: 10px; width: 260px; }
+.search-form__label { display: block; padding-bottom: 2px; font-size: 24px; font-weight: bold; color: #ffffff; }
+.search-form__input { padding: 8px; border-radius: 15px; }
+.search-form__button { margin-left: 10px; }
+
+
 /*Widgets*/
-/*Search widget*/
-.wp-block-search { position: absolute; width: 260px; top: 125px; right: 10px; } 
-.wp-block-search__label { display: block; padding-bottom: 2px; font-size: 24px; font-weight: bold; color: #ffffff; }
-.wp-block-search__input { border-radius: 15px; }
-.wp-block-search__button { }
 
 
 /*Index page*/
@@ -712,9 +716,11 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .content__highlighted-phrase { font-size: 18px; }
 
     
-    /*Widgets*/
-    /*Search widget*/
-    .wp-block-search { position: absolute; top: 225px; right: 90px; }
+    /*Search form*/
+    .search-form { position: absolute; top: 256px; right: 90px; }
+    
+    
+    /*Widgets*/    
 
     
     /*Products in custom WooCommerce shortcode.*/
@@ -819,10 +825,12 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .content__content-image { height: 360px; }
 
     
-    /*Widgets*/
-    /*Search widget*/
-    .wp-block-search { position: absolute; top: 205px; right: 100px; }
+    /*Search form*/
+    .search-form { position: absolute; top: 235px; right: 100px; }
     
+    
+    /*Widgets*/
+        
     
     /*Shared styles*/
     .main-title-container { margin-left: 0; margin-right: 0; }

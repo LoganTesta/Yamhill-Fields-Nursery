@@ -54,6 +54,7 @@ global $woocommerce;
                             <?php dynamic_sidebar( 'header-widgets-area' ); ?>
                         </div>
                     <?php } ?>
+                    <?php get_search_form(); ?>
                 </div>
             </header>
             <nav class="nav mobile-nav" id="mobileNav">
