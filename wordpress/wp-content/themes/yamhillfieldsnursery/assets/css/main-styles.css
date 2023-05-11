@@ -351,10 +351,10 @@ header { min-height: 210px; }
 
 
 /*Search form*/
-.search-form { position: absolute; top: 125px; right: 10px; width: 260px; }
-.search-form__label { display: block; padding-bottom: 2px; font-size: 24px; font-weight: bold; color: #ffffff; }
-.search-form__input { padding: 8px; border-radius: 15px; }
-.search-form__button { margin-left: 10px; }
+.search-form { position: absolute; top: 125px; right: 50px; width: 260px; }
+.search-form .search-form__label { display: block; padding-bottom: 2px; font-size: 24px; font-weight: bold; color: #ffffff; }
+.search-form .search-form__input { padding: 8px; border-radius: 15px; }
+.search-form .search-form__button { margin-left: 10px; margin-top: 10px; }
 
 
 /*Widgets*/
@@ -717,7 +717,8 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
 
     
     /*Search form*/
-    .search-form { position: absolute; top: 256px; right: 90px; }
+    .search-form { position: absolute; top: 256px; right: 90px; width: auto; }
+    .search-form .search-form__button { margin-top: 0; }
     
     
     /*Widgets*/    
@@ -826,7 +827,7 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
 
     
     /*Search form*/
-    .search-form { position: absolute; top: 235px; right: 100px; }
+    .search-form { position: absolute; top: 180px; right: 100px; }
     
     
     /*Widgets*/
@@ -901,7 +902,7 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .star-rating__average-and-number { padding-bottom: 0; margin-top: -26px; margin-left: 105px; }
     
     /*Shopping Cart Icon*/
-    .cart-icon { right: 20px; top: 240px; }
+    .cart-icon { right: 20px; top: 185px; }
 
 }
 
@@ -925,5 +926,15 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .slideshow__icon.left { position: absolute; top: 170px; left: 3%; }
     .slideshow__icon.right { position: absolute; top: 170px; right: 3%; }
     .slideshow__icon__link { font-size: 27px; line-height: 36px; }
+    
+    
+    /*Search form*/
+    .search-form { position: absolute; top: 235px; right: 100px; }
+    
+    
+    /*Customized plugin styles.*/
+    
+    /*Shopping Cart Icon*/
+    .cart-icon { right: 20px; top: 240px; }
     
 }
