@@ -353,10 +353,10 @@ header { min-height: 210px; }
 /*Search form*/
 #searchForm .search-controls { display: none; }
 #searchForm.show .search-controls { display: inline-block; }
-.search-form { position: absolute; top: 125px; right: 50px; width: 260px; }
+.search-form { position: absolute; top: 125px; right: 20px; }
 .search-form .search-form__label { display: block; padding-bottom: 2px; font-size: 24px; font-weight: bold; color: #ffffff; }
-.search-form .search-form__input { padding: 8px; border-radius: 15px; }
-.search-form .search-form__button { margin-left: 10px; margin-top: 10px; }
+.search-form .search-form__input { width: 160px; padding: 8px; border-radius: 15px; }
+.search-form .search-form__button { margin-left: 10px; }
 .search-form__search-icon { position: relative; top: 8px; width: 20px; height: 30px; margin-left: 15px;
                                       background: url('../images/search-icon.png') 50% 50%/cover no-repeat; cursor: pointer; }
 
@@ -722,7 +722,8 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     
     /*Search form*/
     .search-form { position: absolute; top: 256px; right: 90px; width: auto; }
-    .search-form .search-form__button { margin-top: 0; }
+    .search-form .search-form__input { width: auto; }
+    .search-form .search-form__button { }
     
     
     /*Widgets*/    
