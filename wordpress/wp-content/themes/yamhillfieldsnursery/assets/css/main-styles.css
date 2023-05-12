@@ -353,7 +353,7 @@ header { min-height: 210px; }
 /*Search form*/
 #searchForm .search-controls { display: none; }
 #searchForm.show .search-controls { display: inline-block; }
-.search-form { position: absolute; top: 125px; right: 20px; }
+.search-form { position: absolute; top: 155px; right: 15px; }
 .search-form .search-form__label { display: block; padding-bottom: 2px; font-size: 24px; font-weight: bold; color: #ffffff; }
 .search-form .search-form__input { width: 160px; padding: 8px; border-radius: 15px; }
 .search-form .search-form__button { margin-left: 10px; }
@@ -652,7 +652,7 @@ header { min-height: 210px; }
 /*WooCommerce Account page*/
 
 /*Shopping Cart Icon*/
-.cart-icon { position: absolute; right: 10px; top: 135px; background-color: rgba(255, 255, 255, 0.7); }
+.cart-icon { position: absolute; right: 10px; top: 110px; background-color: rgba(255, 255, 255, 0.7); }
 a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px; border: 2px solid #ffffff; border-radius: 4px; font-size: 20px; font-weight: bold; color: #333333; }
 
 
