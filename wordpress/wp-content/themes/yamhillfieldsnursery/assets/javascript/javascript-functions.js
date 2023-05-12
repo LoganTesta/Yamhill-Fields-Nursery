@@ -14,4 +14,14 @@ window.addEventListener("load", function() {
         document.getElementById("comment").removeAttribute("required"); 
     } 
     
+    
+    /*Toggle show/hide for search bar. */
+    let searchIcon = document.getElementById("searchFormSearchIcon");
+    searchIcon.addEventListener("click", toggleSearchForm, false);
+    
+    function toggleSearchForm() {
+        document.getElementById("searchForm").classList.toggle("show");
+    }
+    
+    
 }, "false");

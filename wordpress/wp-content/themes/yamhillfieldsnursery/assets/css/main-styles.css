@@ -351,6 +351,8 @@ header { min-height: 210px; }
 
 
 /*Search form*/
+#searchForm .search-controls { display: none; }
+#searchForm.show .search-controls { display: inline-block; }
 .search-form { position: absolute; top: 125px; right: 50px; width: 260px; }
 .search-form .search-form__label { display: block; padding-bottom: 2px; font-size: 24px; font-weight: bold; color: #ffffff; }
 .search-form .search-form__input { padding: 8px; border-radius: 15px; }
