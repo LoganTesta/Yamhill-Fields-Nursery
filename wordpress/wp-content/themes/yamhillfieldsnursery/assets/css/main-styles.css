@@ -355,6 +355,8 @@ header { min-height: 210px; }
 .search-form .search-form__label { display: block; padding-bottom: 2px; font-size: 24px; font-weight: bold; color: #ffffff; }
 .search-form .search-form__input { padding: 8px; border-radius: 15px; }
 .search-form .search-form__button { margin-left: 10px; margin-top: 10px; }
+.search-form__search-icon { position: relative; top: 8px; width: 20px; height: 30px; margin-left: 15px;
+                                      background: url('../images/search-icon.png') 50% 50%/cover no-repeat; cursor: pointer; }
 
 
 /*Widgets*/

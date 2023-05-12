@@ -10,4 +10,7 @@
     <div class="input-container">
         <button type="submit" class="search-form__button">Search</button>
     </div>
+    <div class="input-container">
+        <div class="search-form__search-icon"></div>
+    </div>
 </form>
