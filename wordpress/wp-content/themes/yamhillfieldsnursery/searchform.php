@@ -11,6 +11,9 @@
         <button type="submit" class="search-form__button">Search</button>
     </div>
     <div class="input-container">
-        <div class="search-form__search-icon" id="searchFormSearchIcon"></div>
+        <div class="search-form__search" id="searchFormSearch">
+            <div class="search-form__search-icon" id="searchFormSearchIcon"></div>
+            <div class="search-form__close-search-icon" id="searchFormCloseSearchIcon"></div>
+        </div>
     </div>
 </form>

@@ -16,8 +16,8 @@ window.addEventListener("load", function() {
     
     
     /*Toggle show/hide for search bar. */
-    let searchIcon = document.getElementById("searchFormSearchIcon");
-    searchIcon.addEventListener("click", toggleSearchForm, false);
+    let searchFormSearch = document.getElementById("searchFormSearch");
+    searchFormSearch.addEventListener("click", toggleSearchForm, false);
     
     function toggleSearchForm() {
         document.getElementById("searchForm").classList.toggle("show");
