@@ -559,7 +559,8 @@ header { min-height: 210px; }
 .woocommerce input, 
 .woocommerce textarea, 
 .woocommerce select { width: 100%; padding: 10px 15px; border: 1px solid #aaaaaa; border-radius: 5px; }
-.woocommerce label { display: inline-block; padding-bottom: 0; font-size: 19px; font-weight: bold; color: #4f7942; }
+.woocommerce input[type="checkbox"] { width: auto; }
+.woocommerce label { padding-bottom: 0; font-size: 19px; font-weight: bold; color: #4f7942; }
 
 .woocommerce #respond input#submit, 
 .woocommerce a.button, 
