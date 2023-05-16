@@ -99,7 +99,7 @@ if ( !empty( $tags ) ) {
             ?>
             
             <div class="content-row">
-                <h3 class="content__subheader">More in "<?php echo $categoryNameSelected; ?>", plus a random post</h3>
+                <h3 class="content__subheader">More in "<?php echo $categoryNameSelected; ?>", and a random post</h3>
             </div>
             
             <?php foreach ( $postsToDisplay as $post ) : setup_postdata( $post ); ?>      
