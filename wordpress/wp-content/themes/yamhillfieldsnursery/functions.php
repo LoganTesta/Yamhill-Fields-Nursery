@@ -36,7 +36,7 @@ if ( function_exists( 'yamhill_fields_nursery_setup' ) === false ) {
         add_theme_support( 'editor-styles' ); //Enable theme support for styling posts.
         add_editor_style( 'assets/css/editor-styles.css' );
               
-        if ( ! isset( $content_width ) ){
+        if ( !isset( $content_width ) ){
             $content_width = 1920;            
         };
     }
@@ -174,7 +174,7 @@ add_shortcode( 'yfn_woocommerce_products_products', 'yfn_woocommerce_products_pr
 
 
 
-function yfm_update_cart(){
+function yfn_update_cart(){
     global $woocommerce;
     ob_start();
     ?>
@@ -183,7 +183,7 @@ function yfm_update_cart(){
     $fragments['a.woocommerce-cart-total'] = ob_get_clean();
     return $fragments;
 }
-add_filter( 'woocommerce_add_to_cart_fragments', 'yfm_update_cart' );
+add_filter( 'woocommerce_add_to_cart_fragments', 'yfn_update_cart' );
 
 
 
