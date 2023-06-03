@@ -118,15 +118,15 @@ if ( !empty( $tags ) ) {
                         <h3 class="blog-post__title"><a href="<?php the_permalink(); ?>" class="blog-post__title__link"><?php the_title(); ?></a></h3>
                         <div class="blog__categories"><?php
                             $categories = get_the_category();
-                            $h = 0;
-                            foreach ($categories as $category) {
-                                $h++;
+                            $numberOfCategories = 0;
+                            foreach ( $categories as $category ) {
+                                $numberOfCategories++;
                             }
-                            $h = $h - 1;
+
                             $i = 0;
-                            foreach ($categories as $category) {
+                            foreach ( $categories as $category ) {
                                 $result = "";
-                                if ( $i < $h ) {
+                                if ( $i < $numberOfCategories - 1 ) {
                                     $result .= "<a class='blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>, ";
                                 } else {
                                     $result .= "<a class='blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>";
@@ -169,15 +169,15 @@ if ( !empty( $tags ) ) {
                         <h3 class="blog-post__title"><a href="<?php the_permalink(); ?>" class="blog-post__title__link"><?php the_title(); ?></a></h3>
                         <div class="blog__categories"><?php
                             $categories = get_the_category();
-                            $h = 0;
-                            foreach ($categories as $category) {
-                                $h++;
+                            $numberOfCategories = 0;
+                            foreach ( $categories as $category ) {
+                                $numberOfCategories++;
                             }
-                            $h = $h - 1;
+
                             $i = 0;
-                            foreach ($categories as $category) {
+                            foreach ( $categories as $category ) {
                                 $result = "";
-                                if ( $i < $h ) {
+                                if ( $i < $numberOfCategories - 1 ) {
                                     $result .= "<a class='blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>, ";
                                 } else {
                                     $result .= "<a class='blog__categories__link' href='" . get_category_link( $category ) . "'>" . $category->name . "</a>";
