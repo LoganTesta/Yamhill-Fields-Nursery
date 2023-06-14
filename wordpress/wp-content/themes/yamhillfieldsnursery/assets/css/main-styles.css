@@ -505,13 +505,16 @@ header { min-height: 210px; }
 .search-query-text { display: inline-block; font-size: inherit; font-weight: inherit; }
 
 
+/*Post pages*/
+.single .content-background-container { padding-bottom: 20px; }
+
+
 /*Single blog pages*/
 .blog-post-content .breadcrumbs { padding-bottom: 10px; }
 .blog-post-content .blog__date { font-size: 18px; }
 .blog-post-content .blog__categories { padding-bottom: 8px;  }
 .blog-post-content .blog__tags { padding-bottom: 30px; }
 
-.single-post .content-background-container { padding-bottom: 20px; }
 .single-blog-post-content .blog__image-container { float: none; padding-bottom: 10px; padding-left: 0; }
 .single-blog-post-content .blog__image-link { height: 200px; }
 .single-blog-post-content .blog__image { float: none; width: 100%; height: 200px; padding-left: 0; }
