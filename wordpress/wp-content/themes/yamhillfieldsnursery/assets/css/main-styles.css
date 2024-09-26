@@ -506,6 +506,7 @@ header { min-height: 210px; }
 
 /*Search results page*/
 .search-query-text { display: inline-block; font-size: inherit; font-weight: inherit; }
+.search-results__header { padding-bottom: 50px; }
 
 
 /*Post pages*/
