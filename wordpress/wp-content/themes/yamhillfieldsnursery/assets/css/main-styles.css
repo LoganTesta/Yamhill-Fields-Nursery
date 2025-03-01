@@ -218,6 +218,7 @@ h4 { padding: 0 0 10px 0; color: #4f7942; }
 
 a, a:link, a:visited { color: #4f7942; transition: 0.2s; }
 a:hover { color: #77874a; transition: 0.2s; }
+a:focus-visible { outline: 2px solid #4f7942; } 
 
 input, textarea, select { border: 1px solid #aaaaaa; }
 input:focus, textarea:focus, select:focus, .woocommerce form .form-row textarea:focus { border: 1px solid #aaaaaa; box-shadow: 0px 0px 3px 3px rgba(79, 121, 66, 0.6); transition: 0.2s; }
@@ -232,6 +233,7 @@ header { min-height: 210px; }
 .nav li:last-of-type { padding-bottom: 0; }
 .nav a { border-bottom: 2px solid rgba(255, 255, 255, 0); font-size: 18px; color: #ffffff; transition: 0.1s all ease-in; }
 .nav a:hover { border-bottom: 2px solid rgba(199, 233, 227, 1); color: #c7e9e3; transition: 0.1s all ease-in; }
+.nav a:focus-visible { outline: 2px solid #ffffff; }
 .nav .current_page_item a { border-bottom: 2px solid rgba(255, 255, 255, 1); }
 .nav .current_page_item a:hover { border-bottom: 2px solid rgba(199, 233, 227, 1); }
 
@@ -297,6 +299,7 @@ header { min-height: 210px; }
                        transition: 0.6s; cursor: pointer; }
 .main-title-container__background { position: absolute; top: 0; left: 0; opacity: 0; width: 100%; height: 94px; border-radius: 10px; transition: 0.6s; }
 .main-title-container:hover .main-title-container__background { opacity: 1; transition: 0.6s; }
+.main-title-container__title:focus-visible { outline: 2px solid #356127; }
 .main-title-container__title { display: inline-block; position: relative; padding: 10px 6px; font-size: 19px; font-family: 'Calibri', sans-serif; 
                                font-weight: bold; color: #4f7942; text-shadow: 0.15px 0.2px #090909; }
 .main-title-container__title:hover { color: #4f7942; }
@@ -725,7 +728,7 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .footer__background { min-height: 470px; }
 
     .main-title-container { top: 74px; width: 242px; padding: 0; margin-left: auto; margin-right: auto; border: 3px solid rgba(79, 121, 66, 0.9); border-width: 4px; border-radius: 10px; }
-    .main-title-container__title { width: auto; padding: 8px 10px; font-size: 32px; text-shadow: 0.8px 1px #090909; }
+    .main-title-container__title { width: 100%; padding: 8px 10px; font-size: 32px; text-shadow: 0.8px 1px #090909; }
     .main-title-container:hover { background-color: rgba(252, 252, 252, 0.75); transition: 0.6s; }	
     
     /*General use classes*/
