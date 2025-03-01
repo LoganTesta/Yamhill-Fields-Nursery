@@ -233,7 +233,8 @@ header { min-height: 210px; }
 .nav li:last-of-type { padding-bottom: 0; }
 .nav a { border-bottom: 2px solid rgba(255, 255, 255, 0); font-size: 18px; color: #ffffff; transition: 0.1s all ease-in; }
 .nav a:hover { border-bottom: 2px solid rgba(199, 233, 227, 1); color: #c7e9e3; transition: 0.1s all ease-in; }
-.nav a:focus-visible { outline: 2px solid #ffffff; }
+.nav a:focus-visible,
+button:focus-visible { outline: 2px solid #ffffff; }
 .nav .current_page_item a { border-bottom: 2px solid rgba(255, 255, 255, 1); }
 .nav .current_page_item a:hover { border-bottom: 2px solid rgba(199, 233, 227, 1); }
 
