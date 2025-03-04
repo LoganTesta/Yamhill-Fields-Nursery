@@ -148,7 +148,7 @@ function yfn_woocommerce_products_products_layout( $info ) {
                     $itemContainer .= '<div class="item__zoom-in-container">';
                         $itemContainer .= '<div class="item__zoom-in" style="background: url('. get_the_post_thumbnail_url() . ') 91px 73px/cover no-repeat"></div>';
                     $itemContainer .= '</div>';
-                    $itemContainer .= '<div class="item__inspect-background"></div>';
+                    $itemContainer .= '<button class="item__inspect-background"></button>';
                     $itemContainer .= '<h3 class="item__title"><a class="item__title__link" href="' . get_the_permalink( ) . '">' . get_the_title() . '</a></h3>';
                     $itemContainer .= '<div class="item__notes">' . get_the_excerpt() . '</div>';
                     $itemContainer .= '<div class="item__description">' . get_the_content() . '</div>';
