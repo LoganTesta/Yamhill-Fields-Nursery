@@ -431,11 +431,11 @@ button:focus-visible { outline: 2px solid #ffffff; }
 .index-product__name { padding-bottom: 5px; text-align: center; }
 .index-product__name-link { font-size: 20px; font-weight: bold; color: #77874a; }
 .index-product__image { float: left; width: 120px; height: 100px; margin-right: 10px; }
-.index-product__background-layer { position: absolute; top: 30px; left: 0; width: 120px; height: 100px; opacity: 0; 
+.index-product__background-layer { width: 120px; height: 100px; opacity: 0; 
                                    background-color: rgba(119, 135, 74, 0.35); transition: 0.4s ease-in; }
 .index-product__background-layer:hover { opacity: 1; transition: 0.4s ease-in; cursor: pointer; }
 .index-product__image-link { position: relative; display: inline-block; width: 100%; height: 100%; }
-.index-product__image-link:focus-visible { outline: 4px solid #4f7942; }
+.index-product__image-link:focus-visible { outline: 3px solid #4f7942; }
 .index-product__description { }
 
 .index-product.zero .index-product__image { background: url('../images/plants/trees-outside-nursery.jpg') 50% 50%/cover no-repeat; }
@@ -895,7 +895,7 @@ a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px;
     .index-product__name { padding-left: 15px; text-align: left; }
     .index-product__name-link { font-size: 22px; }
     .index-product__image { width: 100%; height: 300px; }
-    .index-product__background-layer { top: 33px; width: 100%; height: 300px; }
+    .index-product__background-layer { width: 100%; height: 300px; }
     .index-product__description { padding-top: 3px; }
 
     
