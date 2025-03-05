@@ -585,6 +585,12 @@ button:focus-visible { outline: 2px solid #ffffff; }
 .woocommerce a.button:hover, 
 .woocommerce button.button:hover, 
 .woocommerce input.button:hover { background-color: #71bc78; color: #ffffff; }
+.woocommerce #respond input#submit:focus-visible, 
+.woocommerce a.button:focus-visible, 
+.woocommerce button.button:focus-visible, 
+.woocommerce input.button:focus-visible {
+    box-shadow: inset 0 0 2px 2px #356127;
+}
 
 .woocommerce form .form-row input.input-text, 
 .woocommerce form .form-row textarea { height: auto; }
@@ -666,6 +672,12 @@ button:focus-visible { outline: 2px solid #ffffff; }
 #add_payment_method table.cart img, 
 .woocommerce-cart table.cart img, 
 .woocommerce-checkout table.cart img { width: 60px; }
+.product-thumbnail a:focus-visible {
+    outline: 0;
+}  
+.product-thumbnail a:focus-visible img {
+    outline: 2px solid #4f7942;
+}
 
 /*WooCommerce Checkout page*/
 .woocommerce .checkout_coupon.woocommerce-form-coupon .button { margin-top: 0; }
