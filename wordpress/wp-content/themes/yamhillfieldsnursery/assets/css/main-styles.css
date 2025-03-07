@@ -258,7 +258,7 @@ button:focus-visible { outline: 2px solid #ffffff; }
 .logo { position: absolute; top: 5px; left: auto; right: 10px; width: 44px; height: 44px; border: 3px solid rgba(79, 121, 66, 0.8);
        border-radius: 12px; background-color: rgba(255, 255, 255, 0.9); }
 .logo__link { display: block; border-radius: 12px; cursor: pointer; }
-.logo__link:focus-visible { box-shadow: inset 0 0 2px 2px #77874a; }
+.logo__link:focus-visible { outline: 6px solid #71bc78; }
 .logo__image { display: block; transition: 0.4s ease-in; }
 .logo__image:hover { background-color: rgba(79, 121, 66, 0.2); transition: 0.4s ease-in; }
 .logo:hover { background-color: rgba(255, 255, 255, 0.68); transition: 0.4s ease-in; }
@@ -301,7 +301,7 @@ button:focus-visible { outline: 2px solid #ffffff; }
                        transition: 0.6s; cursor: pointer; }
 .main-title-container__background { position: absolute; top: 0; left: 0; opacity: 0; width: 100%; height: 94px; border-radius: 10px; transition: 0.6s; }
 .main-title-container:hover .main-title-container__background { opacity: 1; transition: 0.6s; }
-.main-title-container__title:focus-visible { box-shadow: inset 0 0 2px 2px #77874a; }
+.main-title-container__title:focus-visible { outline: 4px solid #71bc78; }
 .main-title-container__title { display: inline-block; position: relative; padding: 10px 6px; font-size: 19px; font-family: 'Calibri', sans-serif; 
                                font-weight: bold; color: #4f7942; text-shadow: 0.15px 0.2px #090909; }
 .main-title-container__title:hover { color: #4f7942; }
@@ -588,9 +588,7 @@ button:focus-visible { outline: 2px solid #ffffff; }
 .woocommerce #respond input#submit:focus-visible, 
 .woocommerce a.button:focus-visible, 
 .woocommerce button.button:focus-visible, 
-.woocommerce input.button:focus-visible {
-    box-shadow: inset 0 0 2px 2px #356127;
-}
+.woocommerce input.button:focus-visible { box-shadow: inset 0 0 2px 2px #356127; }
 
 .woocommerce form .form-row input.input-text, 
 .woocommerce form .form-row textarea { height: auto; }
@@ -687,6 +685,7 @@ button:focus-visible { outline: 2px solid #ffffff; }
 /*Shopping Cart Icon*/
 .cart-icon { position: absolute; right: 10px; top: 110px; background-color: rgba(255, 255, 255, 0.7); }
 a.cart-icon__link { display: block; width: auto; height: 100%; padding: 2px 8px; border: 2px solid #ffffff; border-radius: 4px; font-size: 20px; font-weight: bold; color: #333333; }
+a.cart-icon__link:focus-visible { outline: 4px solid #71bc78; }
 
 
 /* Clearing variable width columns */
