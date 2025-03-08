@@ -400,6 +400,7 @@ button:focus-visible { outline: 2px solid #ffffff; }
 .slideshow__slide-button { display: block; float: left; opacity: 0.45; width: 20px; height: 20px; margin-top: 10px; margin-left: 18px; background-color: #4f7942;
                 border-radius: 5px; cursor: pointer; transition: 0.2s; }
 .slideshow__slide-button:hover { opacity: 0.25; transition: 0.2s; }
+.slideshow__slide-button:focus-visible { outline: 2px solid #325b53; }
 .slideshow__button-text { }
 
 .pause-play-button { opacity: 1; margin-left: 0; font-size: 0; background-color: transparent; }
@@ -421,9 +422,9 @@ button:focus-visible { outline: 2px solid #ffffff; }
 .slideshow__icon.left { position: absolute; top: 66px; left: 3%; }
 .slideshow__icon.right { position: absolute; top: 66px; right: 3%; }
 
-.slideshow__icon__link { display: block; width: 100%; border-radius: 5px; font-size: 20px; line-height: 27px; color: rgba(50, 91, 83, 0.8); text-align: center; transition: 0.2s; }
-.slideshow__icon:hover .slideshow__icon__link { color: rgba(50, 91, 83, 0.95); transition: 0.2s; }
-.slideshow__icon__link:focus-visible { outline: 2px solid #4f7942; }
+.slideshow__icon__button { display: block; width: 100%; border-radius: 5px; font-size: 20px; line-height: 27px; color: rgba(50, 91, 83, 0.8); text-align: center; transition: 0.2s; }
+.slideshow__icon:hover .slideshow__icon__button { color: rgba(50, 91, 83, 0.95); transition: 0.2s; }
+.slideshow__icon__button:focus-visible { outline: 2px solid #4f7942; }
 
 .currentSlideButton { opacity: 1; }
 .slideshow__slide-button.currentSlideButton:hover { opacity: 0.8; }
@@ -779,7 +780,7 @@ a.cart-icon__link:focus-visible { outline: 4px solid #71bc78; }
     .slideshow__icon.left { position: absolute; top: 114px; }
     .slideshow__icon.right { position: absolute; top: 114px; }
     
-    .slideshow__icon__link { font-size: 24px; line-height: 33px; }
+    .slideshow__icon__button { font-size: 24px; line-height: 33px; }
     
     .index-product__image { float: none; width: 100%; height: 220px; }
     
@@ -963,7 +964,7 @@ a.cart-icon__link:focus-visible { outline: 4px solid #71bc78; }
     .slideshow__icon { width: 36px; height: 36px; }
     .slideshow__icon.left { position: absolute; top: 170px; left: 3%; }
     .slideshow__icon.right { position: absolute; top: 170px; right: 3%; }
-    .slideshow__icon__link { font-size: 27px; line-height: 36px; }
+    .slideshow__icon__button { font-size: 27px; line-height: 36px; }
     
     
     /*Search form*/

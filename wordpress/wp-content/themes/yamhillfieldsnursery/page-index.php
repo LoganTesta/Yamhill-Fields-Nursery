@@ -20,10 +20,10 @@ get_header();
                         </div>
                     </div>
                     <div class="slideshow__icon left">
-                        <button class="slideshow__icon__link">&#10094;</button>
+                        <button class="slideshow__icon__button">&#10094;</button>
                     </div>
                     <div class="slideshow__icon right">
-                        <button class="slideshow__icon__link">&#10095;</button>
+                        <button class="slideshow__icon__button">&#10095;</button>
                     </div>
                     <div class="slideshow__buttons">
                         <div id="pausePlayButton" class="pause-play-button slideshow__slide-button">
@@ -31,18 +31,18 @@ get_header();
                             <div class="pause-button-left"></div>
                             <div class="pause-button-right"></div>
                         </div>
-                        <div id="slideButton0" class="slideshow__slide-button">
+                        <button id="slideButton0" class="slideshow__slide-button">
                             <div class="slideshow__button-text"></div>
-                        </div>
-                        <div id="slideButton1" class="slideshow__slide-button">
+                        </button>
+                        <button id="slideButton1" class="slideshow__slide-button">
                             <div class="slideshow__button-text"></div>
-                        </div>
-                        <div id="slideButton2" class="slideshow__slide-button">
+                        </button>
+                        <button id="slideButton2" class="slideshow__slide-button">
                             <div class="slideshow__button-text"></div>
-                        </div>
-                        <div id="slideButton3" class="slideshow__slide-button">
+                        </button>
+                        <button id="slideButton3" class="slideshow__slide-button">
                             <div class="slideshow__button-text"></div>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
