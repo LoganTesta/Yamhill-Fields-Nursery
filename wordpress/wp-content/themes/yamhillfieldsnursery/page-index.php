@@ -26,11 +26,11 @@ get_header();
                         <button class="slideshow__icon__button">&#10095;</button>
                     </div>
                     <div class="slideshow__buttons">
-                        <div id="pausePlayButton" class="pause-play-button slideshow__slide-button">
+                        <button id="pausePlayButton" class="pause-play-button slideshow__slide-button">
                             <div class="play-button"></div>
                             <div class="pause-button-left"></div>
                             <div class="pause-button-right"></div>
-                        </div>
+                        </button>
                         <button id="slideButton0" class="slideshow__slide-button">
                             <div class="slideshow__button-text"></div>
                         </button>
