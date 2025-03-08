@@ -20,10 +20,10 @@ get_header();
                         </div>
                     </div>
                     <div class="slideshow__icon left">
-                        <div class="slideshow__icon__link">&#10094;</div>
+                        <button class="slideshow__icon__link">&#10094;</button>
                     </div>
                     <div class="slideshow__icon right">
-                        <div class="slideshow__icon__link">&#10095;</div>
+                        <button class="slideshow__icon__link">&#10095;</button>
                     </div>
                     <div class="slideshow__buttons">
                         <div id="pausePlayButton" class="pause-play-button slideshow__slide-button">

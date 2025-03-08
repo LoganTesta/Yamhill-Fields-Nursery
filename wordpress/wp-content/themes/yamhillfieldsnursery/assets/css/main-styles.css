@@ -421,9 +421,10 @@ button:focus-visible { outline: 2px solid #ffffff; }
 .slideshow__icon.left { position: absolute; top: 66px; left: 3%; }
 .slideshow__icon.right { position: absolute; top: 66px; right: 3%; }
 
-.slideshow__icon__link { display: block; font-size: 20px; line-height: 27px; color: rgba(50, 91, 83, 0.8); text-align: center; transition: 0.2s; }
+.slideshow__icon__link { display: block; width: 100%; border-radius: 5px; font-size: 20px; line-height: 27px; color: rgba(50, 91, 83, 0.8); text-align: center; transition: 0.2s; }
 .slideshow__icon:hover .slideshow__icon__link { color: rgba(50, 91, 83, 0.95); transition: 0.2s; }
- 
+.slideshow__icon__link:focus-visible { outline: 2px solid #4f7942; }
+
 .currentSlideButton { opacity: 1; }
 .slideshow__slide-button.currentSlideButton:hover { opacity: 0.8; }
 
