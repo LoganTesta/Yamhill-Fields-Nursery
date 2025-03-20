@@ -59,11 +59,11 @@ global $woocommerce;
             </header>
             <nav class="nav mobile-nav" id="mobileNav">
                 <div class="dropdown-button-wrapper">
-                    <div id="dropdownButton">
+                    <button id="dropdownButton">
                         <div class="dropdown-part-1"></div>
                         <div class="dropdown-part-2"></div>
                         <div class="dropdown-part-3"></div>
-                    </div>
+                    </button>
                 </div>
                 <div id="dropdownContent">
                     <?php

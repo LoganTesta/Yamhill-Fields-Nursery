@@ -242,6 +242,7 @@ button:focus-visible { outline: 2px solid #ffffff; }
 .desktop-nav { display: none; }
 .dropdown-button-wrapper { position: absolute; top: 17px; left: 10px; width: 26px; }
 #dropdownButton { width: 26px; cursor: pointer; }
+#dropdownButton:focus-visible { outline: 2px solid #4f7942; outline-offset: 3px; }
 .dropdown-part-1 { border-bottom: 3px solid #4f7942; margin-bottom: 6px; transition: 0.4s ease-in; }
 .dropdown-part-2 { border-bottom: 3px solid #4f7942; margin-bottom: 6px; transition: 0.4s ease-in; }
 .dropdown-part-3 { border-bottom: 3px solid #4f7942; transition: 0.4s ease-in; }
@@ -258,7 +259,7 @@ button:focus-visible { outline: 2px solid #ffffff; }
 .logo { position: absolute; top: 5px; left: auto; right: 10px; width: 44px; height: 44px; border: 3px solid rgba(79, 121, 66, 0.8);
        border-radius: 12px; background-color: rgba(255, 255, 255, 0.9); }
 .logo__link { display: block; border-radius: 12px; cursor: pointer; }
-.logo__link:focus-visible { outline: 6px solid #71bc78; }
+.logo__link:focus-visible { outline: 6px solid #4f7942; }
 .logo__image { display: block; transition: 0.4s ease-in; }
 .logo__image:hover { background-color: rgba(79, 121, 66, 0.2); transition: 0.4s ease-in; }
 .logo:hover { background-color: rgba(255, 255, 255, 0.68); transition: 0.4s ease-in; }
@@ -301,7 +302,7 @@ button:focus-visible { outline: 2px solid #ffffff; }
                        transition: 0.6s; cursor: pointer; }
 .main-title-container__background { position: absolute; top: 0; left: 0; opacity: 0; width: 100%; height: 94px; border-radius: 10px; transition: 0.6s; }
 .main-title-container:hover .main-title-container__background { opacity: 1; transition: 0.6s; }
-.main-title-container__title:focus-visible { outline: 4px solid #71bc78; }
+.main-title-container__title:focus-visible { outline: 4px solid #4f7942; }
 .main-title-container__title { display: inline-block; position: relative; padding: 10px 6px; font-size: 19px; font-family: 'Calibri', sans-serif; 
                                font-weight: bold; color: #4f7942; text-shadow: 0.15px 0.2px #090909; }
 .main-title-container__title:hover { color: #4f7942; }
@@ -744,12 +745,15 @@ a.cart-icon__link:focus-visible { outline: 4px solid #71bc78; }
     .dropdown-button-wrapper { border-radius: 1px; box-shadow: 0 0 4px 6px rgba(255, 255, 255, 0.8); background-color: rgba(255, 255, 255, 0.8); }
 
     .logo { width: 84px; height: 84px; border-width: 4px; }
+    .logo__link:focus-visible { outline-color: #71bc78; }
     
     .footer__background { min-height: 470px; }
 
     .main-title-container { top: 74px; width: 242px; padding: 0; margin-left: auto; margin-right: auto; border: 3px solid rgba(79, 121, 66, 0.9); border-width: 4px; border-radius: 10px; }
     .main-title-container__title { width: 100%; padding: 8px 10px; font-size: 32px; text-shadow: 0.8px 1px #090909; }
-    .main-title-container:hover { background-color: rgba(252, 252, 252, 0.75); transition: 0.6s; }	
+    .main-title-container:hover { background-color: rgba(252, 252, 252, 0.75); transition: 0.6s; }
+    .main-title-container__title:focus-visible { outline-color: #71bc78; border-radius: 10px; }
+    
     
     /*General use classes*/
     .content-background-container.general-layout { float: right; width: 60%; padding-bottom: 0; padding-left: 30px; }
