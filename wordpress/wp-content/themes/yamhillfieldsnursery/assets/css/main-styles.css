@@ -241,8 +241,8 @@ button:focus-visible { outline: 2px solid #ffffff; }
 .mobile-nav { display: block; }
 .desktop-nav { display: none; }
 .dropdown-button-wrapper { position: absolute; top: 17px; left: 10px; width: 26px; }
-#dropdownButton { width: 26px; background: none; cursor: pointer; }
-#dropdownButton:hover { background: none; }
+#dropdownButton { width: 26px; background-color: transparent; cursor: pointer; }
+#dropdownButton:hover { }
 #dropdownButton:focus-visible { outline: 2px solid #4f7942; outline-offset: 3px; }
 .dropdown-part-1 { border-bottom: 3px solid #4f7942; margin-bottom: 6px; transition: 0.4s ease-in; }
 .dropdown-part-2 { border-bottom: 3px solid #4f7942; margin-bottom: 6px; transition: 0.4s ease-in; }
