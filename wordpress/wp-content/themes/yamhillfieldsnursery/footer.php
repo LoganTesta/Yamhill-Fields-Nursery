@@ -6,12 +6,12 @@
                         <div class="footer__copyright">
                             Copyright &copy; <?php echo date("Y"); ?> Yamhill Fields Nursery, LLC.  All rights reserved.
                         </div>
-                        <div class="footer__location">
+                        <address class="footer__location">
                             <div class="footer__location-header">Location and Hours:</div> 
                             <div class="footer__location-address">45202 Oak Highway, Dundee, OR 97115</div>
                             <div class="footer__location-hours">Open Mon-Sat 9:00 am-9:00 pm, closed Sunday.</div>
                             <div class="footer__phone">503-538-8204</div>
-                        </div>	
+                        </address>	
                         <div class="footer__nav">
                             <div class="footer__nav__item">
                                 <a class="footer__nav__item__link" href="privacy-policy">
