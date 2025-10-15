@@ -26,21 +26,21 @@ get_header();
                         <button class="slideshow__icon__button">&#10095;</button>
                     </div>
                     <div class="slideshow__buttons">
-                        <button id="pausePlayButton" class="pause-play-button slideshow__slide-button">
+                        <button id="pausePlayButton" class="pause-play-button slideshow__slide-button" aria-label="pausePlayButton">
                             <div class="play-button"></div>
                             <div class="pause-button-left"></div>
                             <div class="pause-button-right"></div>
                         </button>
-                        <button id="slideButton0" class="slideshow__slide-button">
+                        <button id="slideButton0" class="slideshow__slide-button" aria-label="slideButton0">
                             <div class="slideshow__button-text"></div>
                         </button>
-                        <button id="slideButton1" class="slideshow__slide-button">
+                        <button id="slideButton1" class="slideshow__slide-button" aria-label="slideButton1">
                             <div class="slideshow__button-text"></div>
                         </button>
-                        <button id="slideButton2" class="slideshow__slide-button">
+                        <button id="slideButton2" class="slideshow__slide-button" aria-label="slideButton2">
                             <div class="slideshow__button-text"></div>
                         </button>
-                        <button id="slideButton3" class="slideshow__slide-button">
+                        <button id="slideButton3" class="slideshow__slide-button" aria-label="slideButton3">
                             <div class="slideshow__button-text"></div>
                         </button>
                     </div>
