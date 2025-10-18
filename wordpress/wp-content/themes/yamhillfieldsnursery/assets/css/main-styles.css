@@ -832,6 +832,7 @@ a.cart-icon__link:focus-visible { outline: 4px solid #71bc78; }
     .archive.woocommerce .woocommerce-breadcrumb { padding-left: 15px; }
     
     /*Products, supplies*/
+    .woocommerce-product-page-header { padding-left: 15px; padding-right: 15px; }
     .woocommerce-ordering.custom-form { padding-left: 15px; }
     .custom-form__sort-results { display: inline-block; padding-left: 15px; padding-top: 0; }
     
