@@ -116,6 +116,7 @@ if ( !empty( $tags ) ) {
                                 <div class="blog__image-container">
                                     <a class="blog__image-link" href="<?php the_permalink(); ?>">
                                         <div class="blog__image" style="background: url('<?php echo esc_url( the_post_thumbnail_url( 'medium' ) ); ?>') 50% 50%/cover no-repeat"></div>
+                                        <span class="hide-element"><?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?></span>
                                     </a>
                                 </div>
                             <?php } ?>
@@ -167,6 +168,7 @@ if ( !empty( $tags ) ) {
                                 <div class="blog__image-container">
                                     <a class="blog__image-link" href="<?php the_permalink(); ?>">
                                         <div class="blog__image" style="background: url('<?php echo esc_url( the_post_thumbnail_url( 'medium' ) ); ?>') 50% 50%/cover no-repeat"></div>
+                                        <span class="hide-element"><?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?></span>
                                     </a>
                                 </div>
                             <?php } ?>
