@@ -60,7 +60,7 @@ get_header();
                     <div class="index-product__image">
                         <a href="plants" class="index-product__image-link">
                             <div class="index-product__background-layer">
-                                <span class="sr-only">Plants</span>
+                                <span class="hidden-sr-only">Plants</span>
                             </div>    
                         </a>
                     </div>
@@ -74,7 +74,7 @@ get_header();
                     <div class="index-product__image">
                         <a href="supplies" class="index-product__image-link">
                             <div class="index-product__background-layer">
-                                <span class="sr-only">Supplies</span>
+                                <span class="hidden-sr-only">Supplies</span>
                             </div>
                         </a>
                     </div>

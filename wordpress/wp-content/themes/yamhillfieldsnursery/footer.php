@@ -24,13 +24,13 @@
                             <div class="footer__social-item">
                                 <a href="/" class="footer__social-link">
                                     <div class="footer__social-link__background"></div>
-                                    <i class="fab fa-facebook-f fa-2x footer__social-icon"><span class="sr-only">Facebook</span></i>
+                                    <i class="fab fa-facebook-f fa-2x footer__social-icon"><span class="hidden-sr-only">Facebook</span></i>
                                 </a>
                             </div>
                             <div class="footer__social-item">
                                 <a href="/" class="footer__social-link">
                                     <div class="footer__social-link__background"></div>
-                                    <i class="fab fa-pinterest fa-2x footer__social-icon"><span class="sr-only">Pinterest</span></i>
+                                    <i class="fab fa-pinterest fa-2x footer__social-icon"><span class="hidden-sr-only">Pinterest</span></i>
                                 </a>
                             </div>
                         </div>
