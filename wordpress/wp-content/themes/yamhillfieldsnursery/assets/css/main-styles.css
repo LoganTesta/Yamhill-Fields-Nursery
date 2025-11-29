@@ -363,11 +363,10 @@ button:focus-visible { outline: 2px solid #ffffff; }
 #searchForm .search-controls { display: none; }
 #searchForm.show .search-controls { display: inline-block; }
 .search-form { position: absolute; top: 155px; right: 15px; }
-.search-form .search-form__label { display: block; padding-bottom: 2px; font-size: 24px; font-weight: bold; color: #ffffff; }
+.search-form .search-form__input-label { display: none; }
 .search-form .search-form__input { width: 160px; padding: 8px; border-radius: 15px; background-color: rgba(255, 255, 255, 0.9); }
 .search-form .search-form__input:focus { border: 1px solid rgba(255, 255, 255, 0.9); background-color: rgba(255, 255, 255, 0.65); }
 .search-form .search-form__input:focus::Placeholder { opacity: 0.9; }
-.search-form .search-form__input-label { display: none; }
 .search-form .search-form__button { margin-left: 10px; background-color: rgba(79, 121, 66, 0.9); }
 .search-form .search-form__button:hover { background-color: rgba(113, 188, 120, 0.9); }
 .search-form__search { position: relative; top: 8px; margin-left: 15px; }
