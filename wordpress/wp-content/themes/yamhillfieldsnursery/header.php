@@ -60,9 +60,9 @@ global $woocommerce;
             <nav class="nav mobile-nav" id="mobileNav">
                 <div class="dropdown-button-wrapper">
                     <button id="dropdownButton" aria-label="dropdown button">
-                        <div class="dropdown-part-1"></div>
-                        <div class="dropdown-part-2"></div>
-                        <div class="dropdown-part-3"></div>
+                        <span class="dropdown-part-1"></span>
+                        <span class="dropdown-part-2"></span>
+                        <span class="dropdown-part-3"></span>
                     </button>
                 </div>
                 <div id="dropdownContent">

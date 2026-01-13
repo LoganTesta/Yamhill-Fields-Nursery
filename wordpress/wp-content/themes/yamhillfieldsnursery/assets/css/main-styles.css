@@ -246,9 +246,9 @@ button:focus-visible { outline: 2px solid #ffffff; }
 #dropdownButton { width: 26px; background-color: transparent; cursor: pointer; }
 #dropdownButton:hover { }
 #dropdownButton:focus-visible { outline: 2px solid #4f7942; outline-offset: 3px; }
-.dropdown-part-1 { border-bottom: 3px solid #4f7942; margin-bottom: 6px; transition: 0.4s ease-in; }
-.dropdown-part-2 { border-bottom: 3px solid #4f7942; margin-bottom: 6px; transition: 0.4s ease-in; }
-.dropdown-part-3 { border-bottom: 3px solid #4f7942; transition: 0.4s ease-in; }
+.dropdown-part-1 { display: block; border-bottom: 3px solid #4f7942; margin-bottom: 6px; transition: 0.4s ease-in; }
+.dropdown-part-2 { display: block; border-bottom: 3px solid #4f7942; margin-bottom: 6px; transition: 0.4s ease-in; }
+.dropdown-part-3 { display: block; border-bottom: 3px solid #4f7942; transition: 0.4s ease-in; }
 #mobileNav.show .dropdown-part-1 { transform: translateY(9px) rotate(45deg); transition: 0.4s ease-in; } 
 #mobileNav.show .dropdown-part-2 { opacity: 0; transition: 0.4s ease-in; } 
 #mobileNav.show .dropdown-part-3 { transform: translateY(-9px) rotate(-45deg); transition: 0.4s ease-in; } 
