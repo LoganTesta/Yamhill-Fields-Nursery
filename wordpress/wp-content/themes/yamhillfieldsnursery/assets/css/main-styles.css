@@ -412,12 +412,13 @@ button:focus-visible { outline: 2px solid #ffffff; }
 .pause-play-button { opacity: 1; margin-left: 0; font-size: 0; background-color: transparent; }
 .pause-play-button:hover { opacity: 0.8; }
 
+.play-button { display: inline-block; }
 .pause-button-left,
 .pause-button-right { display: inline-block; opacity: 1; width: 5px; height: 20px; background-color: #4f7942; }
 .pause-button-left { margin-left: 2px; margin-right: 6px; }
+
 .pause-play-button.paused .pause-button-left,
 .pause-play-button.paused .pause-button-right { display: none; opacity: 1; border: 0; }
-
 .pause-play-button.paused .play-button { width: 0; height: 0; margin-left: 1px; border-top: 10px solid transparent; border-left: 18px solid #4f7942; border-bottom: 10px solid transparent; border-radius: 0; background-color: transparent; }
 
 

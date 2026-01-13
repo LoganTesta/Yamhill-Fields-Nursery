@@ -27,9 +27,9 @@ get_header();
                     </div>
                     <div class="slideshow__buttons">
                         <button id="pausePlayButton" class="pause-play-button slideshow__slide-button" aria-label="pausePlayButton">
-                            <div class="play-button"></div>
-                            <div class="pause-button-left"></div>
-                            <div class="pause-button-right"></div>
+                            <span class="play-button"></span>
+                            <span class="pause-button-left"></span>
+                            <span class="pause-button-right"></span>
                         </button>
                         <button id="slideButton0" class="slideshow__slide-button" aria-label="slideButton0">
                             <div class="slideshow__button-text"></div>
