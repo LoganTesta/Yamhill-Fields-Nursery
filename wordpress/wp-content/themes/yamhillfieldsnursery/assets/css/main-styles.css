@@ -407,7 +407,7 @@ button:focus-visible { outline: 2px solid #ffffff; }
                 border-radius: 5px; cursor: pointer; transition: 0.2s; }
 .slideshow__slide-button:hover { opacity: 0.25; transition: 0.2s; }
 .slideshow__slide-button:focus-visible { outline: 2px dashed #325b53; }
-.slideshow__button-text { }
+.slideshow__button-text { display: block; }
 
 .pause-play-button { opacity: 1; margin-left: 0; font-size: 0; background-color: transparent; }
 .pause-play-button:hover { opacity: 0.8; }

@@ -32,16 +32,16 @@ get_header();
                             <span class="pause-button-right"></span>
                         </button>
                         <button id="slideButton0" class="slideshow__slide-button" aria-label="slideButton0">
-                            <div class="slideshow__button-text"></div>
+                            <span class="slideshow__button-text"></span>
                         </button>
                         <button id="slideButton1" class="slideshow__slide-button" aria-label="slideButton1">
-                            <div class="slideshow__button-text"></div>
+                            <span class="slideshow__button-text"></span>
                         </button>
                         <button id="slideButton2" class="slideshow__slide-button" aria-label="slideButton2">
-                            <div class="slideshow__button-text"></div>
+                            <span class="slideshow__button-text"></span>
                         </button>
                         <button id="slideButton3" class="slideshow__slide-button" aria-label="slideButton3">
-                            <div class="slideshow__button-text"></div>
+                            <span class="slideshow__button-text"></span>
                         </button>
                     </div>
                 </div>
