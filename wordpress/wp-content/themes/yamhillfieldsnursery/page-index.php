@@ -94,6 +94,10 @@ get_header();
             $postsToDisplay = get_posts($args);
 
             foreach ( $postsToDisplay as $post ) : setup_postdata( $post );
+                $postNameInitial = str_replace( " ", "", get_the_title() );
+                $minusFirstChar = substr( $postNameInitial, 1 );
+                $firstChar = strtolower(substr($postNameInitial, 0, 1));
+                $postName = $firstChar . $minusFirstChar;
                 ?>      
                 <div class="col-sma-6 col-lar-4 blog-post">
                     <div class="">     
@@ -128,7 +132,7 @@ get_header();
                             </div>
                         <?php } ?>
                         <div class="blog__date"><?php the_date(); ?></div>
-                        <div class="blog__content"><?php the_excerpt(); ?><a href="blog#<?php the_title(); ?>"><span class="blog__read-more">More posts &#10132;</span></a></div>
+                        <div class="blog__content"><?php the_excerpt(); ?><a href="blog#<?php echo $postName ?>"><span class="blog__read-more">More posts &#10132;</span></a></div>
                         <div class="clear-both"></div>
                     </div>
                 </div>
