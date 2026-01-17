@@ -29,8 +29,8 @@ get_header();
                     $postsToDisplay = get_posts( $args );
                     foreach ( $postsToDisplay as $post ) : setup_postdata( $post );
                         $postNameInitial = str_replace( " ", "", get_the_title() );
-                        $minusFirstChar = substr( $postNameInitial, 1 ); 
-                        $firstChar = strtolower(substr($postNameInitial, 0, 1));
+                        $minusFirstChar = substr( $postNameInitial, 1 );
+                        $firstChar = strtolower( substr( $postNameInitial, 0, 1 ) );
                         $postName = $firstChar . $minusFirstChar;
                         ?>                                                       
                         <div class="blog-post <?php if ( has_post_thumbnail() ) { echo "has-image"; } ?>" id="<?php echo $postName; ?>">

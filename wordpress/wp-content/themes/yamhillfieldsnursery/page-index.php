@@ -96,7 +96,7 @@ get_header();
             foreach ( $postsToDisplay as $post ) : setup_postdata( $post );
                 $postNameInitial = str_replace( " ", "", get_the_title() );
                 $minusFirstChar = substr( $postNameInitial, 1 );
-                $firstChar = strtolower(substr($postNameInitial, 0, 1));
+                $firstChar = strtolower( substr( $postNameInitial, 0, 1 ) );
                 $postName = $firstChar . $minusFirstChar;
                 ?>      
                 <div class="col-sma-6 col-lar-4 blog-post">
