@@ -225,6 +225,7 @@ a:focus-visible { outline: 2px solid #4f7942; }
 input, textarea, select { border: 1px solid #aaaaaa; }
 input:focus, textarea:focus, select:focus, .woocommerce form .form-row textarea:focus { border: 1px solid #aaaaaa; box-shadow: 0px 0px 3px 3px rgba(79, 121, 66, 0.6); transition: 0.2s; }
 input::placeholder, textarea::placeholder { color: #4f7942; opacity: 0.8; }
+input[type=checkbox] { accent-color: #4f7942; }
 
 header { min-height: 210px; }
 .header__background { position: absolute; top: 0; width: 100%; min-height: 220px; }
