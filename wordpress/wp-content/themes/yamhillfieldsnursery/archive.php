@@ -59,7 +59,7 @@ get_header();
             </div>
             <div class="col-lar-3 blog-col-right">
                 <h3>Visit us at</h3>
-                <address>45202 Oak Highway, Dundee, OR 97115</address>
+                <address>10000 Oak Highway, Dundee, OR 97115</address>
                 <p>Open Mon-Sat 9:00 am-9:00 pm, closed Sunday.TEST</p>
                 <div class="blog-col-right__bg-img"></div>
             </div>
